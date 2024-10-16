@@ -1,0 +1,1 @@
+chrome-extension://idgpnmonknjnojddfkpgkljpfnnfcklj/assets/src/js/service/content_script_vite-148e3621.js
