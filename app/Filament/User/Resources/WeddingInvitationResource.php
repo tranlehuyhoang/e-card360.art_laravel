@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\User\Resources;
 
-use App\Filament\Resources\WeddingInvitationResource\Pages;
-use App\Filament\Resources\WeddingInvitationResource\RelationManagers;
+use App\Filament\User\Resources\WeddingInvitationResource\Pages;
+use App\Filament\User\Resources\WeddingInvitationResource\RelationManagers;
 use App\Models\User;
 use App\Models\WeddingCard;
 use App\Models\WeddingInvitation;
@@ -14,7 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 
 class WeddingInvitationResource extends Resource
 {
@@ -24,6 +24,7 @@ class WeddingInvitationResource extends Resource
     protected static ?string $navigationLabel = 'Thiệp Cưới';
 
     protected static ?string $navigationGroup = 'Quản Lý';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -32,54 +33,6 @@ class WeddingInvitationResource extends Resource
                     ->tabs([
                         Forms\Components\Tabs\Tab::make('Thông Tin Chung')
                             ->schema([
-                                // Section for Customer Information
-                                Forms\Components\Section::make('Thông Tin Khách Hàng')
-                                    ->schema([
-                                        Forms\Components\Select::make('customer_id')
-                                            ->required()
-                                            ->options(User::all()->pluck('email', 'id')) // Lấy danh sách người dùng
-                                            ->label('ID Khách Hàng'),
-                                    ]),
-                                Forms\Components\Section::make('Chi Tiết Thiệp Mời')
-                                    ->schema([
-                                        Forms\Components\Select::make('invitation_template_id')
-                                            ->label('ID Mẫu Thiệp')
-                                            ->options(WeddingCard::all()->pluck('template_name', 'id')) // Assuming 'name' is the display value
-                                            ->nullable()
-                                         
-                                            ->required(),                                      
-                                            Forms\Components\TextInput::make('invitation_code')
-                                            ->label('Mã Thiệp')
-                                            ->required()
-                                            ->disabled()
-                                            ->dehydrated(true)
-                                            ->unique(WeddingInvitation::class, 'invitation_code', ignoreRecord: true)
-                                            ->afterStateHydrated(function (callable $get, callable $set) {
-                                                // Chỉ tạo mã nếu invitation_code đang rỗng.
-                                                if (!$get('invitation_code')) {
-                                                    $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-                                                    $randomString = '';
-                                        
-                                                    // Lặp để đảm bảo mã không trùng.
-                                                    do {
-                                                        $randomString = '';
-                                                        for ($i = 0; $i < 60; $i++) {
-                                                            $randomString .= $characters[random_int(0, strlen($characters) - 1)];
-                                                        }
-                                        
-                                                        // Kiểm tra xem mã đã tồn tại chưa, trừ mã hiện tại (nếu có).
-                                                        $exists = WeddingInvitation::where('invitation_code', $randomString)
-                                                            ->whereKeyNot($get('id')) // Bỏ qua chính bản ghi hiện tại.
-                                                            ->exists();
-                                                    } while ($exists);
-                                        
-                                                    // Gán mã không trùng vào field.
-                                                    $set('invitation_code', $randomString);
-                                                }
-                                            })
-                                            ,
-                                    ]),
-                                // Section for Event Information
                                 Forms\Components\Section::make('Thông Tin Tổ Chức')
                                     ->schema([
                                         Forms\Components\DateTimePicker::make('event_time')
@@ -232,7 +185,11 @@ class WeddingInvitationResource extends Resource
             //
         ];
     }
-   
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()
+            ->where('customer_id', Auth::id()); // Chỉ lấy bản ghi của user hiện tại.
+    }
     public static function getPages(): array
     {
         return [

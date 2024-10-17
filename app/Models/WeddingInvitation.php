@@ -60,6 +60,10 @@ class WeddingInvitation extends Model
     // Nếu có mối quan hệ với model khác, bạn có thể định nghĩa ở đây
     public function customer()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'customer_id');
     }
+    public function invitationTemplate()
+{
+    return $this->belongsTo(WeddingCard::class, 'invitation_template_id');
+}
 }

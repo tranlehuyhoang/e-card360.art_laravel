@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Oct 16, 2024 at 04:30 PM
+-- Generation Time: Oct 17, 2024 at 04:03 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,8 +40,8 @@ CREATE TABLE `cache` (
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1729087935),
 ('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1729087935;', 1729087935),
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1729088811),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1729088811;', 1729088811),
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1729126530),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1729126530;', 1729126530),
 ('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:25:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:18:\"view_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:22:\"view_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:20:\"create_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:20:\"update_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:21:\"restore_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:25:\"restore_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:23:\"replicate_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:21:\"reorder_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:20:\"delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:24:\"delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:26:\"force_delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:30:\"force_delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1729170469),
 ('theme', 's:6:\"sunset\";', 2044443836);
 
@@ -164,7 +164,8 @@ CREATE TABLE `model_has_roles` (
 --
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
-(1, 'App\\Models\\User', 1);
+(1, 'App\\Models\\User', 1),
+(2, 'App\\Models\\User', 2);
 
 -- --------------------------------------------------------
 
@@ -307,9 +308,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('5kSbvfOe3806pPqeSANRpn0EJB7z8WsZ0TqAgSx5', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoid2U0Z1FxRk5qd2F5eGFTS0RFUnRNdmdSc2c4SFg0Q3pDOGdTMlY2NCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi93ZWRkaW5nLWludml0YXRpb25zIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJE0xTEt3L3RyTFhDTGFQR0hSeVhiNy5WYzlwa0RnczFOYU45RGE5bTZUT1hnRzU0QTNzL1dHIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1729088992),
-('O7HHXeflsIM33smloplzYzN676qa8b5HYmPqaxDn', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiMU5YRGVTaFE0NXJ3SzdkUE1wSWIxb2RiQ3NNQmptNDkyWk5VQUdJSiI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vbG9naW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkTTFMS3cvdHJMWENMYVBHSFJ5WGI3LlZjOXBrRGdzMU5hTjlEYTltNlRPWGdHNTRBM3MvV0ciO30=', 1729088813),
-('qNoGhiLsYP4S9gRUSl2vyspHhLbTeXql83LblDa8', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiczVnZFJtMmN4VTdJRHloc2NTS2g0dU1rNktXclgxa2tDYWVSUUtuVyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1729088813);
+('rvUXqGJPe8kTxEfT3KwPo51y63WJrjXxxcdrnaRM', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiY0JERHhhTmJJb3ZoeWF6ZmVqd3J1REpFSzgxUk9BV0FZcnJ4a3VWcyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRNMUxLdy90ckxYQ0xhUEdIUnlYYjcuVmM5cGtEZ3MxTmFOOURhOW02VE9YZ0c1NEEzcy9XRyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC8yLzEyMzEyMyI7fXM6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1729130551);
 
 -- --------------------------------------------------------
 
@@ -335,7 +334,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`) VALUES
-(1, 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$M1LKw/trLXCLaPGHRyXb7.Vc9pkDgs1NaN9Da9m6TOXgG54A3s/WG', NULL, '2024-10-16 05:23:51', '2024-10-16 05:23:51', 'default', NULL);
+(1, 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$M1LKw/trLXCLaPGHRyXb7.Vc9pkDgs1NaN9Da9m6TOXgG54A3s/WG', NULL, '2024-10-16 05:23:51', '2024-10-16 05:23:51', 'default', NULL),
+(2, '2509roblox@gmail.com', '2509roblox@gmail.com', NULL, '$2y$12$Kq0irGeEMg90XuOWbhsETeeyxFoEVbONmzL1y32qmmdItH18f5RZu', NULL, '2024-10-16 18:33:12', '2024-10-16 18:33:19', 'default', NULL);
 
 -- --------------------------------------------------------
 
@@ -417,8 +417,14 @@ CREATE TABLE `wedding_invitations` (
 --
 
 INSERT INTO `wedding_invitations` (`id`, `customer_id`, `event_time`, `event_date`, `event_location`, `event_address`, `event_map_link`, `event_phone`, `event_album`, `event_payment_qr`, `event_day_of_week`, `event_zodiac_sign`, `groom_name`, `groom_birth_date`, `groom_description`, `groom_image`, `bride_name`, `bride_birth_date`, `bride_description`, `first_meeting_date`, `first_meeting_image`, `dating_date`, `dating_image`, `engagement_date`, `engagement_image`, `wedding_date`, `wedding_image`, `album`, `groom_family_address`, `groom_family_phone`, `groom_family_map_link`, `groom_family_gift_qr`, `groom_family_image`, `bride_family_address`, `bride_family_phone`, `bride_family_map_link`, `bride_family_gift_qr`, `bride_family_image`, `created_at`, `updated_at`, `bride_image`, `invitation_template_id`, `invitation_code`) VALUES
-(1, 1, '2024-10-16 20:49:30', '2024-10-24', 'Luxury Palace', '171 Nguyễn Thái Sơn, P8, Gò Vấp', 'http://localhost:8000/mau-14', '099999999', '[\"image_2024-10-16_210133935.png\"]', '01JAAT4TR9SAVTSKEYN5GT2BR4.png', '123', '12', 'Công Thành', '2024-10-23', 'Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.', '01JAAT5PPE2G1891TSANN4S285.png', 'Phương Ánh', '2024-10-25', 'Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.', '2024-10-29', '01JAAT7V0CC209GJ912GQAEE9Z.png', '2024-10-11', '01JAAT7V0GQ04WKVPYHR0GFBZW.png', '2024-10-18', '01JAAT7V0NAY1S5C8KXEF53YQ9.png', '2024-10-10', '01JAAT7V0S104EX14M9XT1DMX2.png', '[\"image_2024-10-16_210329334.png\",\"image_2024-10-16_210332386.png\",\"image_2024-10-16_210336323.png\",\"image_2024-10-16_210349684.png\",\"image_2024-10-16_210357391.png\",\"image_2024-10-16_210403597.png\"]', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP', '091292921', 'http://localhost:8000/mau-14#gift', '123', '01JAAT68MY528YXD0M7HXKV6V3.png', '123', '123', '123', '123', '01JAAT7V08DJQYBKW4SVC81DG4.png', '2024-10-16 07:01:06', '2024-10-16 07:15:21', '01JAATPC3P6MDTGV3MZSZ9JBMC.png', 2, '123123'),
-(2, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 07:29:37', '2024-10-16 07:29:37', NULL, 1, NULL);
+(1, 1, '2024-10-16 20:49:30', '2024-10-24', 'Luxury Palace', '171 Nguyễn Thái Sơn, P8, Gò Vấp', 'http://localhost:8000/mau-14', '099999999', '[\"image_2024-10-16_210133935.png\"]', '01JAAT4TR9SAVTSKEYN5GT2BR4.png', '123', '12', 'Công Thành', '2024-10-23', 'Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại.', '01JAAT5PPE2G1891TSANN4S285.png', 'Phương Ánh', '2024-10-25', 'Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình.', '2024-10-29', '01JAAT7V0CC209GJ912GQAEE9Z.png', '2024-10-11', '01JAAT7V0GQ04WKVPYHR0GFBZW.png', '2024-10-18', '01JAAT7V0NAY1S5C8KXEF53YQ9.png', '2024-10-10', '01JAAT7V0S104EX14M9XT1DMX2.png', '[\"image_2024-10-16_210329334.png\",\"image_2024-10-16_210332386.png\",\"image_2024-10-16_210336323.png\",\"image_2024-10-16_210349684.png\",\"image_2024-10-16_210357391.png\",\"image_2024-10-16_210403597.png\"]', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP', '091292921', 'http://localhost:8000/mau-14#gift', '123', '01JAAT68MY528YXD0M7HXKV6V3.png', '123', '123', '123', '123', '01JAAT7V08DJQYBKW4SVC81DG4.png', '2024-10-16 07:01:06', '2024-10-16 19:01:04', '01JAATPC3P6MDTGV3MZSZ9JBMC.png', 2, '123123'),
+(4, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:19:41', '2024-10-16 18:23:37', NULL, 2, '123123123'),
+(5, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:20:06', '2024-10-16 18:24:54', NULL, 1, '871reuupx5lzycvoby1qjx0hu2ms0mfeuce5jqafqstjhj66g6d4pxe1wc5pa'),
+(6, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:20:45', '2024-10-16 18:20:45', NULL, 1, '871reuupx5lzycvoby1qjx0hu2ms0mfeuce5jqafqstjhj66g6d4pxe1wc5p'),
+(7, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:26:37', '2024-10-16 18:26:37', NULL, 2, NULL),
+(8, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:27:28', '2024-10-16 18:27:28', NULL, 1, '1orntr7wazmww5v19kd0plca43ghx1eiq2n8oc8klam6a527h4xb6aya8p39'),
+(9, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:30:11', '2024-10-16 18:31:52', NULL, 2, 'mjorkxqm0pqxhh2t550o5q88gr2akp3flpmq138tdmwfznczfb433wgp3cwu'),
+(10, 1, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '[]', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-10-16 18:32:18', '2024-10-16 18:32:18', NULL, 2, 'ysa8agbv4r9hdg2b6yb1ra2h5dh8vw0nd8md034v1a6j2orw6t3m9qg2meov');
 
 --
 -- Indexes for dumped tables
@@ -570,7 +576,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `wedding_cards`
@@ -582,7 +588,7 @@ ALTER TABLE `wedding_cards`
 -- AUTO_INCREMENT for table `wedding_invitations`
 --
 ALTER TABLE `wedding_invitations`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
