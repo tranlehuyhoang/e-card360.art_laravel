@@ -1,4 +1,5 @@
 <div>
+
     <div>
 
 
@@ -66,8 +67,7 @@
                 }
             </style>
             <link rel='stylesheet' id='wp-block-library-css'
-                href='/assets_1/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2'
-                media='all' />
+                href='/assets_1/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2' media='all' />
             <style id='rank-math-toc-block-style-inline-css'>
                 .wp-block-rank-math-toc-block nav ol {
                     counter-reset: item
@@ -426,49 +426,38 @@
                 }
             </style>
             <link rel='stylesheet' id='uikit-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='reset uikit-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/reset1.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/reset1.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='remixicon-css'
                 href='https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='preload-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/preload.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/preload.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='wedding reset-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='fancybox-css'
                 href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?ver=1.0.0'
                 media='all' />
             <link rel='stylesheet' id='swiper slide-css'
                 href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='animation-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='aos style-css'
                 href='/assets_1/wp-content/themes/wedding-studio/css/aos.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='footer style-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/footer.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/footer.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='wedding style-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/wedding.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/wedding.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='theme-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/theme.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/theme.css?ver=1.0.0' media='all' />
             <script src="/assets_1/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js">
             </script>
-            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-                id="jquery-migrate-js"></script>
-            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0"
-                id="Jquery-js"></script>
+            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js">
+            </script>
+            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0" id="Jquery-js"></script>
             <link rel="https://api.w.org/" href="/wp-json/" />
-            <link rel="alternate" title="JSON" type="application/json"
-                href="/wp-json/wp/v2/mau-thiep/1171" />
-            <link rel="EditURI" type="application/rsd+xml" title="RSD"
-                href="/xmlrpc.php?rsd" />
+            <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/mau-thiep/1171" />
+            <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
             <meta name="generator" content="WordPress 6.6.2" />
             <link rel='shortlink' href='/?p=1171' />
             <link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed"
@@ -492,8 +481,7 @@
                 href="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-180x180.png" />
             <meta name="msapplication-TileImage"
                 content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png" />
-            <link rel="stylesheet"
-                href="/assets_1/wp-content/themes/wedding-studio/assets/gold/css/style.css">
+            <link rel="stylesheet" href="/assets_1/wp-content/themes/wedding-studio/assets/gold/css/style.css">
         </head>
 
         <body
@@ -505,8 +493,8 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt=""
-                            style="max-width: 150px;" class="uk-animation-slide-top">
+                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt="" style="max-width: 150px;"
+                            class="uk-animation-slide-top">
 
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                             Mẫu Thiệp Vàng Gold</h2>
@@ -519,45 +507,50 @@
                 <section id="banner" class="section-banner">
                     <div class="banner-container">
 
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/bg-top-right.png"
-                            alt="" class="bg-top-right" data-aos="fade-down-left" data-aos-duration="3000">
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/bg-top-right.png" alt=""
+                            class="bg-top-right" data-aos="fade-down-left" data-aos-duration="3000">
 
 
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/bg-bottom-left.png"
-                            alt="" class="bg-bottom-left" data-aos="fade-up-right" data-aos-duration="3000">
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/bg-bottom-left.png" alt=""
+                            class="bg-bottom-left" data-aos="fade-up-right" data-aos-duration="3000">
 
                         <h1 class="banner-title" data-aos="fade-down" data-aos-duration="3000">SAVE THE DATE</h1>
                         <div class="banner-logo" data-aos="fade-in" data-aos-duration="3000">
-                            <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/logo-img.png"
-                                alt="" class="logo-img">
+                            <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/logo-img.png" alt=""
+                                class="logo-img">
                             <span class="groom_letter">T</span>
                             <span class="bride_letter">A</span>
                         </div>
+
                         <div class="banner-name">
-                            Công Thành<br />
+                            {{$invitation->groom_name}}<br />
                             &<br />
-                            Phương Ánh </div>
+                            {{$invitation->bride_name}} </div>
                         <div class="banner-date">
-                            <span class="banner_time">10H00</span>
-                            <span class="name_day">CHỦ NHẬT</span> <br />
-                            <span>Ngày </span><span class="banner_date">04</span>
-                            </span><span class="banner_month">02</span>
-                            <span class="banner_year">2024</span>
+                            <span class="banner_time">{{ \Carbon\Carbon::parse($invitation->event_time)->format('H:i')
+                                }}</span>
+
+                            <span class="name_day">{{$invitation->event_day_of_week}}</span> <br />
+                            <span>Ngày </span><span class="banner_date">{{
+                                \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
+                            <span class="banner_month">{{ \Carbon\Carbon::parse($invitation->event_date)->format('m')
+                                }}</span>
+                            <span class="banner_year">{{ \Carbon\Carbon::parse($invitation->event_date)->format('Y')
+                                }}</span>
                         </div>
                         <div class="banner-address uk-position-z-index">
                             <p>Hôn lễ được tổ chức tại</p>
-                            <p class="location-name">Luxury Palace</p>
-                            <address>171 Nguyễn Thái Sơn, P8, Gò Vấp</address>
+                            <p class="location-name">{{$invitation->event_location}}</p>
+                            <address>{{$invitation->event_address}}</address>
                         </div>
                         <div class="social-link">
-                            <a href="tel:+84981742365" class="">
+                            <a href="tel:{{$invitation->event_phone}}" class="">
                                 <i class='ri-phone-fill'></i>
                             </a>
                             <a href="#gift" class="">
                                 <i class='ri-gift-fill'></i>
                             </a>
-                            <a
-                                href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu">
+                            <a href="{{$invitation->event_map_link}}">
                                 <i class='ri-map-fill'></i>
                             </a>
                         </div>
@@ -573,30 +566,33 @@
                     <div class="about-container container">
                         <div class="about-card" style="order:1">
                             <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="/assets_1/wp-content/uploads/2024/01/3F2C891C-BDBD-47BF-88A3-A99E1DC850A6.jpeg"
+                                <img src="{{ Storage::url($invitation->bride_image)}}"
                                     alt="" class="bride_img" />
                             </div>
                             <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
                                 <p class="title">Cô dâu</p>
-                                <h3 class="bride_name">Phương Ánh</h3>
-                                <p class="bride_birthday">20/12/2001</p>
-                                <p class="bride_des">Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du
-                                    lịch cùng gia đình.</p>
+                                <h3 class="bride_name">{{$invitation->bride_name}}</h3>
+                                <p class="bride_birthday">
+                                    {{ \Carbon\Carbon::parse($invitation->bride_birth_date)->format('d/m/Y') }}
+                                </p>
+
+                                <p class="bride_des">{{$invitation->bride_description}}</p>
                                 <hr />
                             </div>
 
                         </div>
                         <div class="about-card" style="order:1">
                             <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
-                                <img src="/assets_1/wp-content/uploads/2024/01/8547179E-5B84-4F6F-9955-7A089DEB57C0.jpeg"
+                                 <img src="{{ Storage::url($invitation->groom_image)}}"
                                     alt="" class="groom_img">
                             </div>
                             <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
                                 <p class="title">Chú rể</p>
-                                <h3 class="groom_name">Công Thành</h3>
-                                <p class="groom_birthday">12/12/1998</p>
-                                <p class="groom_des">Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp
-                                    người hướng ngoại.</p>
+                                <h3 class="groom_name">{{$invitation->groom_name}}</h3>
+                                <p class="groom_birthday"> {{
+                                    \Carbon\Carbon::parse($invitation->groom_birth_date)->format('d/m/Y') }}
+                                </p>
+                                <p class="groom_des">{{$invitation->bride_description}}</p>
                                 <hr />
                             </div>
 
@@ -632,14 +628,16 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="/assets_1/wp-content/uploads/2024/01/2F73AD46-95FD-46BD-AF84-9EB6AAE0D896.jpeg"
-                                        alt="" class="timline-img">
+                                    <img src="{{ Storage::url($invitation->first_meeting_image)}}" alt=""
+                                        class="timline-img">
 
                                 </div>
 
                                 <div class="timeline-body">
 
-                                    <span class="story-date">2013</span>
+                                    <span class="story-date">
+                                        {{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y') }}
+                                    </span>
 
                                     <span class="title">Lần đầu gặp gỡ</span>
 
@@ -654,14 +652,15 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="/assets_1/wp-content/uploads/2024/01/3BC49448-8D6D-48D6-8F91-E58B85773511.jpeg"
-                                        alt="" class="timline-img">
+                                    <img src="{{ Storage::url($invitation->dating_image)}}" alt="" class="timline-img">
 
                                 </div>
 
                                 <div class="timeline-body">
 
-                                    <span class="story-date">2023</span>
+                                    <span class="story-date"> {{
+                                        \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y') }}
+                                    </span>
 
                                     <span class="title">Hẹn hò</span>
 
@@ -676,14 +675,15 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="/assets_1/wp-content/uploads/2024/01/9E226C12-7168-4606-B58B-820972D0DC97-e1710468389529.jpeg"
+                                    <img src="{{ Storage::url($invitation->engagement_image)}}"
                                         alt="" class="timline-img">
 
                                 </div>
 
                                 <div class="timeline-body">
 
-                                    <span class="story-date">24-08-2023</span>
+                                    <span class="story-date">{{
+                                        \Carbon\Carbon::parse($invitation->engagement_date)->format('d - m - Y') }}</span>
 
                                     <span class="title">Đính hôn</span>
 
@@ -698,14 +698,16 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="/assets_1/wp-content/uploads/2024/01/B7337EB8-E437-496C-A4F5-9BC9FF8F6953.jpeg"
+                                    <img src="{{ Storage::url($invitation->wedding_image)}}"
+
                                         alt="" class="timline-img">
 
                                 </div>
 
                                 <div class="timeline-body">
 
-                                    <span class="story-date">04-02-2024</span>
+                                    <span class="story-date">{{
+                                        \Carbon\Carbon::parse($invitation->wedding_date)->format('d - m - Y') }}</span>
 
                                     <span class="title">Lễ Thành Hôn</span>
 
@@ -731,119 +733,19 @@
                             ALBUM ẢNH </h2>
                     </div>
                     <div class="album container">
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/3F2C891C-BDBD-47BF-88A3-A99E1DC850A6.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/3F2C891C-BDBD-47BF-88A3-A99E1DC850A6.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/9E226C12-7168-4606-B58B-820972D0DC97-e1710468389529.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/9E226C12-7168-4606-B58B-820972D0DC97-e1710468389529.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/2F73AD46-95FD-46BD-AF84-9EB6AAE0D896.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/2F73AD46-95FD-46BD-AF84-9EB6AAE0D896.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/B7337EB8-E437-496C-A4F5-9BC9FF8F6953.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/B7337EB8-E437-496C-A4F5-9BC9FF8F6953.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/FF4127FB-2785-458A-8A3D-A3E72742913C.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/FF4127FB-2785-458A-8A3D-A3E72742913C.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/B5B98586-8319-47C4-BC2D-EF47D9B498C1.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/B5B98586-8319-47C4-BC2D-EF47D9B498C1.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/D254EE0D-FF98-4172-9A92-24AA2CD781C4.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/D254EE0D-FF98-4172-9A92-24AA2CD781C4.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/3BC49448-8D6D-48D6-8F91-E58B85773511.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/3BC49448-8D6D-48D6-8F91-E58B85773511.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/17A5F6B3-B630-49FF-B992-8EA7C846246E.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/17A5F6B3-B630-49FF-B992-8EA7C846246E.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/F4F0DCF3-E834-4949-A95C-72B1AA6769A3.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/F4F0DCF3-E834-4949-A95C-72B1AA6769A3.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/D7F30C92-AFB3-4440-9D57-5A662A2D6CCE.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/D7F30C92-AFB3-4440-9D57-5A662A2D6CCE.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/8547179E-5B84-4F6F-9955-7A089DEB57C0.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/8547179E-5B84-4F6F-9955-7A089DEB57C0.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/B637D0C4-54F9-4898-A748-1A32BDC602E6.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/B637D0C4-54F9-4898-A748-1A32BDC602E6.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="album-item">
-                            <a data-fancybox="gallery"
-                                href="/assets_1/wp-content/uploads/2024/01/E3926477-7BF8-4E5B-8B84-99D6E4D78D9C.jpeg">
-                                <img src="/assets_1/wp-content/uploads/2024/01/E3926477-7BF8-4E5B-8B84-99D6E4D78D9C.jpeg"
-                                    alt="">
-                            </a>
-                        </div>
+                        @if(!empty($invitation->album) && is_array($invitation->album))
+                            @foreach($invitation->album as $image)
+                                <div class="album-item">
+                                    <a data-fancybox="gallery" href="{{ Storage::url($image) }}">
+                                        <img src="{{ Storage::url($image) }}" alt="">
+                                    </a>
+                                </div>
+                            @endforeach
+                        @else
+                            <p>No images available.</p>
+                        @endif
                     </div>
+                    
                 </section>
                 <!-- END ALBUM -->
                 <!-- VIDEO -->
@@ -900,36 +802,34 @@
                             <path fill="#f1ebe4"
                                 d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z" />
                         </svg>
-                        <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid
-                            uk-countdown="date: 2024-02-04 00:00:00">
-                            <div>
-                                <div
-                                    class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                                </div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center ">Ngày</div>
-                            </div>
-
-                            <div>
-                                <div
-                                    class="uk-countdown-number uk-countdown-hours uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                                </div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center ">Giờ</div>
-                            </div>
-
-                            <div>
-                                <div
-                                    class="uk-countdown-number uk-countdown-minutes uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                                </div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center ">Phút</div>
-                            </div>
-
-                            <div>
-                                <div
-                                    class="uk-countdown-number uk-countdown-seconds uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                                </div>
-                                <div class="uk-countdown-label uk-margin-small uk-text-center ">Giây</div>
-                            </div>
-                        </div>
+                        <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" 
+                        uk-grid
+                        uk-countdown="date: {{ $invitation->event_time }}">
+                       <div>
+                           <div class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                           </div>
+                           <div class="uk-countdown-label uk-margin-small uk-text-center">Ngày</div>
+                       </div>
+                   
+                       <div>
+                           <div class="uk-countdown-number uk-countdown-hours uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                           </div>
+                           <div class="uk-countdown-label uk-margin-small uk-text-center">Giờ</div>
+                       </div>
+                   
+                       <div>
+                           <div class="uk-countdown-number uk-countdown-minutes uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                           </div>
+                           <div class="uk-countdown-label uk-margin-small uk-text-center">Phút</div>
+                       </div>
+                   
+                       <div>
+                           <div class="uk-countdown-number uk-countdown-seconds uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                           </div>
+                           <div class="uk-countdown-label uk-margin-small uk-text-center">Giây</div>
+                       </div>
+                   </div>
+                   
 
                     </div>
                 </section>
@@ -947,11 +847,11 @@
                         <div class="invitation">
                             <div class="invitation-container">
                                 <div class="invitation-card"> <img
-                                        src="/assets_1/wp-content/uploads/2024/01/B637D0C4-54F9-4898-A748-1A32BDC602E6.jpeg"
+                                        src="{{Storage::url($invitation->bride_family_image) }}"
                                         alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                        <p>{{$invitation->bride_family_address}}</p>
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -976,7 +876,7 @@
 
                                     </div>
                                     <div class="social-link">
-                                        <a href="tel:(+84)981742365" class="phone_number">
+                                        <a href="tel:{{$invitation->bride_family_phone}}" class="phone_number">
                                             <i class="ri-phone-fill"></i></i>
                                         </a>
                                         <a href="" class="phone_number" data-fancybox>
@@ -991,11 +891,11 @@
 
                                 </div>
                                 <div class="invitation-card"> <img
-                                        src="/assets_1/wp-content/uploads/2024/01/FF4127FB-2785-458A-8A3D-A3E72742913C.jpeg"
+                                        src="{{Storage::url($invitation->groom_family_image) }}"
                                         alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>ẤP HẠ, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                        <p>{{$invitation->groom_family_address}}</p>
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -1006,7 +906,7 @@
                                             <div class="invi_group_time">
 
                                                 <span class="invi_date_text">
-                                                    Chủ Nhật </span>
+                                                    {{$invitation->event_day_of_week}} </span>
                                                 <span class="invi_date_number">
                                                     <p class="invi_date">04</p> /
                                                     <p class="invi_month">02</p>
@@ -1020,13 +920,13 @@
 
                                     </div>
                                     <div class="social-link">
-                                        <a href="tel:(+84)981742365" class="phone_number">
+                                        <a href="tel:{{$invitation->groom_family_phone}}" class="phone_number">
                                             <i class="ri-phone-fill"></i></i>
                                         </a>
                                         <a href="" class="phone_number" data-fancybox>
                                             <i class="ri-image-circle-fill"></i>
                                         </a>
-                                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map"
+                                        <a href="{{$invitation->groom_family_map_link}}" class="invi_map"
                                             target="_blank">
                                             <i class="ri-map-2-fill"></i>
                                         </a>
@@ -1209,51 +1109,7 @@
                     </div>
                 </section>
 
-                <script>
-                    //XỬ LÝ FORM
-$(document).ready(function(){
-  $('.message-form').fadeOut(300)
-  $('#form').on('submit', function(e){
-      e.preventDefault();
-      f_userName = "Công Thành-Phương Ánh"
-      f_check = $('input[type="radio"]:checked').val()
-      f_name = $(this).find('#f_name').val()
-      f_numUser = $('#num_user').find('option:selected').val()
-      f_select = $('#wedding-select').find('option:selected').val()
-      f_text = $(this).find('#f_text').val()
-      var form_data = {
-          'entry.737056527': f_userName,
-          'entry.642873731': f_check,
-          'entry.1699210899': f_name,
-          'entry.369695229': f_numUser,
-          'entry.1528762541': f_select,
-          'entry.1679764871': f_text,
-      }
-     $('.wedding-submit[type="submit"]').text('Đang gửi ...')
-     $.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
-      type: "POST",
-      data : form_data,
-      dataType: "xml",
-      statusCode: {
-          0: function() {
-              mess_form = 'Chúng mình xin chân thành cám ơn !'
-              $('.message-form').html(mess_form)
-              $('button[type="submit"]').addClass('success')
-              $('button[type="submit"]').removeClass('btn_primary')
-              $('button[type="submit"]').attr('disabled','true')
-              $('button[type="submit"]').text('Đã xác nhận')
-              $('.message-form').fadeIn(300)
-          },
-          200: function() {
-              alert('200')
-          }
-      }
-      })
-  })
-  return false;
-})
-                </script>
+
                 <!-- END FORM XÁC NHẬN -->
 
                 <!-- GỬI QUÀ -->
@@ -1276,7 +1132,7 @@ $(document).ready(function(){
                             <div class="gift-container" id="gift-container">
                                 <div class="gift-card">
                                     <div class="gift-qr">
-                                        <img src="/assets_1/wp-content/uploads/2024/01/z5062484714460_86b92a8805a1d69892e3ad506673b204-11-e1705158219375.jpg"
+                                        <img src="{{ Storage::url($invitation->event_payment_qr) }}"
                                             alt="" class="groom_qr" style="max-width:100%" />
                                     </div>
                                     <div class="gift-body">
@@ -1296,8 +1152,8 @@ $(document).ready(function(){
                 <!-- THANK YOU -->
                 <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
                     <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-                    <img src="/assets_1/wp-content/uploads/2024/01/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg"
-                        alt="" class="thankyou-bg thankyou_img" style="object-position:" />
+                    <img src="/assets_1/wp-content/uploads/2024/01/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg" alt=""
+                        class="thankyou-bg thankyou_img" style="object-position:" />
                     <div class="thankyou-body container uk-position-relative uk-position-z-index">
                         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                             data-aos-duration="2000">Thank you!</h2>
@@ -1331,8 +1187,7 @@ $(document).ready(function(){
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio
-                    src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-12.mp3"
+                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-12.mp3"
                     controls autoplay id="audio">
 
                 </audio>
@@ -1340,7 +1195,7 @@ $(document).ready(function(){
                 <!-- FOOTER -->
                 <footer>
                     <div class="footer-bottom">
-                        <p>Bản quyền 2023 thuộc về Thiệp cưới điện tử®</p>
+                        <p>Bản quyền 2024 thuộc về Nphdigital</p>
                     </div>
                 </footer>
                 <button class='toggleAudio'>
@@ -1350,23 +1205,21 @@ $(document).ready(function(){
 
                 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?ver=1.0.0"
                     id="fancybox js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0"
-                    id="uikit js-js"></script>
-                <script
-                    src="/assets_1/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0"
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0" id="uikit js-js">
+                </script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0"
                     id="uikit icon-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0"
-                    id="preloader js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0"
-                    id="aos js-js"></script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0" id="preloader js-js">
+                </script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0" id="aos js-js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=1.0.0"
                     id="swiper slide-js"></script>
                 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js?ver=1.0.0"
                     id="scrollrevea-js"></script>
                 <script src="/assets_1/wp-content/themes/wedding-studio/js/main-wedding.js?ver=1.0.0"
                     id="main wedding-js"></script>
-                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2"
-                    id="comment-reply-js" async data-wp-strategy="async"></script>
+                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2" id="comment-reply-js" async
+                    data-wp-strategy="async"></script>
 
             </body>
 

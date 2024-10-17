@@ -1337,7 +1337,7 @@ $(document).ready(function(){
                 <!-- FOOTER -->
                 <footer>
                     <div class="footer-bottom">
-                        <p>Bản quyền 2023 thuộc về Thiệp cưới điện tử®</p>
+                        <p>Bản quyền 2024 thuộc về Nphdigital</p>
                     </div>
                 </footer>
                 <button class='toggleAudio'>
