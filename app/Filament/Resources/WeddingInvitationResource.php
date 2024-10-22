@@ -21,7 +21,7 @@ class WeddingInvitationResource extends Resource
     protected static ?string $model = WeddingInvitation::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
-    protected static ?string $navigationLabel = 'Thiệp Cưới';
+    protected static ?string $navigationLabel = 'Danh Sách Thiệp Cưới';
 
     protected static ?string $navigationGroup = 'Quản Lý';
     public static function form(Form $form): Form
@@ -46,9 +46,9 @@ class WeddingInvitationResource extends Resource
                                             ->label('ID Mẫu Thiệp')
                                             ->options(WeddingCard::all()->pluck('template_name', 'id')) // Assuming 'name' is the display value
                                             ->nullable()
-                                         
-                                            ->required(),                                      
-                                            Forms\Components\TextInput::make('invitation_code')
+
+                                            ->required(),
+                                        Forms\Components\TextInput::make('invitation_code')
                                             ->label('Mã Thiệp')
                                             ->required()
                                             ->disabled()
@@ -59,25 +59,24 @@ class WeddingInvitationResource extends Resource
                                                 if (!$get('invitation_code')) {
                                                     $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
                                                     $randomString = '';
-                                        
+
                                                     // Lặp để đảm bảo mã không trùng.
                                                     do {
                                                         $randomString = '';
                                                         for ($i = 0; $i < 60; $i++) {
                                                             $randomString .= $characters[random_int(0, strlen($characters) - 1)];
                                                         }
-                                        
+
                                                         // Kiểm tra xem mã đã tồn tại chưa, trừ mã hiện tại (nếu có).
                                                         $exists = WeddingInvitation::where('invitation_code', $randomString)
                                                             ->whereKeyNot($get('id')) // Bỏ qua chính bản ghi hiện tại.
                                                             ->exists();
                                                     } while ($exists);
-                                        
+
                                                     // Gán mã không trùng vào field.
                                                     $set('invitation_code', $randomString);
                                                 }
-                                            })
-                                            ,
+                                            }),
                                     ]),
                                 // Section for Event Information
                                 Forms\Components\Section::make('Thông Tin Tổ Chức')
@@ -131,7 +130,7 @@ class WeddingInvitationResource extends Resource
                                 Forms\Components\FileUpload::make('groom_image')
                                     ->label('Ảnh Chú Rể'),
                             ]),
-                        Forms\Components\Tabs\Tab::make('Nhà Trai')
+                            Forms\Components\Tabs\Tab::make('Nhà Trai')
                             ->schema([
                                 Forms\Components\TextInput::make('groom_family_address')
                                     ->label('Địa Chỉ Nhà Trai'),
@@ -143,7 +142,12 @@ class WeddingInvitationResource extends Resource
                                     ->label('QR Quà Nhà Trai'),
                                 Forms\Components\FileUpload::make('groom_family_image')
                                     ->label('Ảnh Nhà Trai'),
+                                Forms\Components\TextInput::make('groom_family_description')
+                                    ->label('Mô Tả Nhà Trai'),
+                                Forms\Components\DateTimePicker::make('groom_family_time')
+                                    ->label('Thời Gian Nhà Trai'),
                             ]),
+
                         Forms\Components\Tabs\Tab::make('Nhà Gái')
                             ->schema([
                                 Forms\Components\TextInput::make('bride_family_address')
@@ -156,7 +160,12 @@ class WeddingInvitationResource extends Resource
                                     ->label('QR Quà Nhà Gái'),
                                 Forms\Components\FileUpload::make('bride_family_image')
                                     ->label('Ảnh Nhà Gái'),
+                                Forms\Components\TextInput::make('bride_family_description')
+                                    ->label('Mô Tả Nhà Gái'),
+                                Forms\Components\DateTimePicker::make('bride_family_time')
+                                    ->label('Thời Gian Nhà Gái'),
                             ]),
+
                         Forms\Components\Tabs\Tab::make('Love Story')
                             ->schema([
                                 Forms\Components\DatePicker::make('first_meeting_date')
@@ -183,6 +192,29 @@ class WeddingInvitationResource extends Resource
                                     ->multiple() // Cho phép tải nhiều ảnh
                                     ->preserveFilenames(),
                             ]),
+                        Forms\Components\Tabs\Tab::make('Banner')
+                            ->schema([
+                                Forms\Components\FileUpload::make('banner1')
+                                    ->label('Banner 1')
+                                    ->preserveFilenames(),
+
+                                Forms\Components\FileUpload::make('banner2')
+                                    ->label('Banner 2')
+                                    ->preserveFilenames(),
+
+                                Forms\Components\FileUpload::make('banner3')
+                                    ->label('Banner 3')
+                                    ->preserveFilenames(),
+
+                                Forms\Components\FileUpload::make('banner4')
+                                    ->label('Banner 4')
+                                    ->preserveFilenames(),
+
+                                Forms\Components\FileUpload::make('banner5')
+                                    ->label('Banner 5')
+                                    ->preserveFilenames(),
+                            ]),
+
                     ])->columnSpanFull(),
             ]);
     }
@@ -232,7 +264,7 @@ class WeddingInvitationResource extends Resource
             //
         ];
     }
-   
+
     public static function getPages(): array
     {
         return [
@@ -240,5 +272,10 @@ class WeddingInvitationResource extends Resource
             'create' => Pages\CreateWeddingInvitation::route('/create'),
             'edit' => Pages\EditWeddingInvitation::route('/{record}/edit'),
         ];
+    }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
     }
 }

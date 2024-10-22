@@ -51,6 +51,15 @@ class WeddingInvitation extends Model
         'bride_family_image',
         'invitation_template_id',
         'invitation_code',
+        'banner1',
+        'banner2',
+        'banner3',
+        'banner4',
+        'banner5',
+        'bride_family_description',
+        'groom_family_description',
+        'bride_family_time',
+        'groom_family_time',
     ];
     protected $casts = [
         'event_album' => 'array', // Chuyển đổi sang mảng

@@ -14,5 +14,6 @@ class WeddingCard extends Model
         'template_name',
         'image',
         'demo_link',
+        'price',
     ];
 }

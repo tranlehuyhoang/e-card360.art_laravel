@@ -518,8 +518,8 @@
                         <div class="banner-logo" data-aos="fade-in" data-aos-duration="3000">
                             <img src="/assets_1/wp-content/themes/wedding-studio/assets/gold/img/logo-img.png" alt=""
                                 class="logo-img">
-                            <span class="groom_letter">T</span>
-                            <span class="bride_letter">A</span>
+                            <span class="groom_letter">{{ substr(strrchr($invitation->groom_name, ' '), 1, 1) }}</span>
+                            <span class="bride_letter">{{ substr(strrchr($invitation->bride_name, ' '), 1, 1) }}</span>
                         </div>
 
                         <div class="banner-name">
@@ -566,8 +566,7 @@
                     <div class="about-container container">
                         <div class="about-card" style="order:1">
                             <div class="about-media" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="{{ Storage::url($invitation->bride_image)}}"
-                                    alt="" class="bride_img" />
+                                <img src="{{ Storage::url($invitation->bride_image)}}" alt="" class="bride_img" />
                             </div>
                             <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
                                 <p class="title">Cô dâu</p>
@@ -583,8 +582,7 @@
                         </div>
                         <div class="about-card" style="order:1">
                             <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
-                                 <img src="{{ Storage::url($invitation->groom_image)}}"
-                                    alt="" class="groom_img">
+                                <img src="{{ Storage::url($invitation->groom_image)}}" alt="" class="groom_img">
                             </div>
                             <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
                                 <p class="title">Chú rể</p>
@@ -603,7 +601,7 @@
                 <!-- TIMELINE -->
 
                 <section id="time-line" class="time-line-section img_bg bg_overlay"
-                    style="background-image:url(/assets_1/wp-content/uploads/2024/01/FF4127FB-2785-458A-8A3D-A3E72742913C.jpeg)">
+                    style="background-image:url({{ Storage::url($invitation->banner1)}})">
 
                     <div class="time-line container">
 
@@ -636,7 +634,8 @@
                                 <div class="timeline-body">
 
                                     <span class="story-date">
-                                        {{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y') }}
+                                        {{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y')
+                                        }}
                                     </span>
 
                                     <span class="title">Lần đầu gặp gỡ</span>
@@ -675,15 +674,16 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="{{ Storage::url($invitation->engagement_image)}}"
-                                        alt="" class="timline-img">
+                                    <img src="{{ Storage::url($invitation->engagement_image)}}" alt=""
+                                        class="timline-img">
 
                                 </div>
 
                                 <div class="timeline-body">
 
                                     <span class="story-date">{{
-                                        \Carbon\Carbon::parse($invitation->engagement_date)->format('d - m - Y') }}</span>
+                                        \Carbon\Carbon::parse($invitation->engagement_date)->format('d - m - Y')
+                                        }}</span>
 
                                     <span class="title">Đính hôn</span>
 
@@ -698,9 +698,7 @@
 
                                 <div class="timeline-media">
 
-                                    <img src="{{ Storage::url($invitation->wedding_image)}}"
-
-                                        alt="" class="timline-img">
+                                    <img src="{{ Storage::url($invitation->wedding_image)}}" alt="" class="timline-img">
 
                                 </div>
 
@@ -734,18 +732,18 @@
                     </div>
                     <div class="album container">
                         @if(!empty($invitation->album) && is_array($invitation->album))
-                            @foreach($invitation->album as $image)
-                                <div class="album-item">
-                                    <a data-fancybox="gallery" href="{{ Storage::url($image) }}">
-                                        <img src="{{ Storage::url($image) }}" alt="">
-                                    </a>
-                                </div>
-                            @endforeach
+                        @foreach($invitation->album as $image)
+                        <div class="album-item">
+                            <a data-fancybox="gallery" href="{{ Storage::url($image) }}">
+                                <img src="{{ Storage::url($image) }}" alt="">
+                            </a>
+                        </div>
+                        @endforeach
                         @else
-                            <p>No images available.</p>
+                        <p>No images available.</p>
                         @endif
                     </div>
-                    
+
                 </section>
                 <!-- END ALBUM -->
                 <!-- VIDEO -->
@@ -790,7 +788,7 @@
 
                 <section id="countdown-secton"
                     class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
-                    style="background-image:url(/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg)">
+                    style="background-image:url({{ Storage::url($invitation->banner2)}})">
                     <div class="uk-container">
                         <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                         <h2 class="uk-heading-small uk-text-center script-font">
@@ -802,34 +800,37 @@
                             <path fill="#f1ebe4"
                                 d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z" />
                         </svg>
-                        <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" 
-                        uk-grid
-                        uk-countdown="date: {{ $invitation->event_time }}">
-                       <div>
-                           <div class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                           </div>
-                           <div class="uk-countdown-label uk-margin-small uk-text-center">Ngày</div>
-                       </div>
-                   
-                       <div>
-                           <div class="uk-countdown-number uk-countdown-hours uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                           </div>
-                           <div class="uk-countdown-label uk-margin-small uk-text-center">Giờ</div>
-                       </div>
-                   
-                       <div>
-                           <div class="uk-countdown-number uk-countdown-minutes uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                           </div>
-                           <div class="uk-countdown-label uk-margin-small uk-text-center">Phút</div>
-                       </div>
-                   
-                       <div>
-                           <div class="uk-countdown-number uk-countdown-seconds uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
-                           </div>
-                           <div class="uk-countdown-label uk-margin-small uk-text-center">Giây</div>
-                       </div>
-                   </div>
-                   
+                        <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid
+                            uk-countdown="date: {{ $invitation->event_time }}">
+                            <div>
+                                <div
+                                    class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                                </div>
+                                <div class="uk-countdown-label uk-margin-small uk-text-center">Ngày</div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="uk-countdown-number uk-countdown-hours uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                                </div>
+                                <div class="uk-countdown-label uk-margin-small uk-text-center">Giờ</div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="uk-countdown-number uk-countdown-minutes uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                                </div>
+                                <div class="uk-countdown-label uk-margin-small uk-text-center">Phút</div>
+                            </div>
+
+                            <div>
+                                <div
+                                    class="uk-countdown-number uk-countdown-seconds uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
+                                </div>
+                                <div class="uk-countdown-label uk-margin-small uk-text-center">Giây</div>
+                            </div>
+                        </div>
+
 
                     </div>
                 </section>
@@ -847,8 +848,7 @@
                         <div class="invitation">
                             <div class="invitation-container">
                                 <div class="invitation-card"> <img
-                                        src="{{Storage::url($invitation->bride_family_image) }}"
-                                        alt="" />
+                                        src="{{Storage::url($invitation->bride_family_image) }}" alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
                                         <p>{{$invitation->bride_family_address}}</p>
@@ -891,8 +891,7 @@
 
                                 </div>
                                 <div class="invitation-card"> <img
-                                        src="{{Storage::url($invitation->groom_family_image) }}"
-                                        alt="" />
+                                        src="{{Storage::url($invitation->groom_family_image) }}" alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
                                         <p>{{$invitation->groom_family_address}}</p>
@@ -943,38 +942,22 @@
                 <!-- LỜI CHÚC -->
                 <!-- TIN NHẮN -->
                 <section id="message" class="section-message uk-background-cover uk-section"
-                    style="background-image:url(/assets_1/wp-content/uploads/2024/01/B637D0C4-54F9-4898-A748-1A32BDC602E6.jpeg); display:block">
-                    <div class="uk-position-cover uk-overlay uk-overlay-primary" style="opacity:.5"> </div>
+                    style="background-image:url({{ Storage::url($invitation->banner3)}}); display:block">
                     <div class="message-container container uk-position-relative uk-position-z-index">
                         <h2 class="section-title uk-light" style="color:white">
                             Gửi lời chúc đến cặp đôi </h2>
-                        <div class="list_message">
-                            <!-- <div class="message-item" data-aos="fade-up" data-aos-duration="2000">
-            <i class='bx bxs-quote-alt-left'></i>
-            <h3 class="user_message">Phương Nguyễn</h3>
-            <p class="message_body">Chúc bạn thân của tao lấy một chồng, đẻ hai con đủ nếp đủ tẻ, sống ở nhà ba tầng,
-              mua xe 4 bánh nhé. Phải thật hạnh phúc mày nhé! Hi hi.</p>
-          </div> -->
-                        </div>
-
                         <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
-
                             <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
-                            <form action="" id="messageForm" method="POST">
-
-                                <input type='hidden' id="postId" value='1171' />
-                                <div class="input-group uk-margin-top" style="color:white">
-                                    <label for="">
-                                        Tên của bạn </label>
-                                    <input style="border:1px solid white" id="m_name" type="text" class="input blur-bg"
-                                        value="" required />
+                            <form wire:submit.prevent="createMessage">
+                                <div class="input-group uk-margin-top" style="color:rgb(255, 255, 255)">
+                                    <label for="">Tên của bạn</label>
+                                    <input style="border:1px solid white ;color:rgb(0, 0, 0)" wire:model="authorName" type="text"
+                                        class="input blur-bg" required />
                                 </div>
                                 <div class="input-group uk-margin-top">
-                                    <label for="" style="color:white">
-                                        Lời nhắn gửi </label>
-                                    <textarea style="border:1px solid white; color:white" id="m_text"
-                                        class="input-text text-white blur-bg" name="" cols="30" rows="5"
-                                        required></textarea>
+                                    <label for="" style="color:white">Lời nhắn gửi</label>
+                                    <textarea style="border:1px solid white; color:rgb(0, 0, 0)" wire:model="messageContent"
+                                        class="input-text text-white blur-bg" cols="30" rows="5" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary send_message uk-margin-top"
                                     style="color:white">Gửi lời chúc</button>
@@ -983,128 +966,70 @@
                     </div>
                 </section>
                 <!-- END TIN NHẮN -->
-                <script>
-                    fetch('/wp-json/wp/v2/comments?post=1171&per_page=100',
-    {
-     method: 'GET',
-    }
-    )
-    
-  .then(response => response.json())
-  .then(data => {
-    mess_item = ''
-    for(let i in data){
-        if(!i) {
-          $('.list_message').attr('class','hidden')
-        }
-        c_author = data[i].author_name
-        c_content = data[i].content.rendered
-       
-        mess_item += '<div class="blur-bg uk-padding-small uk-border-rounded uk-light"> <h3 class="user_message">'+c_author+'</h3> <p class="message_body">'+c_content+'</p> </div>'
-    }
-    $('.list_message').html(mess_item)
-  })
 
-  //FORM
- $('#messageForm').submit(function (e) { 
-  e.preventDefault();
-  const postId = $(this).find('#postId').val()
-  const name = $(this).find('#m_name').val()
-  const mess = $(this).find('#m_text').val()
-  const data = JSON.stringify({
-    post: postId,
-    author_name: name,
-    content: mess,
-  });
-  ACTION_URL = '/wp-json/wp/v2/comments'
-  fetch(ACTION_URL, {
-    method: 'post',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: data,
-  })
-    .then((response) => {
-      if (response.ok === true) {
-        mess_new = '<div class=" uk-light blur-bg uk-padding-small uk-border-rounded" data-aos="fade-up" data-aos-duration="2000"> <i class="bx bxs-quote-alt-left"></i> <h3 class="user_message">'+name+'</h3> <p class="message_body">'+mess+'</p> </div>'
-        $('.list_message').prepend(mess_new)
-        $('#messageForm')[0].reset()
-      }
-      return response.json();
-    })
-    .then((object) => {
-      // Comment submission failed.
-      // Output `object.message` to see the error message.
-    })
-    .catch(error => console.error('Error:', error));
- });
- 
-                </script>
-                <!-- END LỜI CHÚC -->
                 <!-- FORM XÁC NHẬN -->
-                <!-- FROM XÁC NHẬN -->
                 <section id="form" class="form" style="display:block">
                     <div class="container">
-                        <form action="" method="post" id="form-wedding"
+                        <form wire:submit.prevent="confirmAttendance"
                             style="background-image:url(https://static.vecteezy.com/system/resources/previews/016/407/415/original/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg)">
                             <h2 class="section-title">Xác nhận tham dự</h2>
-                            <p class="sub-title">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
+                            <p class="sub-title text-center " style="
+                            text-align: center;
+                        ">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
                             <div class="form-container">
                                 <div class="group-radio">
-
-                                    <label class="radio-container">TƯ GIA NHÀ GÁI <span class="tooltip">
-                                            <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                    <label class="radio-container">TƯ GIA NHÀ GÁI
+                                        <span class="tooltip">
+                                            <p>{{ $invitation->bride_family_address }}</p>
                                         </span>
-                                        <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ GÁI">
+                                        <input type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ GÁI" name="attendanceLocation" required>
                                         <span class="checkmark"></span>
                                     </label>
 
-                                    <label class="radio-container">TƯ GIA NHÀ TRAI <span class="tooltip">
-                                            <p>ẤP HẠ, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                    <label class="radio-container">TƯ GIA NHÀ TRAI
+                                        <span class="tooltip">
+                                            <p>{{ $invitation->groom_family_address }}</p>
                                         </span>
-                                        <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ TRAI">
+                                        <input checked type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ TRAI" name="attendanceLocation" required>
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="group-input">
                                     <label>Tên Khách Mời</label>
-                                    <input type="text" class="input" id="f_name" required=""
-                                        placeholder="Tên Khách Mời">
+                                    <input type="text" class="input" wire:model="attendeeName" required placeholder="Tên Khách Mời">
                                 </div>
 
                                 <div class="group-input">
                                     <p class="group-title"></p>
                                     <div class="group-select">
-                                        <select name="" id="wedding-select" class="uk-text-truncate"
-                                            style="max-width:320px">
-                                            <option value="Có tôi sẽ đến">Có tôi sẽ đến </option>
+                                        <select wire:model="attendanceStatus" class="uk-text-truncate"
+                                            style="max-width:320px" required>
+                                            <option value="">Chọn trạng thái tham dự</option>
+                                            <option value="Có tôi sẽ đến">Có tôi sẽ đến</option>
                                             <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham dự
-                                                được ! </option>
+                                                được !</option>
                                         </select>
                                         <i class='bx bx-chevron-down'></i>
                                     </div>
                                     <div class="group-select">
-                                        <select name="" id="num_user">
-                                            <option value="1 Người">1 Người </option>
-                                            <option value="2 Người">2 Người</option>
-                                            <option value="3 Người">3 Người</option>
+                                        <select wire:model="numberOfGuests" required>
+                                            <option value="">Chọn số lượng người</option>
+                                            <option value="1">1 Người</option>
+                                            <option value="2">2 Người</option>
+                                            <option value="3">3 Người</option>
                                         </select>
                                         <i class='bx bx-chevron-down'></i>
                                     </div>
                                 </div>
                                 <div class="group-input">
-                                    <label></label>
-                                    <textarea name="" id="f_text" cols="30" rows="4">
-          </textarea>
+                                    <label>Ghi chú</label>
+                                    <textarea wire:model="attendanceNote" cols="30" rows="4" placeholder="Nhập ghi chú của bạn"></textarea>
                                 </div>
-                                <div class="message-form">
-
-                                </div>
+                            
                                 <div class="group-input">
-                                    <button type="submit" class="wedding-submit">Xác nhận</button>
+                                    <button type="submit" class="wedding-submit" style="margin: 10px 0;">Xác nhận</button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </section>
@@ -1132,8 +1057,8 @@
                             <div class="gift-container" id="gift-container">
                                 <div class="gift-card">
                                     <div class="gift-qr">
-                                        <img src="{{ Storage::url($invitation->event_payment_qr) }}"
-                                            alt="" class="groom_qr" style="max-width:100%" />
+                                        <img src="{{ Storage::url($invitation->event_payment_qr) }}" alt=""
+                                            class="groom_qr" style="max-width:100%" />
                                     </div>
                                     <div class="gift-body">
                                     </div>
@@ -1152,8 +1077,8 @@
                 <!-- THANK YOU -->
                 <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
                     <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-                    <img src="/assets_1/wp-content/uploads/2024/01/D745F3CE-DC05-45C5-88F6-408A69D33377.jpeg" alt=""
-                        class="thankyou-bg thankyou_img" style="object-position:" />
+                    <img src="{{ Storage::url($invitation->banner4)}}" alt="" class="thankyou-bg thankyou_img"
+                        style="object-position:" />
                     <div class="thankyou-body container uk-position-relative uk-position-z-index">
                         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                             data-aos-duration="2000">Thank you!</h2>
