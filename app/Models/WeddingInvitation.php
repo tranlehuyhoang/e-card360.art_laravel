@@ -71,8 +71,19 @@ class WeddingInvitation extends Model
     {
         return $this->belongsTo(User::class, 'customer_id');
     }
+
     public function invitationTemplate()
-{
-    return $this->belongsTo(WeddingCard::class, 'invitation_template_id');
-}
+    {
+        return $this->belongsTo(WeddingCard::class, 'invitation_template_id');
+    }
+
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class);
+    }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
 }

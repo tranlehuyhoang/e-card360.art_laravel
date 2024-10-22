@@ -15,6 +15,8 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Facades\Auth;
+use App\Filament\User\Resources\WeddingInvitationResource\RelationManagers\AttendancesRelationManager;
+use App\Filament\User\Resources\WeddingInvitationResource\RelationManagers\MessagesRelationManager;
 
 class WeddingInvitationResource extends Resource
 {
@@ -242,9 +244,11 @@ class WeddingInvitationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AttendancesRelationManager::class,
+            MessagesRelationManager::class,
         ];
     }
+
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()
