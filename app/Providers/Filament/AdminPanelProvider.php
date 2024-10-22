@@ -19,6 +19,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Widgets\WeddingInvitationChart;
 use App\Filament\Widgets\NewUsersChart;
+use App\Filament\Widgets\LatestWeddingInvitationsWidget;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -43,6 +44,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
                 WeddingInvitationChart::class,
                 NewUsersChart::class,
+                LatestWeddingInvitationsWidget::class,
             ])
             ->plugins([
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Oct 22, 2024 at 05:43 AM
+-- Generation Time: Oct 22, 2024 at 01:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -64,10 +64,10 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1729135731),
-('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1729135731;', 1729135731),
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1729563207),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1729563207;', 1729563207),
+('356a192b7913b04c54574d18c28d46e6395428ab', 'i:2;', 1729572261),
+('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1729572261;', 1729572261),
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1729594811),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1729594811;', 1729594811),
 ('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:25:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:18:\"view_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:22:\"view_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:20:\"create_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:20:\"update_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:21:\"restore_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:25:\"restore_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:23:\"replicate_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:21:\"reorder_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:20:\"delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:24:\"delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:26:\"force_delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:30:\"force_delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1729649548),
 ('theme', 's:7:\"dracula\";', 2044924725);
 
@@ -368,7 +368,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('NiSPPtTHA2SiH7nJJvkBqyV1fI6aK9V0iCoUtgxx', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo4OntzOjY6Il90b2tlbiI7czo0MDoiTEFOMDI3aHVLdmtVUXVBWTl1aGpudGpIblFodHFrVkJzZGRsbXNOVyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRNMUxLdy90ckxYQ0xhUEdIUnlYYjcuVmM5cGtEZ3MxTmFOOURhOW02VE9YZ0c1NEEzcy9XRyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC8yLzEyMzEyMyI7fXM6ODoiZmlsYW1lbnQiO2E6MDp7fXM6NjoidGFibGVzIjthOjE6e3M6MzE6Ikxpc3RXZWRkaW5nSW52aXRhdGlvbnNfcGVyX3BhZ2UiO3M6MzoiYWxsIjt9fQ==', 1729568578);
+('XvOgDEJDneJEMX7fU95BVnZk1kaIQUyxvhuF527I', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiaE96S0lBTGJrcDJhRnRYREpVYnhOWmExWmxHbXlyWlJHUE9RbGljYiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRNMUxLdy90ckxYQ0xhUEdIUnlYYjcuVmM5cGtEZ3MxTmFOOURhOW02VE9YZ0c1NEEzcy9XRyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi93ZWRkaW5nLWNhcmRzIjt9czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1729595838);
 
 -- --------------------------------------------------------
 
@@ -419,7 +419,19 @@ CREATE TABLE `wedding_cards` (
 
 INSERT INTO `wedding_cards` (`id`, `template_name`, `image`, `demo_link`, `price`, `created_at`, `updated_at`) VALUES
 (1, 'Mẫu Thiệp Hiện Đại 2', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-1', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25'),
-(2, 'Mẫu Thiệp Vàng Gold', 'wedding_cards/01JAAPGDB19406RGNVC7ZRXSZ7.png', '/mau-2', NULL, '2024-10-16 05:58:07', '2024-10-16 05:58:07');
+(2, 'Mẫu Thiệp Vàng Gold', 'wedding_cards/01JAAPGDB19406RGNVC7ZRXSZ7.png', '/mau-2', 1000000.00, '2024-10-16 05:58:07', '2024-10-22 04:01:50'),
+(3, 'Mẫu thiệp cưới korea ', 'wedding_cards/01JAS70NHB2Y2M3G9Y3EHZH9T9.png', '/mau-3', 2000000.00, '2024-10-22 04:15:59', '2024-10-22 04:15:59'),
+(4, 'Mẫu Thiệp Sang Trọng ', 'wedding_cards/01JAS72BG21M7TRN77AA20VADZ.png', '/mau-4', 2000000.00, '2024-10-22 04:16:54', '2024-10-22 04:16:54'),
+(5, 'Mẫu Thiệp Quý Phái ', 'wedding_cards/01JAS87TYDPTA7QK64J9C2Q9FF.png', '/mau-5', 100000.00, '2024-10-22 04:17:33', '2024-10-22 04:37:23'),
+(6, 'Mẫu Thiệp Nhẹ Nhàng', 'wedding_cards/01JAS8966R7Y59VJH4E71N7MSY.png', '/mau-6', 1.00, '2024-10-22 04:38:07', '2024-10-22 04:38:07'),
+(7, 'Mẫu Thiệp Hiện Đại ', 'wedding_cards/01JAS8CYVJWPBE86HKSA99C8BJ.png', '/mau-7', 1.00, '2024-10-22 04:40:10', '2024-10-22 04:40:10'),
+(8, 'Mẫu Thiệp Cổ Điển', 'wedding_cards/01JAS8DPSDWVN53W25HWFXVAAR.png', '/mau-8', 1.00, '2024-10-22 04:40:35', '2024-10-22 04:40:35'),
+(9, 'Mẫu Thiệp Lãng Mạn ', 'wedding_cards/01JAS8EWYD6BC3T8Z9T25EJNVS.png', '/mau-9', 1.00, '2024-10-22 04:41:14', '2024-10-22 04:41:14'),
+(10, 'Mẫu Thiệp Biển ', 'wedding_cards/01JAS8FZZH7MKQD6KM44MRY73B.png', '/mau-10', 1.00, '2024-10-22 04:41:50', '2024-10-22 04:41:50'),
+(11, 'Mẫu Thiệp China ', 'wedding_cards/01JAS8GY988DCCMHERWR5ZW21Z.png', '/mau-11', 1.00, '2024-10-22 04:42:21', '2024-10-22 04:42:21'),
+(12, 'Mẫu Thiệp Cô Ba Sài Gòn  ', 'wedding_cards/01JAS8J499BPPFXB17P0951V3S.png', '/mau-12', 1.00, '2024-10-22 04:43:00', '2024-10-22 04:43:00'),
+(13, 'Mẫu Thiệp Xanh Luxury  ', 'wedding_cards/01JAS8JZ4X8MJZX0F3CGJ91Q1A.png', '/mau-13', 1.00, '2024-10-22 04:43:27', '2024-10-22 04:43:27'),
+(14, 'Mẫu Thiệp Xanh Lá  ', 'wedding_cards/01JAS8KXHHXXZR8SGAXR1B0T20.png', '/mau-14', 1.00, '2024-10-22 04:43:58', '2024-10-22 04:43:58');
 
 -- --------------------------------------------------------
 
@@ -487,7 +499,8 @@ CREATE TABLE `wedding_invitations` (
 --
 
 INSERT INTO `wedding_invitations` (`id`, `customer_id`, `event_time`, `event_date`, `event_location`, `event_address`, `event_map_link`, `event_phone`, `event_album`, `event_payment_qr`, `event_day_of_week`, `event_zodiac_sign`, `groom_name`, `groom_birth_date`, `groom_description`, `groom_image`, `bride_name`, `bride_birth_date`, `bride_description`, `first_meeting_date`, `first_meeting_image`, `dating_date`, `dating_image`, `engagement_date`, `engagement_image`, `wedding_date`, `wedding_image`, `album`, `groom_family_address`, `groom_family_phone`, `groom_family_map_link`, `groom_family_gift_qr`, `groom_family_image`, `bride_family_address`, `bride_family_phone`, `bride_family_map_link`, `bride_family_gift_qr`, `bride_family_image`, `created_at`, `updated_at`, `bride_image`, `invitation_template_id`, `invitation_code`, `banner1`, `banner2`, `banner3`, `banner4`, `banner5`, `bride_family_description`, `groom_family_description`, `bride_family_time`, `groom_family_time`) VALUES
-(1, 1, '2024-10-18 20:49:30', '2024-10-24', 'Luxury Palace 1', '171 Nguyễn Thái Sơn, P8, Gò Vấp 1', 'http://localhost:8000/mau-141', '099999999 1', '[\"image_2024-10-16_210133935.png\"]', '01JAAT4TR9SAVTSKEYN5GT2BR4.png', 'CHỦ NHẬT 1', 'CANH THÌN 1', 'Công Thành 1', '2024-10-23', 'Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại. 1', '01JAAT5PPE2G1891TSANN4S285.png', 'Phương Ánh 1', '2024-10-25', 'Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình. 1', '2024-10-29', '01JAAT7V0CC209GJ912GQAEE9Z.png', '2024-10-11', '01JAAT7V0GQ04WKVPYHR0GFBZW.png', '2024-10-18', '01JAAT7V0NAY1S5C8KXEF53YQ9.png', '2024-10-10', '01JAAT7V0S104EX14M9XT1DMX2.png', '[\"image_2024-10-16_210329334.png\",\"image_2024-10-16_210332386.png\",\"image_2024-10-16_210336323.png\",\"image_2024-10-16_210349684.png\",\"image_2024-10-16_210357391.png\",\"image_2024-10-16_210403597.png\"]', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP 1', '11111111111111', 'http://localhost:8000/mau-14#gift', '123', '01JAAT68MY528YXD0M7HXKV6V3.png', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP', '123 1', '123 1', '123 1', '01JAAT7V08DJQYBKW4SVC81DG4.png', '2024-10-16 07:01:06', '2024-10-17 03:27:53', '01JAATPC3P6MDTGV3MZSZ9JBMC.png', 2, '123123', 'image_2024-10-17_102644558.png', 'image_2024-10-17_102708458.png', 'image_2024-10-17_102733606.png', 'image_2024-10-17_102748538.png', NULL, 'Nhằm ngày 24 tháng 12 năm Quý Mão', 'Nhằm ngày 24 tháng 12 năm Quý Mão', NULL, NULL);
+(1, 1, '2024-10-18 20:49:30', '2024-10-24', 'Luxury Palace 1', '171 Nguyễn Thái Sơn, P8, Gò Vấp 1', 'http://localhost:8000/mau-141', '099999999 1', '[\"image_2024-10-16_210133935.png\"]', '01JAAT4TR9SAVTSKEYN5GT2BR4.png', 'CHỦ NHẬT 1', 'CANH THÌN 1', 'Công Thành 1', '2024-10-23', 'Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại. 1', '01JAAT5PPE2G1891TSANN4S285.png', 'Phương Ánh 1', '2024-10-25', 'Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình. 1', '2024-10-29', '01JAAT7V0CC209GJ912GQAEE9Z.png', '2024-10-11', '01JAAT7V0GQ04WKVPYHR0GFBZW.png', '2024-10-18', '01JAAT7V0NAY1S5C8KXEF53YQ9.png', '2024-10-10', '01JAAT7V0S104EX14M9XT1DMX2.png', '[\"image_2024-10-16_210329334.png\",\"image_2024-10-16_210332386.png\",\"image_2024-10-16_210336323.png\",\"image_2024-10-16_210349684.png\",\"image_2024-10-16_210357391.png\",\"image_2024-10-16_210403597.png\"]', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP 1', '11111111111111', 'http://localhost:8000/mau-14#gift', '123', '01JAAT68MY528YXD0M7HXKV6V3.png', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP', '123 1', '123 1', '123 1', '01JAAT7V08DJQYBKW4SVC81DG4.png', '2024-10-16 07:01:06', '2024-10-22 11:12:07', '01JAATPC3P6MDTGV3MZSZ9JBMC.png', 1, '123123', 'image_2024-10-17_102644558.png', 'image_2024-10-17_102708458.png', 'image_2024-10-17_102733606.png', 'image_2024-10-17_102748538.png', NULL, 'Nhằm ngày 24 tháng 12 năm Quý Mão', 'Nhằm ngày 24 tháng 12 năm Quý Mão', NULL, NULL),
+(11, 1, '2024-10-18 20:49:30', '2024-10-24', 'Luxury Palace 1', '171 Nguyễn Thái Sơn, P8, Gò Vấp 1', 'http://localhost:8000/mau-141', '099999999 1', '[\"image_2024-10-16_210133935.png\"]', '01JAAT4TR9SAVTSKEYN5GT2BR4.png', 'CHỦ NHẬT 1', 'CANH THÌN 1', 'Công Thành 1', '2024-10-23', 'Chú rể là người cởi mở, thân thiện, giao tiếp tốt và thuộc tuýp người hướng ngoại. 1', '01JAAT5PPE2G1891TSANN4S285.png', 'Phương Ánh 1', '2024-10-25', 'Cô dâu thuộc tuýp người hướng nội . Sở thích nấu nướng và đi du lịch cùng gia đình. 1', '2024-10-29', '01JAAT7V0CC209GJ912GQAEE9Z.png', '2024-10-11', '01JAAT7V0GQ04WKVPYHR0GFBZW.png', '2024-10-18', '01JAAT7V0NAY1S5C8KXEF53YQ9.png', '2024-10-10', '01JAAT7V0S104EX14M9XT1DMX2.png', '[\"image_2024-10-16_210329334.png\",\"image_2024-10-16_210332386.png\",\"image_2024-10-16_210336323.png\",\"image_2024-10-16_210349684.png\",\"image_2024-10-16_210357391.png\",\"image_2024-10-16_210403597.png\"]', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP 1', '11111111111111', 'http://localhost:8000/mau-14#gift', '123', '01JAAT68MY528YXD0M7HXKV6V3.png', 'ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP', '123 1', '123 1', '123 1', '01JAAT7V08DJQYBKW4SVC81DG4.png', '2024-09-04 07:01:06', '2024-10-17 03:27:53', '01JAATPC3P6MDTGV3MZSZ9JBMC.png', 2, '123123123', 'image_2024-10-17_102644558.png', 'image_2024-10-17_102708458.png', 'image_2024-10-17_102733606.png', 'image_2024-10-17_102748538.png', NULL, 'Nhằm ngày 24 tháng 12 năm Quý Mão', 'Nhằm ngày 24 tháng 12 năm Quý Mão', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -671,13 +684,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wedding_cards`
 --
 ALTER TABLE `wedding_cards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `wedding_invitations`
 --
 ALTER TABLE `wedding_invitations`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables

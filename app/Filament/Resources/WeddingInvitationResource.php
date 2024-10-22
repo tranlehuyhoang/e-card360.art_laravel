@@ -15,6 +15,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 
 class WeddingInvitationResource extends Resource
 {
@@ -224,36 +225,66 @@ class WeddingInvitationResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                    ->label('ID'),
+                    ->label('ID')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('invitation_code')
-                    ->label('Mã thiệp'),
-
+                    ->label('Mã thiệp')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('invitationTemplate.template_name')
-                    ->label('Template ID'),
+                    ->label('Tên mẫu thiệp')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('customer.email')
-                    ->label('Customer ID'),
+                    ->label('Email khách hàng')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->label('Created At')
-                    ->dateTime(), // Formats the date
+                    ->label('Ngày tạo')
+                    ->dateTime()
+                    ->formatStateUsing(fn (Carbon $state) => $state->format('H:i:s d/m/Y'))
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('invitationTemplate.demo_link')
+                    ->label('Xem thiệp')
+                    ->url(fn ($record) => '/' . $record->invitationTemplate->id . '/' . $record->invitation_code)
+                    ->openUrlInNewTab(),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('invitationTemplate')
+                    ->relationship('invitationTemplate', 'template_name')
+                    ->label('Lọc theo mẫu thiệp'),
+                Tables\Filters\Filter::make('created_at')
+                    ->form([
+                        Forms\Components\DatePicker::make('created_from')
+                            ->label('Từ ngày'),
+                        Forms\Components\DatePicker::make('created_until')
+                            ->label('Đến ngày'),
+                    ])
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data['created_from'],
+                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', '>=', $date),
+                            )
+                            ->when(
+                                $data['created_until'],
+                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', '<=', $date),
+                            );
+                    })
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([
                     Tables\Actions\ViewAction::make()
-                        ->label('Xem'), // Đổi nhãn sang tiếng Việt
+                        ->label('Xem'),
                     Tables\Actions\EditAction::make()
-                        ->label('Chỉnh Sửa'), // Đổi nhãn sang tiếng Việt
+                        ->label('Chỉnh sửa'),
                     Tables\Actions\DeleteAction::make()
-                        ->label('Xóa'), // Đổi nhãn sang tiếng Việt
-                    Tables\Actions\RestoreAction::make(),
+                        ->label('Xóa'),
+                    Tables\Actions\RestoreAction::make()
+                        ->label('Khôi phục'),
                 ])
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make()
-                        ->label('Xóa Nhiều'), // Đổi nhãn sang tiếng Việt
+                        ->label('Xóa nhiều'),
                 ]),
             ]);
     }
