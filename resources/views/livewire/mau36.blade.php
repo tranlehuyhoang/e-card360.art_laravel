@@ -21,7 +21,7 @@
         content="https://static.ladipage.net/6446a909ce8883001284c7a2/untitled-1-20240604143531-3dxly.png">
     <meta property="og:description" content="Thiệp cưới Online (mẫu 8)" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" href="https://www.27biggroup.com/src/log-27bg/logo-27 - v3-height.png" />
+    <link rel="shortcut icon" href="/assets_3/src/log-27bg/logo-27 - v3-height.png" />
     <link rel="dns-prefetch">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -33,7 +33,7 @@
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Sriracha&display=swap" as="style"
         onload="this.onload = null; this.rel = 'stylesheet';">
-    <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+    <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
     <style id="style_ladi" type="text/css">
         a,
         abbr,
@@ -6198,13 +6198,13 @@
             background-image: none !important;
         }
     </style>
-    <link rel="stylesheet" href="https://www.27biggroup.com/librarywedding/css/StyleWedding.css">
+    <link rel="stylesheet" href="/assets_3/librarywedding/css/StyleWedding.css">
     <!--___________________chong coppy_________________-->
     <script type="text/JavaScript">
 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://www.27biggroup.com/librarywedding/functionWedding/library27biggroup.js"></script>
+    <script src="/assets_3/librarywedding/functionWedding/library27biggroup.js"></script>
     <script>
         document.onkeydown = function (e) {
             if (e.ctrlKey &&
@@ -7302,7 +7302,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                         <div id="MessageBox">
                         </div>
                         <script
-                            src="https://www.27biggroup.com/librarywedding/functionWedding/MessageBoxFunction.js"></script>
+                            src="/assets_3/librarywedding/functionWedding/MessageBoxFunction.js"></script>
                         <script>
                             run_MessageBox("#BUTTON5", '1Rnf7Ge7UXsZWG-O-YSzbEwsS6zn89k67fAS346hbb_o', 'LadiPage', 1, 6, 5, "Mọi người")
                         </script>
@@ -8143,7 +8143,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                             let BGItem = $('.cap_background_item .ladi-image-background')
                                             BGItemSize = BGItem.length
                                             for (i = 0; i <= BGItemSize; i++) {
-                                                $(BGItem[i]).css('background-image', 'url(https://www.27biggroup.com/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
+                                                $(BGItem[i]).css('background-image', 'url(/assets_3/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
                                             }
 
                                         </script>
@@ -8163,7 +8163,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                                     <p>Phú</p>
                                                 </div>
                                             </h2>
-                                            <img src="https://www.27biggroup.com/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
+                                            <img src="/assets_3/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
                                                 height="150">
                                         </div>
                                     </div>
@@ -8410,7 +8410,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
                                 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
                                 <script
-                                    src="https://www.27biggroup.com/librarywedding/functionWedding/CaptureScreen.js"></script>
+                                    src="/assets_3/librarywedding/functionWedding/CaptureScreen.js"></script>
                             </div>
                         </div>
                     </div>
@@ -8544,9 +8544,9 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                 <div id="HTML_CODE2" class='ladi-element'>
                     <div class='ladi-html-code'><!--custom chức năng âm nhạc-->
                         <audio controls="" loop="" id="audio_music" style="display: none;" play="">
-                            <source src="https://www.27biggroup.com/file_music/ido.wav" type="audio/mpeg">
+                            <source src="/assets_3/file_music/ido.wav" type="audio/mpeg">
                         </audio>
-                        <script src="https://www.27biggroup.com/librarywedding/functionWedding/music.js"></script>
+                        <script src="/assets_3/librarywedding/functionWedding/music.js"></script>
                         <!--custom-->
                     </div>
                 </div>
@@ -9177,7 +9177,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
             }
         }
     </style>
-    <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+    <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
     <script id="script_event_data"
         type="application/json">{"IMAGE2":{"a":"image","F":"bounceInRight","C":"1s"},"IMAGE3":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE4":{"a":"image","F":"bounceInUp","C":"1s"},"GROUP1":{"a":"group","E":"flipInX","B":"1s"},"BOX1":{"a":"box","F":"bounceInRight","C":"1s"},"BOX3":{"a":"box","F":"bounceInLeft","C":"1s"},"GROUP2":{"a":"group","E":"bounceInLeft","B":"1s"},"GROUP3":{"a":"group","E":"flipInX","B":"1s"},"GROUP4":{"a":"group","E":"bounceInRight","B":"1s"},"PARAGRAPH3":{"a":"paragraph","F":"flipInX","C":"1s"},"BOX5":{"a":"box","F":"bounceInUp","C":"1s"},"GROUP6":{"a":"group","E":"bounceInLeft","B":"1s"},"IMAGE31":{"a":"image","cs":[{"dr":"action","dw":"POPUP3","a":"popup"}]},"GROUP27":{"a":"group","D":"bounceInUp","A":"1s"},"IMAGE34":{"a":"image","cs":[{"dr":"action","dw":"POPUP4","a":"popup"}]},"GROUP29":{"a":"group","D":"bounceInUp","A":"1s"},"SHAPE19":{"a":"shape","F":"shake","C":"0s"},"POPUP3":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"POPUP4":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"GROUP35":{"a":"group","aD":true,"aA":"bottom_left","aw":"0px","at":"5px","aq":"5px","an":"0px"},"SHAPE34":{"a":"shape","F":"pulse","C":"0s"},"HEADLINE33":{"a":"headline","cs":[{"dr":"action","dw":"SECTION16","a":"section"}]},"HEADLINE34":{"a":"headline","cs":[{"dr":"action","dw":"SECTION16","a":"section"}]},"HEADLINE35":{"a":"headline","cs":[{"dr":"action","dw":"SECTION16","a":"section"}]},"FORM_ITEM7":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM8":{"a":"form_item","bS":"textarea","bQ":6},"FORM_ITEM9":{"a":"form_item","bS":"select","bQ":2},"FORM_ITEM10":{"a":"form_item","bS":"checkbox","bQ":3},"FORM_ITEM11":{"a":"form_item","bS":"select","bQ":5},"FORM_ITEM12":{"a":"form_item","bS":"checkbox","bQ":4},"FORM3":{"a":"form","bP":"663edb65c9c5120012ef6f25","bM":true,"bK":"popup","bJ":"POPUP2","bA":true,"by":true,"bx":true},"POPUP2":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"IMAGE45":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE46":{"a":"image","F":"rollIn","C":"1s"},"IMAGE47":{"a":"image","F":"bounceIn","C":"1s"},"GROUP56":{"a":"group","F":"shake","C":"0s"},"HEADLINE39":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE40":{"a":"headline","F":"bounceInRight","C":"0s"},"HEADLINE41":{"a":"headline","F":"swing","C":"0s"},"SHAPE46":{"a":"shape","F":"pulse","C":"1s"},"SHAPE47":{"a":"shape","F":"pulse","C":"2s"},"SHAPE48":{"a":"shape","F":"pulse","C":"3s"},"SHAPE49":{"a":"shape","F":"pulse","C":"4s"},"COUNTDOWN_ITEM9":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM10":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM11":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM12":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN3":{"a":"countdown","bX":"endtime","bT":1718424000000},"IMAGE51":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"SHAPE50":{"a":"shape","F":"pulse","C":"0s"},"IMAGE52":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE53":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE54":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE55":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE56":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE57":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE58":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE59":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE60":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE61":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE62":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE63":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE64":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"IMAGE65":{"a":"image","cs":[{"dr":"action","dw":"album_anhCuoi","a":"popup"}]},"SHAPE51":{"a":"shape","F":"tada","C":"0s"},"CAROUSEL_ITEM12":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM13":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM14":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM15":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM16":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM17":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM18":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM19":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM20":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM21":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM22":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM23":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM24":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM25":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM26":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM27":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM28":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL13":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"CAROUSEL_ITEM29":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM30":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM31":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM32":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM33":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM34":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM35":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM36":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM37":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM38":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM39":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM40":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL14":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"BUTTON6":{"a":"button","cs":[{"dr":"action","dw":"GROUP66","a":"collapse"}]},"BUTTON7":{"a":"button","cs":[{"dr":"action","dw":"GROUP62","a":"collapse"}]},"BUTTON8":{"a":"button","cs":[{"event_custom_script":"let getFlast = $(&#39;&#39;)","dr":"action","a":"custom_script"}],"F":"pulse","C":"0s"},"HEADLINE53":{"a":"headline","F":"pulse","C":"0s"},"CAROUSEL15":{"a":"carousel","cN":2,"cG":"type_abab","H":"960px","G":"420px","cM":"0px","cJ":"horizontal","R":false,"L":"1250px"},"GROUP69":{"a":"group","D":"bounceIn","A":"1s"},"GROUP70":{"a":"group","D":"bounceIn","A":"1s"}}</script>
     <script id="script_ladipage_run"

@@ -34,7 +34,7 @@
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto+Mono:wght@400;700&family=Lobster&display=swap"
     as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-  <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+  <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
   <style id="style_ladi" type="text/css">
     a,
     abbr,
@@ -3117,7 +3117,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
       }
     }
   </style>
-  <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+  <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
   <script id="script_event_data"
     type="application/json">{"PARAGRAPH1":{"a":"paragraph","F":"bounceInLeft","C":"1s"},"PARAGRAPH3":{"a":"paragraph","F":"bounceInRight","C":"1s"},"SHAPE1":{"a":"shape","F":"pulse","C":"0s"},"GROUP1":{"a":"group","E":"bounceInUp","B":"1s"},"GALLERY1":{"a":"gallery","ah":true,"ae":3},"BUTTON2":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://calendar.google.com/calendar/event?action=TEMPLATE&#38;tmeid=MG01ajdoNmZ1ZnBiN204aWNnaWlianN1NXIgMjdiaWdncm91cEBt&#38;tmsrc=27biggroup%40gmail.com","a":"link"}]},"BUTTON3":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://maps.app.goo.gl/DvdLSvWFJ4FgsasbA","a":"link"}]},"BUTTON4":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://calendar.google.com/calendar/event?action=TEMPLATE&#38;tmeid=MG01ajdoNmZ1ZnBiN204aWNnaWlianN1NXIgMjdiaWdncm91cEBt&#38;tmsrc=27biggroup%40gmail.com","a":"link"}]},"BUTTON5":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://maps.app.goo.gl/pHjqsYFZzMiyCUyh9","a":"link"}]},"FRAME2":{"a":"frame","cs":[{"dr":"action"}]},"SHAPE3":{"a":"shape","cs":[{"dr":"action","dw":"POPUP2","a":"popup"}]},"SHAPE4":{"a":"shape","F":"pulse","C":"0s"},"PARAGRAPH19":{"a":"paragraph","F":"bounceInRight","C":"1s"},"PARAGRAPH20":{"a":"paragraph","F":"bounceInLeft","C":"1s"},"POPUP2":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"VIDEO2":{"a":"video","ci":"https://youtu.be/zU-yPz3sukI","ch":"youtube","cg":true,"ab":true},"GROUP9":{"a":"group","cs":[{"dr":"action"}],"as":"17px","ar":"10px","aD":true,"aA":"bottom_left","aw":"0px","aq":"15px","an":"0px"},"off_speaker":{"a":"shape","cs":[{"dr":"action","dE":["off_speaker"],"dD":["on_speaker"],"a":"hidden_show"}]},"on_speaker":{"a":"shape","cs":[{"dr":"action","dE":["on_speaker"],"dD":["off_speaker"],"a":"hidden_show"}]},"BUTTON10":{"a":"button","cs":[{"dr":"action","dv":"_self","dw":"https://wedding.27biggroup.com/","a":"link"}],"F":"pulse","C":"0s"}}</script>
   <script id="script_ladipage_run"

@@ -21,7 +21,7 @@
         content="https://static.ladipage.net/6446a909ce8883001284c7a2/album-anh-5-garden-pho-co-59-20240101083304-xwpnw.jpg">
     <meta property="og:description" content="Thiệp cưới Online (mẫu 4)" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" href="https://www.27biggroup.com/src/log-27bg/logo-27 - v3-height.png" />
+    <link rel="shortcut icon" href="/assets_3/src/log-27bg/logo-27 - v3-height.png" />
     <link rel="dns-prefetch">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -33,7 +33,7 @@
     <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sriracha&family=Quicksand:wght@400;700&display=swap"
         as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-    <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+    <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
     <style id="style_ladi" type="text/css">
         a,
         abbr,
@@ -7361,13 +7361,13 @@
             background-image: none !important;
         }
     </style>
-    <link rel="stylesheet" href="https://www.27biggroup.com/librarywedding/css/StyleWedding.css">
+    <link rel="stylesheet" href="/assets_3/librarywedding/css/StyleWedding.css">
     <!--___________________chong coppy_________________-->
     <script type="text/JavaScript">
 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://www.27biggroup.com/librarywedding/functionWedding/library27biggroup.js"></script>
+    <script src="/assets_3/librarywedding/functionWedding/library27biggroup.js"></script>
     <script>
         document.onkeydown = function (e) {
             if (e.ctrlKey &&
@@ -8278,7 +8278,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                         <div id="MessageBox">
                         </div>
                         <script
-                            src="https://www.27biggroup.com/librarywedding/functionWedding/MessageBoxFunction.js"></script>
+                            src="/assets_3/librarywedding/functionWedding/MessageBoxFunction.js"></script>
                         <script>
                             run_MessageBox("#BUTTON44", '1Rnf7Ge7UXsZWG-O-YSzbEwsS6zn89k67fAS346hbb_o', 'LadiPage', 1, 6, 5, "Mọi người")
                         </script>
@@ -9131,7 +9131,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                             let BGItem = $('.cap_background_item .ladi-image-background')
                                             BGItemSize = BGItem.length
                                             for (i = 0; i <= BGItemSize; i++) {
-                                                $(BGItem[i]).css('background-image', 'url(https://www.27biggroup.com/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
+                                                $(BGItem[i]).css('background-image', 'url(/assets_3/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
                                             }
 
                                         </script>
@@ -9151,7 +9151,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                                     <p>Bảo </p>
                                                 </div>
                                             </h2>
-                                            <img src="https://www.27biggroup.com/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
+                                            <img src="/assets_3/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
                                                 height="150">
                                         </div>
                                     </div>
@@ -9398,7 +9398,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                                 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
                                 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
                                 <script
-                                    src="https://www.27biggroup.com/librarywedding/functionWedding/CaptureScreen.js"></script>
+                                    src="/assets_3/librarywedding/functionWedding/CaptureScreen.js"></script>
                             </div>
                         </div>
                     </div>
@@ -9532,9 +9532,9 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
                 <div id="HTML_CODE149" class='ladi-element'>
                     <div class='ladi-html-code'><!--custom chức năng âm nhạc-->
                         <audio controls="" loop="" id="audio_music" style="display: none;" play="">
-                            <source src="https://www.27biggroup.com/file_music/ido.wav" type="audio/mpeg">
+                            <source src="/assets_3/file_music/ido.wav" type="audio/mpeg">
                         </audio>
-                        <script src="https://www.27biggroup.com/librarywedding/functionWedding/music.js"></script>
+                        <script src="/assets_3/librarywedding/functionWedding/music.js"></script>
                         <!--custom-->
                     </div>
                 </div>
@@ -10235,7 +10235,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
             }
         }
     </style>
-    <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+    <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
     <script id="script_event_data"
         type="application/json">{"IMAGE3":{"a":"image","F":"bounceIn","C":"0s"},"HEADLINE3":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE4":{"a":"headline","F":"bounceInRight","C":"0s"},"SHAPE1":{"a":"shape","F":"bounceIn","C":"0s"},"IMAGE4":{"a":"image","F":"rollIn","C":"1s"},"HEADLINE5":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE7":{"a":"headline","F":"bounceInRight","C":"0s"},"HEADLINE9":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE11":{"a":"headline","F":"bounceInLeft","C":"0s"},"IMAGE18":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE19":{"a":"image","F":"bounceIn","C":"1s"},"HEADLINE12":{"a":"headline","F":"pulse","C":"0s"},"HEADLINE13":{"a":"headline","F":"pulse","C":"0s"},"SHAPE3":{"a":"shape","F":"bounceIn","C":"0s"},"IMAGE21":{"a":"image","F":"bounceIn","C":"1s"},"PARAGRAPH22":{"a":"paragraph","F":"fadeInLeft","C":"1s"},"PARAGRAPH23":{"a":"paragraph","F":"fadeInLeft","C":"1s"},"IMAGE22":{"a":"image","F":"bounceInDown","C":"1s"},"IMAGE23":{"a":"image","F":"bounceInRight","C":"1s"},"BOX5":{"a":"box","F":"bounceInRight","C":"1s"},"IMAGE24":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE27":{"a":"image","F":"bounceInLeft","C":"1s"},"BOX6":{"a":"box","F":"bounceInLeft","C":"1s"},"BOX7":{"a":"box","F":"bounceInLeft","C":"1s"},"IMAGE29":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE39":{"a":"image","F":"swing","C":"0s"},"IMAGE41":{"a":"image","F":"swing","C":"0s"},"COUNTDOWN_ITEM5":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM6":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM7":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM8":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN2":{"a":"countdown","bX":"endtime","bT":1718766540000},"IMAGE48":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE50":{"a":"image","cs":[{"dr":"action","dw":"POPUP3","a":"popup"}]},"GROUP31":{"a":"group","E":"bounceInLeft","B":"1s"},"IMAGE51":{"a":"image","cs":[{"dr":"action","dw":"POPUP4","a":"popup"}]},"IMAGE52":{"a":"image","F":"bounceIn","C":"1s"},"GROUP32":{"a":"group","E":"bounceInRight","B":"1s"},"POPUP2":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"POPUP3":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"POPUP4":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"SHAPE36":{"a":"shape","F":"tada","C":"0s"},"CAROUSEL_ITEM101":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM102":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM103":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM104":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM105":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM106":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM107":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM108":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM109":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM110":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM111":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM112":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM113":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM114":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM115":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM116":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM117":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL10":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"CAROUSEL_ITEM118":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM119":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM120":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM121":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM122":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM123":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM124":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM125":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM126":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM127":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM128":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM129":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL11":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"BUTTON35":{"a":"button","cs":[{"dr":"action","dw":"GROUP111","a":"collapse"}]},"BUTTON36":{"a":"button","cs":[{"dr":"action","dw":"GROUP107","a":"collapse"}]},"BUTTON37":{"a":"button","cs":[{"event_custom_script":"let getFlast = $(&#39;&#39;)","dr":"action","a":"custom_script"}],"F":"pulse","C":"0s"},"CAROUSEL12":{"a":"carousel","cN":2,"cG":"type_abab","H":"960px","G":"420px","cM":"0px","cJ":"horizontal","R":false,"L":"1250px"},"GROUP114":{"a":"group","aD":true,"aA":"bottom_left","aw":"0px","at":"5px","aq":"5px","an":"0px"},"IMAGE89":{"a":"image","F":"shake","C":"0s"},"FORM_ITEM17":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM18":{"a":"form_item","bS":"textarea","bQ":6},"FORM_ITEM19":{"a":"form_item","bS":"select","bQ":2},"FORM_ITEM20":{"a":"form_item","bS":"checkbox","bQ":3},"FORM_ITEM21":{"a":"form_item","bS":"select","bQ":5},"FORM_ITEM22":{"a":"form_item","bS":"checkbox","bQ":4},"FORM5":{"a":"form","bP":"663edb65c9c5120012ef6f25","bM":true,"bK":"popup","bJ":"POPUP2","bA":true,"by":true,"bx":true},"GROUP117":{"a":"group","E":"bounceInDown","B":"1s"},"IMAGE99":{"a":"image","F":"rubberBand","C":"0s"},"IMAGE100":{"a":"image","F":"rubberBand","C":"0s"},"IMAGE101":{"a":"image","F":"rotateInUpLeft","C":"1s"},"GROUP119":{"a":"group","E":"bounceInDown","B":"1s"},"IMAGE106":{"a":"image","F":"shake","C":"0s"},"IMAGE107":{"a":"image","F":"shake"},"IMAGE108":{"a":"image","F":"swing","C":"0s"},"IMAGE109":{"a":"image","F":"swing","C":"0s"},"IMAGE110":{"a":"image","F":"swing","C":"0s"},"IMAGE111":{"a":"image","F":"swing","C":"0s"},"BUTTON45":{"a":"button","cs":[{"dr":"action","a":"section","dw":"SECTION18"}]},"IMAGE6":{"a":"image","F":"pulse","C":"0s"},"IMAGE9":{"a":"image","F":"rotateInDownLeft","C":"1s"},"IMAGE8":{"a":"image","F":"rotateInUpLeft","C":"1s"}}</script>
     <script id="script_ladipage_run"

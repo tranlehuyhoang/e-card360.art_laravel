@@ -21,7 +21,7 @@
     content="https://static.ladipage.net/6446a909ce8883001284c7a2/untitled-3-20240221152538-elpjd.jpg">
   <meta property="og:description" content="Thiệp cưới Online (mẫu 11)" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="shortcut icon" href="https://www.27biggroup.com/src/log-27bg/logo-27 - v3-height.png" />
+  <link rel="shortcut icon" href="/assets_3/src/log-27bg/logo-27 - v3-height.png" />
   <link rel="dns-prefetch">
   <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -33,7 +33,7 @@
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Sriracha&display=swap" as="style"
     onload="this.onload = null; this.rel = 'stylesheet';">
-  <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+  <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
   <style id="style_ladi" type="text/css">
     a,
     abbr,
@@ -5314,13 +5314,13 @@
       background-image: none !important;
     }
   </style>
-  <link rel="stylesheet" href="https://www.27biggroup.com/librarywedding/css/StyleWedding.css">
+  <link rel="stylesheet" href="/assets_3/librarywedding/css/StyleWedding.css">
   <!--___________________chong coppy_________________-->
   <script type="text/JavaScript">
 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
 </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://www.27biggroup.com/librarywedding/functionWedding/library27biggroup.js"></script>
+  <script src="/assets_3/librarywedding/functionWedding/library27biggroup.js"></script>
   <script>
     document.onkeydown = function (e) {
       if (e.ctrlKey &&
@@ -6513,9 +6513,9 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
         <div id="HTML_CODE3" class='ladi-element'>
           <div class='ladi-html-code'><!--custom chức năng âm nhạc-->
             <audio controls="" loop="" id="audio_music" style="display: none;" play="">
-              <source src="https://www.27biggroup.com/file_music/ido.wav" type="audio/mpeg">
+              <source src="/assets_3/file_music/ido.wav" type="audio/mpeg">
             </audio>
-            <script src="https://www.27biggroup.com/librarywedding/functionWedding/music.js"></script>
+            <script src="/assets_3/librarywedding/functionWedding/music.js"></script>
             <!--custom-->
           </div>
         </div>
@@ -7367,7 +7367,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
       transform: translateX(-50%);
     }
   </style>
-  <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+  <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
   <script id="script_event_data"
     type="application/json">{"IMAGE6":{"a":"image","F":"bounceIn","C":"1s"},"PARAGRAPH5":{"a":"paragraph","F":"flipInX","C":"1s"},"HEADLINE12":{"a":"headline","F":"pulse","C":"1s"},"IMAGE16":{"a":"image","cs":[{"dr":"action","dw":"","a":"copy_clipboard"}],"F":"bounceIn","C":"1s"},"IMAGE17":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE18":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE22":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE23":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE25":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE32":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE33":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE34":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE40":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE53":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.facebook.com/","a":"link"}]},"SHAPE54":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.instagram.com/?hl=en","a":"link"}]},"GROUP40":{"a":"group","E":"bounceInLeft","B":"1s"},"SHAPE56":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.facebook.com/","a":"link"}]},"SHAPE57":{"a":"shape","cs":[{"dr":"action","dv":"_blank","dw":"https://www.instagram.com/?hl=en","a":"link"}]},"IMAGE48":{"a":"image","F":"bounceIn","C":"1s"},"PARAGRAPH28":{"a":"paragraph","F":"flipInX","C":"1s"},"HEADLINE54":{"a":"headline","F":"pulse","C":"1s"},"GROUP41":{"a":"group","E":"bounceInRight","B":"1s"},"BUTTON10":{"a":"button","cs":[{"dr":"action","dw":"SECTION7","a":"section"}],"F":"fadeInUp","C":"1s"},"BUTTON13":{"a":"button","cs":[{"dr":"action","dw":"POPUP4","a":"popup"}],"F":"fadeInUp","C":"1s"},"GROUP42":{"a":"group","D":"fadeInUp","A":"1s"},"COUNTDOWN1":{"a":"countdown","bX":"endtime","bT":1720753200000},"COUNTDOWN_ITEM1":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM2":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM3":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM4":{"a":"countdown_item","bY":"seconds"},"SHAPE58":{"a":"shape","F":"pulse","C":"0s"},"IMAGE49":{"a":"image","F":"fadeInLeft","C":"1s"},"SHAPE61":{"a":"shape","F":"pulse","C":"0s"},"SHAPE62":{"a":"shape","F":"pulse","C":"0s"},"SHAPE63":{"a":"shape","F":"pulse","C":"0s"},"GROUP49":{"a":"group","E":"fadeInRight","B":"1s"},"IMAGE50":{"a":"image","F":"fadeInLeft","C":"1s"},"GROUP50":{"a":"group","E":"fadeInRight","B":"1s"},"IMAGE51":{"a":"image","F":"fadeInLeft","C":"1s"},"GROUP51":{"a":"group","E":"fadeInRight","B":"1s"},"IMAGE52":{"a":"image","F":"fadeInLeft","C":"1s"},"GROUP52":{"a":"group","E":"fadeInRight","B":"1s"},"SHAPE64":{"a":"shape","F":"pulse","C":"0s"},"GROUP54":{"a":"group","D":"tada","A":"1s"},"CAROUSEL_ITEM21":{"a":"frame","cs":[{"dr":"action"}]},"CAROUSEL1":{"a":"carousel","cN":2,"cL":"5px","cG":"type_abab","N":5,"H":"236px","cK":"0px","M":4,"G":"355px","cJ":"horizontal","R":true,"L":"1250px"},"BUTTON27":{"a":"button","cs":[{"dr":"action","dw":"SECTION17","a":"section"}]},"FRAME26":{"a":"frame","F":"flipInX","C":"1s"},"FORM_ITEM2":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM5":{"a":"form_item","bS":"textarea","bQ":4},"FORM2":{"a":"form","bP":"659a110c04ba1700121e183e","bM":true,"bK":"popup","bJ":"POPUP6","by":true,"bx":true},"IMAGE77":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE97":{"a":"shape","F":"pulse","C":"0s"},"GROUP62":{"a":"group","D":"fadeInUp","A":"1s"},"SHAPE99":{"a":"shape","cs":[{"dr":"action","dO":{"dM":2,"dt":"bottom_right"},"dw":"DROPBOX5","a":"dropbox"}],"aD":true,"aA":"top_right","aw":"14px","at":"0px","aq":"0px","an":"8px"},"POPUP3":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"CAROUSEL4":{"a":"carousel","cN":2,"cG":"type_abab","cM":"0px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"325px"},"POPUP4":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"FORM_ITEM6":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM8":{"a":"form_item","bS":"tel","bQ":3},"FORM3":{"a":"form","bP":"659a110c04ba1700121e183e","bM":true,"bK":"popup","bJ":"POPUP7","by":true,"bx":true},"FORM_ITEM10":{"a":"form_item","bS":"checkbox","bQ":3},"FORM_ITEM11":{"a":"form_item","bS":"select","bQ":4},"FORM_ITEM12":{"a":"form_item","bS":"select","bQ":4},"GROUP67":{"a":"group","D":"bounceIn","A":"1s"},"DROPBOX5":{"a":"popup","X":"default"},"BUTTON33":{"a":"button","cs":[{"dr":"action","dw":"SECTION17","a":"section"}]},"FRAME43":{"a":"frame","F":"flipInX","C":"1s"},"BUTTON34":{"a":"button","cs":[{"dr":"action","dw":"SECTION17","a":"section"}]},"FRAME45":{"a":"frame","F":"flipInX","C":"1s"},"BUTTON35":{"a":"button","cs":[{"dr":"action","dw":"SECTION17","a":"section"}]},"FRAME47":{"a":"frame","F":"flipInX","C":"1s"},"BUTTON37":{"a":"button","cs":[{"dr":"action","dw":"POPUP3","a":"popup"}],"F":"fadeInUp","C":"1s"},"POPUP6":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"GROUP79":{"a":"group","cs":[{"dr":"hover","dE":[],"dD":["GROUP82"],"a":"hidden_show"},{"dr":"action","dw":"POPUP4","a":"popup"}]},"GROUP80":{"a":"group","cs":[{"dr":"hover","dD":["GROUP81"],"a":"hidden_show"},{"dr":"action","dw":"SECTION7","a":"section"}]},"GROUP81":{"a":"group","cs":[{"dr":"action","dE":[],"dD":["GROUP81"],"a":"hidden_show"}]},"GROUP83":{"a":"group","cs":[{"dr":"hover","dE":[],"dD":["GROUP84"],"a":"hidden_show"},{"dr":"action","dw":"POPUP3","a":"popup"}]},"HEADLINE151":{"a":"headline","F":"pulse","C":"0s"},"SHAPE116":{"a":"shape","F":"pulse","C":"0s"},"POPUP7":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"GROUP85":{"a":"group","aD":true,"aA":"bottom_left","aw":"0px","at":"5px","aq":"5px","an":"0px"}}</script>
   <script id="script_ladipage_run"

@@ -23,7 +23,7 @@
                 content="https://static.ladipage.net/6446a909ce8883001284c7a2/mau5-20240113065511-7s2gr.png">
             <meta property="og:description" content="Thiệp cưới Online (mẫu 5)" />
             <meta name="format-detection" content="telephone=no" />
-            <link rel="shortcut icon" href="https://www.27biggroup.com/src/log-27bg/logo-27 - v3-height.png" />
+            <link rel="shortcut icon" href="/assets_3/src/log-27bg/logo-27 - v3-height.png" />
             <link rel="dns-prefetch">
             <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
             <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -35,7 +35,7 @@
             <link rel="preload"
                 href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sriracha&family=Baloo+Bhaina:wght@400;700&display=swap"
                 as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-            <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+            <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
             <style id="style_ladi" type="text/css">
                 a,
                 abbr,
@@ -6830,13 +6830,13 @@
                     background-image: none !important;
                 }
             </style>
-            <link rel="stylesheet" href="https://www.27biggroup.com/librarywedding/css/StyleWedding.css">
+            <link rel="stylesheet" href="/assets_3/librarywedding/css/StyleWedding.css">
             <!--___________________chong coppy_________________-->
             <script type="text/JavaScript">
                 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
 </script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="https://www.27biggroup.com/librarywedding/functionWedding/library27biggroup.js"></script>
+            <script src="/assets_3/librarywedding/functionWedding/library27biggroup.js"></script>
             <script>
                 document.onkeydown = function (e) {
             if (e.ctrlKey &&
@@ -7717,7 +7717,7 @@
                                 <div id="MessageBox">
                                 </div>
                                 <script
-                                    src="https://www.27biggroup.com/librarywedding/functionWedding/MessageBoxFunction.js">
+                                    src="/assets_3/librarywedding/functionWedding/MessageBoxFunction.js">
                                 </script>
                                 <script>
                                     run_MessageBox("#BUTTON19", '1Rnf7Ge7UXsZWG-O-YSzbEwsS6zn89k67fAS346hbb_o', 'LadiPage', 1, 6, 5, "Mọi người")
@@ -8642,7 +8642,7 @@
                                             let BGItem = $('.cap_background_item .ladi-image-background')
                                             BGItemSize = BGItem.length
                                             for (i = 0; i <= BGItemSize; i++) {
-                                                $(BGItem[i]).css('background-image', 'url(https://www.27biggroup.com/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
+                                                $(BGItem[i]).css('background-image', 'url(/assets_3/src/image/image-template/CaptureScreen/background/bg-' + (i + 1) + '.jpg)');
                                             }
 
                                                 </script>
@@ -8663,7 +8663,7 @@
                                                             <p>Sơn</p>
                                                         </div>
                                                     </h2>
-                                                    <img src="https://www.27biggroup.com/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
+                                                    <img src="/assets_3/src/image/image-template/CaptureScreen/CoDauChuReChiBi/cdcr2.png"
                                                         height="150">
                                                 </div>
                                             </div>
@@ -8922,7 +8922,7 @@
                                         <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
                                         <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
                                         <script
-                                            src="https://www.27biggroup.com/librarywedding/functionWedding/CaptureScreen.js">
+                                            src="/assets_3/librarywedding/functionWedding/CaptureScreen.js">
                                         </script>
                                     </div>
                                 </div>
@@ -9064,9 +9064,9 @@
                             <div class='ladi-html-code'>
                                 <!--custom chức năng âm nhạc-->
                                 <audio controls="" loop="" id="audio_music" style="display: none;" play="">
-                                    <source src="https://www.27biggroup.com/file_music/ido.wav" type="audio/mpeg">
+                                    <source src="/assets_3/file_music/ido.wav" type="audio/mpeg">
                                 </audio>
-                                <script src="https://www.27biggroup.com/librarywedding/functionWedding/music.js">
+                                <script src="/assets_3/librarywedding/functionWedding/music.js">
                                 </script>
                                 <!--custom-->
                             </div>
@@ -9572,7 +9572,7 @@
                     }
                 }
             </style>
-            <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+            <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
             <script id="script_event_data" type="application/json">
                 {"HEADLINE5":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE6":{"a":"headline","F":"bounceInRight","C":"0s"},"SHAPE1":{"a":"shape","F":"pulse","C":"0s"},"SHAPE2":{"a":"shape","F":"pulse","C":"0s"},"IMAGE6":{"a":"image","F":"swing","C":"0s"},"HEADLINE12":{"a":"headline","F":"tada","C":"0s"},"IMAGE8":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE9":{"a":"image","F":"pulse","C":"2s"},"IMAGE18":{"a":"image","F":"pulse","C":"2s"},"IMAGE19":{"a":"image","F":"bounceIn","C":"1s"},"PARAGRAPH9":{"a":"paragraph","F":"pulse","C":"0s"},"PARAGRAPH12":{"a":"paragraph","F":"pulse","C":"0s"},"IMAGE21":{"a":"image","F":"pulse","C":"0s"},"IMAGE22":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE23":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE4":{"a":"shape","F":"pulse","C":"0s"},"IMAGE24":{"a":"image","F":"bounceInRight","C":"1s"},"IMAGE25":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE5":{"a":"shape","F":"pulse","C":"0s"},"IMAGE26":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE27":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE6":{"a":"shape","F":"pulse","C":"0s"},"IMAGE28":{"a":"image","F":"bounceInRight","C":"1s"},"IMAGE29":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE7":{"a":"shape","F":"pulse","C":"0s"},"IMAGE31":{"a":"image","F":"flipInX","C":"1s"},"IMAGE33":{"a":"image","F":"flipInX","C":"1s"},"IMAGE41":{"a":"image","F":"flipInX","C":"1s"},"IMAGE42":{"a":"image","F":"flipInX","C":"1s"},"IMAGE43":{"a":"image","F":"flipInX","C":"1s"},"IMAGE44":{"a":"image","F":"flipInX","C":"1s"},"IMAGE45":{"a":"image","F":"flipInX","C":"1s"},"IMAGE46":{"a":"image","F":"flipInX","C":"1s"},"IMAGE47":{"a":"image","F":"flipInX","C":"1s"},"IMAGE48":{"a":"image","F":"flipInX","C":"1s"},"IMAGE51":{"a":"image","F":"pulse","C":"0s"},"IMAGE52":{"a":"image","F":"bounceIn","C":"1s"},"GROUP33":{"a":"group","E":"bounceInLeft","B":"1s"},"IMAGE56":{"a":"image","F":"pulse","C":"0s"},"GROUP40":{"a":"group","E":"slideInRight","B":"1s"},"GROUP41":{"a":"group","E":"slideInLeft","B":"1s"},"IMAGE61":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE62":{"a":"image","cs":[{"dr":"action","dw":"POPUP_QR-CODE_CHU-RE","a":"popup"}]},"POPUP_QR-CODE_CO-DAU":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"POPUP_QR-CODE_CHU-RE":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"IMAGE66":{"a":"image","cs":[{"dr":"action","dw":"POPUP_QR-CODE_CHU-RE","a":"popup"}]},"IMAGE30":{"a":"image","F":"pulse","C":"0s"},"POPUP2":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"GROUP54":{"a":"group","E":"bounceInRight","B":"1s"},"COUNTDOWN2":{"a":"countdown","bX":"endtime","bT":1720840140000},"COUNTDOWN_ITEM5":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM6":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM7":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM8":{"a":"countdown_item","bY":"seconds"},"GROUP83":{"a":"group","aD":true,"aA":"bottom_left","aw":"0px","at":"5px","aq":"5px","an":"0px"},"SHAPE16":{"a":"shape","F":"tada","C":"0s"},"CAROUSEL_ITEM69":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM70":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM71":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM72":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM73":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM74":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM75":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM76":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM77":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM78":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM79":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM80":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM81":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM82":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM83":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM84":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM85":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL70":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"CAROUSEL_ITEM86":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM87":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM88":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM89":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM90":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM91":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM92":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM93":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM94":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM95":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM96":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL_ITEM97":{"a":"frame","cs":[{"event_custom_script":"$(&#39;&#39;)\nhandleClickChoice(e)","dr":"action","a":"custom_script"}]},"CAROUSEL71":{"a":"carousel","cN":2,"cG":"type_abab","cM":"10px","cJ":"horizontal","R":true,"O":5,"L":"1250px","I":"100px"},"BUTTON23":{"a":"button","cs":[{"dr":"action","dw":"GROUP89","a":"collapse"}]},"BUTTON24":{"a":"button","cs":[{"dr":"action","dw":"GROUP85","a":"collapse"}]},"BUTTON25":{"a":"button","cs":[{"event_custom_script":"let getFlast = $(&#39;&#39;)","dr":"action","a":"custom_script"}],"F":"pulse","C":"0s"},"HEADLINE45":{"a":"headline","F":"pulse","C":"0s"},"CAROUSEL72":{"a":"carousel","cN":2,"cG":"type_abab","H":"960px","G":"420px","cM":"0px","cJ":"horizontal","R":false,"L":"1250px"},"FORM_ITEM7":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM8":{"a":"form_item","bS":"textarea","bQ":6},"FORM_ITEM9":{"a":"form_item","bS":"select","bQ":2},"FORM_ITEM10":{"a":"form_item","bS":"checkbox","bQ":3},"FORM_ITEM11":{"a":"form_item","bS":"select","bQ":5},"FORM_ITEM12":{"a":"form_item","bS":"checkbox","bQ":4},"FORM3":{"a":"form","bP":"663edb65c9c5120012ef6f25","bM":true,"bK":"default","bJ":"Cảm ơn bạn đã quan tâm!","bA":true,"by":true,"bx":true}}
             </script>

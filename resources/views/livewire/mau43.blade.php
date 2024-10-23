@@ -21,7 +21,7 @@
     content="https://static.ladipage.net/6446a909ce8883001284c7a2/untitled-3-20240125161847-hwng8.jpg">
   <meta property="og:description" content="Thiệp cưới Online (mẫu 6 - custom 1)" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="shortcut icon" href="https://www.27biggroup.com/src/log-27bg/logo-27 - v3-height.png" />
+  <link rel="shortcut icon" href="/assets_3/src/log-27bg/logo-27 - v3-height.png" />
   <link rel="dns-prefetch">
   <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -33,7 +33,7 @@
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&family=Sriracha&family=Yeseva+One&family=Tinos:wght@400;700&family=Baloo+Bhaina:wght@400;700&display=swap"
     as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-  <link rel="preload" href="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" as="script">
+  <link rel="preload" href="/assets_3/librarywedding/ladipagev3.min.js" as="script">
   <style id="style_ladi" type="text/css">
     a,
     abbr,
@@ -4711,13 +4711,13 @@
       background-image: none !important;
     }
   </style>
-  <link rel="stylesheet" href="https://www.27biggroup.com/librarywedding/css/StyleWedding.css">
+  <link rel="stylesheet" href="/assets_3/librarywedding/css/StyleWedding.css">
   <!--___________________chong coppy_________________-->
   <script type="text/JavaScript">
 var message="NoRightClicking"; function defeatIE() {if (document.all) {(message);return false;}} function defeatNS(e) {if (document.layers||(document.getElementById&&!document.all)) { if (e.which==2||e.which==3) {(message);return false;}}} if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=defeatNS;} else{document.onmouseup=defeatNS;document.oncontextmenu=defeatIE;} document.oncontextmenu=new Function("return false") 
 </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://www.27biggroup.com/librarywedding/functionWedding/library27biggroup.js"></script>
+  <script src="/assets_3/librarywedding/functionWedding/library27biggroup.js"></script>
   <script>
     document.onkeydown = function (e) {
       if (e.ctrlKey &&
@@ -5518,7 +5518,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
             </style>
             <div id="MessageBox">
             </div>
-            <script src="https://www.27biggroup.com/librarywedding/functionWedding/MessageBoxFunction.js"></script>
+            <script src="/assets_3/librarywedding/functionWedding/MessageBoxFunction.js"></script>
             <script>
               run_MessageBox("#BUTTON13", '1Rnf7Ge7UXsZWG-O-YSzbEwsS6zn89k67fAS346hbb_o', 'LadiPage', 1, 6, 5, "Mọi người")
             </script>
@@ -5617,9 +5617,9 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
         <div id="HTML_CODE5" class='ladi-element'>
           <div class='ladi-html-code'><!--custom chức năng âm nhạc-->
             <audio controls="" loop="" id="audio_music" style="display: none;" play="">
-              <source src="https://www.27biggroup.com/file_music/ido.wav" type="audio/mpeg">
+              <source src="/assets_3/file_music/ido.wav" type="audio/mpeg">
             </audio>
-            <script src="https://www.27biggroup.com/librarywedding/functionWedding/music.js"></script>
+            <script src="/assets_3/librarywedding/functionWedding/music.js"></script>
             <!--custom-->
           </div>
         </div>
@@ -6314,7 +6314,7 @@ var message="NoRightClicking"; function defeatIE() {if (document.all) {(message)
       }
     }
   </style>
-  <script src="https://www.27biggroup.com/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
+  <script src="/assets_3/librarywedding/ladipagev3.min.js" type="text/javascript"></script>
   <script id="script_event_data"
     type="application/json">{"HEADLINE5":{"a":"headline","F":"bounceInLeft","C":"0s"},"HEADLINE7":{"a":"headline","F":"bounceInRight","C":"0s"},"HEADLINE8":{"a":"headline","F":"bounceIn","C":"1s"},"BUTTON2":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://maps.app.goo.gl/7uupvyg6dtePzfwEA","a":"link"}]},"BUTTON5":{"a":"button","cs":[{"dr":"action","dv":"_blank","dw":"https://calendar.google.com/calendar/event?action=TEMPLATE&#38;tmeid=MXBubmE5Y2QyNmFxZm9oOGxrNWI0c29qNXAgMjdiaWdncm91cEBt&#38;tmsrc=27biggroup%40gmail.com","a":"link"}]},"HEADLINE10":{"a":"headline","F":"bounceInRight","C":"0s"},"HEADLINE11":{"a":"headline","F":"bounceInLeft","C":"0s"},"POPUP2":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"IMAGE29":{"a":"image","F":"swing","C":"0s"},"IMAGE30":{"a":"image","F":"swing","C":"0s"},"IMAGE31":{"a":"image","F":"swing","C":"0s"},"IMAGE32":{"a":"image","F":"swing","C":"0s"},"IMAGE33":{"a":"image","F":"swing","C":"0s"},"COUNTDOWN_ITEM1":{"a":"countdown_item","bY":"day"},"COUNTDOWN_ITEM2":{"a":"countdown_item","bY":"hour"},"COUNTDOWN_ITEM3":{"a":"countdown_item","bY":"minute"},"COUNTDOWN_ITEM4":{"a":"countdown_item","bY":"seconds"},"COUNTDOWN1":{"a":"countdown","bX":"endtime","bT":1720783800000},"POPUP3":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"GROUP44":{"a":"group","aD":true,"aA":"bottom_left","aw":"0px","at":"5px","aq":"5px","an":"0px"},"IMAGE38":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE39":{"a":"image","F":"shake","C":"0s"},"IMAGE40":{"a":"image","F":"bounceIn","C":"1s"},"FORM_ITEM12":{"a":"form_item","bS":"text","bQ":1},"FORM_ITEM13":{"a":"form_item","bS":"textarea","bQ":6},"FORM_ITEM14":{"a":"form_item","bS":"select","bQ":2},"FORM_ITEM15":{"a":"form_item","bS":"select","bQ":3},"FORM_ITEM16":{"a":"form_item","bS":"select","bQ":5},"FORM4":{"a":"form","bP":"665ae96abc0ad80012ebe771","bM":true,"bK":"popup","bJ":"POPUP3","bA":true,"by":true,"bx":true},"BUTTON17":{"a":"button","cs":[{"dr":"action","dw":"00000000","a":"phone"}]},"BUTTON18":{"a":"button","cs":[{"dr":"action","dw":"POPUP2","a":"popup"}]},"POPUP4":{"a":"popup","X":"default","U":"background-color: rgba(0, 0, 0, 0.5);"},"IMAGE43":{"a":"image","F":"tada","C":"0s"},"SHAPE17":{"a":"shape","F":"pulse","C":"0s"},"IMAGE60":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE61":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE18":{"a":"shape","F":"pulse","C":"0s"},"IMAGE62":{"a":"image","F":"bounceInRight","C":"1s"},"IMAGE63":{"a":"image","F":"bounceIn","C":"1s"},"IMAGE64":{"a":"image","F":"bounceInRight","C":"1s"},"IMAGE65":{"a":"image","F":"bounceIn","C":"1s"},"SHAPE19":{"a":"shape","F":"pulse","C":"0s"},"SHAPE20":{"a":"shape","F":"pulse","C":"0s"},"IMAGE66":{"a":"image","F":"bounceInLeft","C":"1s"},"IMAGE67":{"a":"image","F":"bounceIn","C":"1s"}}</script>
   <script id="script_ladipage_run"
