@@ -195,7 +195,7 @@ class WeddingInvitationResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('invitationTemplate.demo_link')
                     ->label('Xem thiệp')
-                    ->url(fn ($record) => '/' . $record->invitationTemplate->id . '/' . $record->invitation_code)
+                    ->url(fn ($record) => '/' . $record->invitationTemplate->stt . '/' . $record->invitation_code)
                     ->openUrlInNewTab(),
             ])
             ->filters([

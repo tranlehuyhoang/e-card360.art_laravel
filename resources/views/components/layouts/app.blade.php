@@ -6,11 +6,7 @@
 
         @livewireStyles
     </head>
-    <div style="display: flex; flex-wrap: wrap;">
-        @for ($i = 1; $i <= 44; $i++)
-            <a href="/mau-{{ $i }}" style="margin: 5px;">{{ $i }}</a>
-        @endfor
-    </div>
+ 
     <body>
         {{ $slot }}
         @livewireScripts

@@ -35,7 +35,6 @@ class WeddingCardResource extends Resource
                             ->label('Tên Mẫu')
                             ->helperText('Nhập tên mẫu thiệp cưới'),
                         Forms\Components\FileUpload::make('image')
-                            ->required()
                             ->label('Ảnh')
                             ->disk('public')
                             ->directory('wedding_cards')
@@ -54,6 +53,7 @@ class WeddingCardResource extends Resource
                             ->required()
                             ->numeric()
                             ->label('Giá')
+                            ->default(1000000)
                             ->prefix('VND')
                             ->helperText('Nhập giá của mẫu thiệp'),
                     ])
