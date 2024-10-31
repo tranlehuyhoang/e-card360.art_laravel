@@ -34,6 +34,10 @@ class WeddingCardResource extends Resource
                             ->required()
                             ->label('Tên Mẫu')
                             ->helperText('Nhập tên mẫu thiệp cưới'),
+                        Forms\Components\Textarea::make('description')
+                            ->required()
+                            ->label('Mô tả')
+                            ->helperText('Nhập mô tả thiệp cưới'),
                         Forms\Components\FileUpload::make('image')
                             ->label('Ảnh')
                             ->disk('public')

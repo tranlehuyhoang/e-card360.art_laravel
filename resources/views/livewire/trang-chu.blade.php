@@ -9146,17 +9146,18 @@
                     <div id="CAROUSEL1" class='ladi-element'>
                         <div class="ladi-carousel">
                             <div class='ladi-carousel-content'>
-                                <div data-action="true" id="CAROUSEL_ITEM1" class='ladi-element'>
+                                @foreach($weddingCards as $card)
+                                <div data-action="true"  id="CAROUSEL_ITEM{{ $loop->index + 1 }}" class='ladi-element'>
                                     <div class='ladi-frame ladi-frame-bg ladi-transition'>
                                         <div class="ladi-frame-background"></div>
                                         <div data-action="true" id="GROUP50" class='ladi-element'>
                                             <div class='ladi-group'>
                                                 <div id="BOX39" class='ladi-element'>
                                                     <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-bustle-vip"
+                                                </div><a href="{{ $card->demo_link}}"
                                                     target="_blank" id="IMAGE33" class='ladi-element'>
                                                     <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
+                                                        <div class="ladi-image-background" style="background-image: url('{{ Storage::url($card->image)}}')"></div>
                                                     </div>
                                                 </a>
                                                 <div id="BUTTON45" class='ladi-element'>
@@ -9176,18 +9177,16 @@
                                                         </div>
                                                         <div id="BUTTON_TEXT45"
                                                             class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện VIP</p>
+                                                            <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div data-action="true" id="HEADLINE97" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Bustle<br></h3>
+                                                    <h3 class='ladi-headline ladi-transition'>{{ $card->template_name}}<br></h3>
                                                 </div>
                                                 <div id="PARAGRAPH30" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Giao diện náo nhiệt nhộn
-                                                        nhịp, mang đến sự thích thú và hào hứng. Tạo ra những nét đặc
-                                                        sắc riêng vô cùng tinh tế, đáng yêu.<br></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-bustle-vip"
+                                                    <div class='ladi-paragraph ladi-transition'>{{ $card->description}}<br></div>
+                                                </div><a href="{{ $card->demo_link}}"
                                                     target="_blank" id="BUTTON46" class='ladi-element'>
                                                     <div class='ladi-button ladi-transition'>
                                                         <div class="ladi-button-background"></div>
@@ -9202,7 +9201,7 @@
                                                         <div class="ladi-button-background"></div>
                                                         <div id="BUTTON_TEXT47"
                                                             class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
+                                                            <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -9210,355 +9209,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div data-action="true" id="CAROUSEL_ITEM2" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP51" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX40" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-noble-vip"
-                                                    target="_blank" id="IMAGE34" class='ladi-element'>
-                                                    <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
-                                                    </div>
-                                                </a>
-                                                <div id="BUTTON48" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_SHAPE48" class='ladi-element ladi-button-shape'>
-                                                            <div class='ladi-shape'><svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                    version="1.1" x="0px" y="0px" viewBox="0 0 100 100"
-                                                                    enable-background="new 0 0 100 100"
-                                                                    xml:space="preserve" preserveAspectRatio="none"
-                                                                    width="100%" height="100%" class=""
-                                                                    fill="rgba(248, 203, 28, 1)">
-                                                                    <use xlink:href="#shape_qnGbobKIyk"></use>
-                                                                </svg></div>
-                                                        </div>
-                                                        <div id="BUTTON_TEXT48"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện VIP</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-action="true" id="HEADLINE98" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Noble<br></h3>
-                                                </div>
-                                                <div id="PARAGRAPH31" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Chủ đề tình yêu Rạng Rỡ
-                                                        vui tươi với phong cách Luxury. Tối ưu giao diện hiển thị. Tạo
-                                                        sự dễ chịu, rộn ràng đằm thắm cho người xem.<br></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-noble-vip"
-                                                    target="_blank" id="BUTTON49" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT49"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Xem thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div data-action="true" id="BUTTON50" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT50"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-action="true" id="CAROUSEL_ITEM3" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP52" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX41" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-luxurious-vip"
-                                                    target="_blank" id="IMAGE35" class='ladi-element'>
-                                                    <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
-                                                    </div>
-                                                </a>
-                                                <div id="BUTTON51" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_SHAPE51" class='ladi-element ladi-button-shape'>
-                                                            <div class='ladi-shape'><svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                    version="1.1" x="0px" y="0px" viewBox="0 0 100 100"
-                                                                    enable-background="new 0 0 100 100"
-                                                                    xml:space="preserve" preserveAspectRatio="none"
-                                                                    width="100%" height="100%" class=""
-                                                                    fill="rgba(248, 203, 28, 1)">
-                                                                    <use xlink:href="#shape_qnGbobKIyk"></use>
-                                                                </svg></div>
-                                                        </div>
-                                                        <div id="BUTTON_TEXT51"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện VIP</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-action="true" id="HEADLINE99" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Luxurious<br></h3>
-                                                </div>
-                                                <div id="PARAGRAPH32" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Không gian Sang trọng
-                                                        tươi sáng, được thiết kế bài trí vô cùng tỉ mỉ và tinh tế. Tối
-                                                        ưu cho đa dạng thiết bị. Mang lại cảm giác dễ chịu.<br></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-luxurious-vip"
-                                                    target="_blank" id="BUTTON52" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT52"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Xem thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div data-action="true" id="BUTTON53" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT53"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-action="true" id="CAROUSEL_ITEM4" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP49" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX38" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-sleazy-vip"
-                                                    target="_blank" id="IMAGE32" class='ladi-element'>
-                                                    <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
-                                                    </div>
-                                                </a>
-                                                <div id="BUTTON42" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_SHAPE42" class='ladi-element ladi-button-shape'>
-                                                            <div class='ladi-shape'><svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                    version="1.1" x="0px" y="0px" viewBox="0 0 512 512"
-                                                                    style="enable-background:new 0 0 512 512;"
-                                                                    xml:space="preserve" preserveAspectRatio="none"
-                                                                    width="100%" height="100%" class=""
-                                                                    fill="rgba(44, 44, 53, 1)">
-                                                                    <use xlink:href="#shape_HeaSAXomFW"></use>
-                                                                </svg></div>
-                                                        </div>
-                                                        <div id="BUTTON_TEXT42"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện thường</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-action="true" id="HEADLINE96" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Sleazy<br></h3>
-                                                </div>
-                                                <div id="PARAGRAPH29" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Thiết kế đơn giản nhẹ
-                                                        nhàng nhưng lắng đọng, tạo sự tươi trẻ lãng mạng. Thiết kế tỉ mỉ
-                                                        và tính tế, tối ưu ở giao diện điện thoại.<br></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-sleazy-vip"
-                                                    target="_blank" id="BUTTON43" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT43"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Xem thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div data-action="true" id="BUTTON44" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT44"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-action="true" id="CAROUSEL_ITEM6" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP56" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX45" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-romantic-vip"
-                                                    target="_blank" id="IMAGE39" class='ladi-element'>
-                                                    <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
-                                                    </div>
-                                                </a>
-                                                <div id="BUTTON63" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_SHAPE63" class='ladi-element ladi-button-shape'>
-                                                            <div class='ladi-shape'><svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                    version="1.1" x="0px" y="0px" viewBox="0 0 512 512"
-                                                                    style="enable-background:new 0 0 512 512;"
-                                                                    xml:space="preserve" preserveAspectRatio="none"
-                                                                    width="100%" height="100%" class=""
-                                                                    fill="rgba(44, 44, 53, 1)">
-                                                                    <use xlink:href="#shape_HeaSAXomFW"></use>
-                                                                </svg></div>
-                                                        </div>
-                                                        <div id="BUTTON_TEXT63"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện thường</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-action="true" id="HEADLINE103" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Romantic<br></h3>
-                                                </div>
-                                                <div id="PARAGRAPH36" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Lãng mạn và vui vẻ là
-                                                        điều mà giao diện này có. Cảm giác nhẹ nhàng đơn giản nhưng vô
-                                                        cùng thích mắt. Tối ưu từng thiết kế rất tỉ mỉ.<br></div>
-                                                </div><a href="https://www.mewedding.online/giao-dien-romantic-vip"
-                                                    target="_blank" id="BUTTON64" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT64"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Xem thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div data-action="true" id="BUTTON65" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT65"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-action="true" id="CAROUSEL_ITEM8" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP57" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX46" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div><a href="https://www.mewedding.online/kho-giao-dien-th004"
-                                                    target="_blank" id="IMAGE40" class='ladi-element'>
-                                                    <div class='ladi-image ladi-transition'>
-                                                        <div class="ladi-image-background"></div>
-                                                    </div>
-                                                </a>
-                                                <div id="BUTTON66" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_SHAPE66" class='ladi-element ladi-button-shape'>
-                                                            <div class='ladi-shape'><svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                    version="1.1" x="0px" y="0px" viewBox="0 0 512 512"
-                                                                    style="enable-background:new 0 0 512 512;"
-                                                                    xml:space="preserve" preserveAspectRatio="none"
-                                                                    width="100%" height="100%" class=""
-                                                                    fill="rgba(44, 44, 53, 1)">
-                                                                    <use xlink:href="#shape_HeaSAXomFW"></use>
-                                                                </svg></div>
-                                                        </div>
-                                                        <div id="BUTTON_TEXT66"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Giao diện thường</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-action="true" id="HEADLINE104" class='ladi-element'>
-                                                    <h3 class='ladi-headline ladi-transition'>Foreign<br></h3>
-                                                </div>
-                                                <div id="PARAGRAPH37" class='ladi-element'>
-                                                    <div class='ladi-paragraph ladi-transition'>Mang đậm không khí tình
-                                                        yêu, giao diện mang đến sự lãng mạng tươi mới, nhẹ nhàng và 1
-                                                        chút tây khác lạ. Giao diện thích mắt.<br></div>
-                                                </div><a href="https://www.mewedding.online/kho-giao-dien-th004"
-                                                    target="_blank" id="BUTTON67" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT67"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Xem thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div data-action="true" id="BUTTON68" class='ladi-element'>
-                                                    <div class='ladi-button ladi-transition'>
-                                                        <div class="ladi-button-background"></div>
-                                                        <div id="BUTTON_TEXT68"
-                                                            class='ladi-element ladi-button-headline'>
-                                                            <p class='ladi-headline'>Chọn thiệp</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-action="true" id="CAROUSEL_ITEM10" class='ladi-element'>
-                                    <div class='ladi-frame ladi-frame-bg ladi-transition'>
-                                        <div class="ladi-frame-background"></div>
-                                        <div data-action="true" id="GROUP58" class='ladi-element'>
-                                            <div class='ladi-group'>
-                                                <div id="BOX47" class='ladi-element'>
-                                                    <div class='ladi-box ladi-transition'></div>
-                                                </div>
-                                                <div data-action="true" id="GROUP59" class='ladi-element'>
-                                                    <div class='ladi-group'><a
-                                                            href="https://www.mewedding.online/kho-giao-dien"
-                                                            target="_blank" id="PARAGRAPH38" class='ladi-element'>
-                                                            <div class='ladi-paragraph ladi-transition'>Click để Xem
-                                                                thêm tất cả các mẫu thiệp cưới của meWedding</div>
-                                                        </a><a href="https://www.mewedding.online/kho-giao-dien"
-                                                            target="_blank" id="BUTTON70" class='ladi-element'>
-                                                            <div class='ladi-button ladi-transition'>
-                                                                <div class="ladi-button-background"></div>
-                                                                <div id="BUTTON_TEXT70"
-                                                                    class='ladi-element ladi-button-headline'>
-                                                                    <p class='ladi-headline'>Xem thêm</p>
-                                                                </div>
-                                                            </div>
-                                                        </a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                          
+                                @endforeach
                             </div>
                             <div class="ladi-carousel-arrow ladi-carousel-arrow-left opacity-0"></div>
                             <div class="ladi-carousel-arrow ladi-carousel-arrow-right opacity-0"></div>

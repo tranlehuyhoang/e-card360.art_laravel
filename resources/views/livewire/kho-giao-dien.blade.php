@@ -10088,7 +10088,7 @@
                     </div>
                 </div>
             </div>
-            <div id="SECTION17" class='ladi-section'>
+            <div id="SECTION17" style="opacity: 0" class='ladi-section'>
                 <div class='ladi-section-background'></div>
                 <div class="ladi-container">
                     <div id="SHAPE111" class='ladi-element'>
@@ -10233,7 +10233,7 @@
                     </div>
                 </div>
             </div>
-            <div id="SECTION22" data-tab-id="SECTION_TABS23" class='selected ladi-section'>
+            {{-- <div id="SECTION22" data-tab-id="SECTION_TABS23" class='selected ladi-section'>
                 <div class='selected ladi-section-background'></div>
                 <div class="ladi-container">
                     <div id="HEADLINE295" class='ladi-element'>
@@ -10310,7 +10310,7 @@
                                         GIÁ</a></span>" </span>.<br></div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div id="SECTION16" data-tab-id="SECTION_TABS18" class='selected ladi-section'>
                 <div class='selected ladi-section-background'></div>
                 <div class="ladi-container">
@@ -13677,122 +13677,7 @@
                     </div>
                 </div>
             </div>
-            <div id="SECTION10" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="SHAPE38" class='ladi-element'>
-                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                preserveAspectRatio="none" viewBox="0 0 1920 120" class=""
-                                fill="rgba(251, 231, 231, 1.0)">
-                                <defs>
-                                    <style>
-                                        .shape_CWyuINPeOE.cls-1 {
-                                            opacity: 0.2;
-                                        }
-
-                                        .shape_CWyuINPeOE.cls-1,
-                                        .shape_CWyuINPeOE.cls-2,
-                                        .shape_CWyuINPeOE.cls-3 {
-                                            isolation: isolate;
-                                        }
-
-                                        .shape_CWyuINPeOE.cls-2 {
-                                            opacity: 0.4;
-                                        }
-
-                                        .shape_CWyuINPeOE.cls-3 {
-                                            opacity: 0.6;
-                                        }
-                                    </style>
-                                </defs>
-                                <polygon class="cls-1 shape_CWyuINPeOE"
-                                    points="1920 120 0 120 0 0 961 62.6 1920 0 1920 120"></polygon>
-                                <polygon class="cls-2 shape_CWyuINPeOE"
-                                    points="1920 120 0 120 0 30.1 961 62.6 1920 30.1 1920 120"></polygon>
-                                <polygon class="cls-3 shape_CWyuINPeOE"
-                                    points="1920 120 0 120 0 60.2 961 62.6 1920 60.2 1920 120"></polygon>
-                                <polygon points="1920 120 0 120 0 89.6 961 62.6 1920 89.6 1920 120"></polygon>
-                            </svg></div>
-                    </div>
-                    <div id="HEADLINE126" class='ladi-element'>
-                        <h3 class='ladi-headline ladi-transition'>TRỞ THÀNH ĐẠI LÝ-CTV CỦA MEWEDDING</h3>
-                    </div>
-                    <div id="HEADLINE127" class='ladi-element'>
-                        <h3 class='ladi-headline ladi-transition'>Thiệp cưới&nbsp; điện tử đang là xu hướng của giới trẻ
-                            hiện đại bởi sự tiện lợi và đa dạng mẫu mã. Tiết kiệm chi phí, bảo vệ môi trường và thể hiện
-                            phong cách cá tính riêng, lưu giữ mãi mãi làm kỷ niệm. meWedding tự hào là đơn vị hàng đầu
-                            trong Thiệp cưới điện tử đã được 1000+ dâu rể lựa chọn. Với đa dạng mẫu mã để khách hàng lựa
-                            chọn, dịch vụ hỗ trợ khách hàng cực tốt, với nhiều mức giá để lựa chọn và được cập nhật liên
-                            tục.<br></h3>
-                    </div>
-                    <div id="GROUP60" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div id="BOX48" class='ladi-element'>
-                                <div class='ladi-box ladi-transition'></div>
-                            </div>
-                            <div id="FORM2" data-config-id="669814be98abb30012590fdf" class='ladi-element'>
-                                <form autocomplete="off" method="post" class='ladi-form'>
-                                    <div id="BUTTON72" class='ladi-element'>
-                                        <div class='ladi-button'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT72" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Đăng ký</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="FORM_ITEM2" class='ladi-element'>
-                                        <div class="ladi-form-item-container">
-                                            <div class="ladi-form-item-background"></div>
-                                            <div class='ladi-form-item'><input autocomplete="off" tabindex="1"
-                                                    name="name" required class="ladi-form-control" type="text"
-                                                    placeholder="Họ và Tên" value="" /></div>
-                                        </div>
-                                    </div>
-                                    <div id="FORM_ITEM3" class='ladi-element'>
-                                        <div class="ladi-form-item-container">
-                                            <div class="ladi-form-item-background"></div>
-                                            <div class='ladi-form-item'><input autocomplete="off" tabindex="2"
-                                                    name="email" class="ladi-form-control" type="email"
-                                                    placeholder="Email" value="" /></div>
-                                        </div>
-                                    </div>
-                                    <div id="FORM_ITEM4" class='ladi-element'>
-                                        <div class="ladi-form-item-container">
-                                            <div class="ladi-form-item-background"></div>
-                                            <div class='ladi-form-item'><input autocomplete="off" tabindex="3"
-                                                    name="phone" required class="ladi-form-control" type="tel"
-                                                    placeholder="Số điện thoại" pattern="(\+84|0)(9|8|7|5|3)[0-9]{8}"
-                                                    value="" /></div>
-                                        </div>
-                                    </div>
-                                    <div id="FORM_ITEM5" class='ladi-element'>
-                                        <div class="ladi-form-item-container">
-                                            <div class="ladi-form-item-background"></div>
-                                            <div class='ladi-form-item'><textarea autocomplete="off" tabindex="4"
-                                                    name="message" class="ladi-form-control"
-                                                    placeholder="Để lại lời nhắn cho chúng tôi"></textarea></div>
-                                        </div>
-                                    </div>
-                                    <div id="FORM_ITEM7" class='ladi-element'>
-                                        <div class="ladi-form-item-container">
-                                            <div class="ladi-form-item-background"></div>
-                                            <div class='ladi-form-item'><select tabindex="5" name="form_item7" required
-                                                    class="ladi-form-control ladi-form-control-select" data-selected="">
-                                                    <option value="" class="ladi-hidden">Hình thức</option>
-                                                    <option value="Đại Lý">Đại Lý</option>
-                                                    <option value="Cộng Tác Viên">Cộng Tác Viên</option>
-                                                </select></div>
-                                        </div>
-                                    </div><button type="submit" class="ladi-hidden"></button>
-                                </form>
-                            </div>
-                            <div id="HEADLINE128" class='ladi-element'>
-                                <h3 class='ladi-headline ladi-transition'>ĐĂNG KÝ TRỞ THÀNH ĐẠI LÝ - CTV</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
           @livewire('inc.footer')
             
         </div>

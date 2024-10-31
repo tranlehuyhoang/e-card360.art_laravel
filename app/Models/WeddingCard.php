@@ -12,6 +12,7 @@ class WeddingCard extends Model
     // Nếu bạn có các trường cần khai báo có thể thêm vào đây
     protected $fillable = [
         'template_name',
+        'description',
         'image',
         'demo_link',
         'price',

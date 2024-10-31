@@ -47,7 +47,7 @@ class AdminPanelProvider extends PanelProvider
                 LatestWeddingInvitationsWidget::class,
             ])
             ->plugins([
-                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+                // \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
                 \Hasnayeen\Themes\ThemesPlugin::make()
             ])
             ->middleware([
