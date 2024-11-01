@@ -10254,8 +10254,7 @@
                             có thể được sử dụng cho cả 3 gói thiệp. Nhưng tùy vào từng gói mà thiệp sẽ khác nhau về 1 số
                             thiết kế, và khác nhau về cả các tính năng. Vui lòng xem chi tiết tính năng của từng gói ở
                             phần <span style="color: rgb(82, 113, 255);">"<span
-                                    style="text-decoration-line: underline;"><a
-                                        href="/bang-gia" target="_blank">BẢNG
+                                    style="text-decoration-line: underline;"><a href="/bang-gia" target="_blank">BẢNG
                                         GIÁ</a></span>" </span>.<br></div>
                     </div>
                 </div>
@@ -10279,8 +10278,7 @@
                             có thể được sử dụng cho cả 3 gói thiệp. Nhưng tùy vào từng gói mà thiệp sẽ khác nhau về 1 số
                             thiết kế, và khác nhau về cả các tính năng. Vui lòng xem chi tiết tính năng của từng gói ở
                             phần <span style="color: rgb(82, 113, 255);">"<span
-                                    style="text-decoration-line: underline;"><a
-                                        href="/bang-gia" target="_blank">BẢNG
+                                    style="text-decoration-line: underline;"><a href="/bang-gia" target="_blank">BẢNG
                                         GIÁ</a></span>" </span>.<br></div>
                     </div>
                 </div>
@@ -10305,8 +10303,7 @@
                             có thể được sử dụng cho cả 3 gói thiệp. Nhưng tùy vào từng gói mà thiệp sẽ khác nhau về 1 số
                             thiết kế, và khác nhau về cả các tính năng. Vui lòng xem chi tiết tính năng của từng gói ở
                             phần <span style="color: rgb(82, 113, 255);">"<span
-                                    style="text-decoration-line: underline;"><a
-                                        href="/bang-gia" target="_blank">BẢNG
+                                    style="text-decoration-line: underline;"><a href="/bang-gia" target="_blank">BẢNG
                                         GIÁ</a></span>" </span>.<br></div>
                     </div>
                 </div>
@@ -10314,45 +10311,46 @@
             <div id="SECTION16" data-tab-id="SECTION_TABS18" class='selected ladi-section'>
                 <div class='selected ladi-section-background'></div>
                 <div class="ladi-container">
-                    <div data-action="true" id="GROUP213" class='ladi-element'>
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->first(); @endphp
+                    <div data-action="true" id="GROUP265" class='ladi-element'>
                         <div class='ladi-group'>
                             <div data-action="true" id="GROUP201" class='ladi-element'>
                                 <div class='ladi-group'>
                                     <div id="BOX96" class='ladi-element'>
                                         <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-quiet-vip" target="_blank"
-                                        id="IMAGE72" class='ladi-element'>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
                                                         <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
+                                                    </svg>
+                                                </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-action="true" id="HEADLINE225" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Quiet<br></h3>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
                                     </div>
                                     <div id="PARAGRAPH108" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Giao diện thiết kế giản dị, nhưng vô
-                                            cùng sang trọng với tone màu trầm. Tạo cảm giác trầm lắng cuốn hút cho người
-                                            xem.<br></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-quiet-vip" target="_blank"
-                                        id="BUTTON120" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
@@ -10360,11 +10358,11 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div data-action="true" id="BUTTON121" class='ladi-element'>
+                                    <div  id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
                                             </div>
                                         </div>
                                     </div>
@@ -10380,1273 +10378,552 @@
                             </div>
                         </div>
                     </div>
-                    <div data-action="true" id="GROUP214" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP203" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX97" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-luxurious-vip" target="_blank"
-                                        id="IMAGE73" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div id="BUTTON122" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE122" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT122" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-action="true" id="HEADLINE226" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Luxurious<br></h3>
-                                    </div>
-                                    <div id="PARAGRAPH109" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Không gian Sang trọng tươi sáng,
-                                            được thiết kế bài trí vô cùng tỉ mỉ và tinh tế. Tối ưu cho đa dạng thiết bị.
-                                            Mang lại cảm giác vô cùng dễ chịu.<br></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-luxurious-vip" target="_blank"
-                                        id="BUTTON123" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT123" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON124" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT124" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON144" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT144" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP215" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP204" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX98" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="http://www.mewedding.online/kho-giao-dien-lightly" target="_blank"
-                                        id="IMAGE74" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div id="BUTTON125" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE125" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT125" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
-                                            </div>
-                                        </div>
-                                    </div><a href="http://www.mewedding.online/kho-giao-dien-lightly" id="HEADLINE227"
-                                        class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Lightly<br></h3>
-                                    </a>
-                                    <div id="PARAGRAPH110" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Thiết kế nhẹ nhàng nhưng lắng đọng,
-                                            sâu sắc, tạo cảm giác hào hứng vui vẻ. Giao diện trong sáng sang trọng<br>
-                                        </div>
-                                    </div><a href="http://www.mewedding.online/kho-giao-dien-lightly" target="_blank"
-                                        id="BUTTON126" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT126" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON127" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT127" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON145" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT145" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP224" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP221" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP218" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX102" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-romantic-vip"
-                                                target="_blank" id="IMAGE78" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="HEADLINE231" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Romantic<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH114" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Lãng mạn và vui vẻ là điều
-                                                    mà giao diện này có. Cảm giác nhẹ nhàng đơn giản nhưng vô cùng thích
-                                                    mắt. Tối ưu từng thiết kế 1 cách tỉ mỉ.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-romantic-vip"
-                                                target="_blank" id="BUTTON152" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT152" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON153" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT153" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON154" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT154" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON159" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_SHAPE159" class='ladi-element ladi-button-shape'>
-                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                                xml:space="preserve" preserveAspectRatio="none" width="100%"
-                                                height="100%" class="" fill="rgba(248, 203, 28, 1)">
-                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                            </svg></div>
-                                    </div>
-                                    <div id="BUTTON_TEXT159" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP228" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP222" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX103" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-sleazy-vip" target="_blank"
-                                        id="IMAGE79" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="HEADLINE232" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Sleazy<br></h3>
-                                    </div>
-                                    <div id="PARAGRAPH115" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Thiết kế đơn giản nhẹ nhàng nhưng
-                                            lắng đọng, tạo sự tươi trẻ lãng mạng. Thiết kế tỉ mỉ và tính tế, tối ưu ở
-                                            giao diện điện thoại.<br></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-sleazy-vip" target="_blank"
-                                        id="BUTTON156" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT156" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON157" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT157" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON160" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT160" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON161" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_SHAPE161" class='ladi-element ladi-button-shape'>
-                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                                xml:space="preserve" preserveAspectRatio="none" width="100%"
-                                                height="100%" class="" fill="rgba(248, 203, 28, 1)">
-                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                            </svg></div>
-                                    </div>
-                                    <div id="BUTTON_TEXT161" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP229" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP225" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX104" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-foreign-vip" target="_blank"
-                                        id="IMAGE80" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="HEADLINE233" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Foreign<br></h3>
-                                    </div>
-                                    <div id="PARAGRAPH116" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Mang đậm không khí tình yêu, giao
-                                            diện mang đến sự lãng mạng tươi mới, nhẹ nhàng và 1 chút tây khác lạ. Giao
-                                            diện thích mắt.<br></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-foreign-vip" target="_blank"
-                                        id="BUTTON163" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT163" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON164" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT164" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON165" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_SHAPE165" class='ladi-element ladi-button-shape'>
-                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                                xml:space="preserve" preserveAspectRatio="none" width="100%"
-                                                height="100%" class="" fill="rgba(248, 203, 28, 1)">
-                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                            </svg></div>
-                                    </div>
-                                    <div id="BUTTON_TEXT165" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON166" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT166" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP230" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP226" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX105" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-cool-vip" target="_blank"
-                                        id="IMAGE81" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="HEADLINE234" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Cool<br></h3>
-                                    </div>
-                                    <div id="PARAGRAPH117" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Giao diện thiết kế tươi sáng mát mẻ,
-                                            tạo cảm giác dễ chịu, vui vẻ cho người xem. Nơi lưu giữ kỷ niệm tuyệt vời
-                                            cho dâu rể.<br></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-cool-vip" target="_blank"
-                                        id="BUTTON168" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT168" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON169" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT169" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON170" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_SHAPE170" class='ladi-element ladi-button-shape'>
-                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                                xml:space="preserve" preserveAspectRatio="none" width="100%"
-                                                height="100%" class="" fill="rgba(248, 203, 28, 1)">
-                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                            </svg></div>
-                                    </div>
-                                    <div id="BUTTON_TEXT170" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON171" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT171" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP231" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP227" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX106" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-simple-vip" target="_blank"
-                                        id="IMAGE82" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="HEADLINE235" class='ladi-element'>
-                                        <h3 class='ladi-headline ladi-transition'>Simple<br></h3>
-                                    </div>
-                                    <div id="PARAGRAPH118" class='ladi-element'>
-                                        <div class='ladi-paragraph ladi-transition'>Giao diện đơn giản, giản dị, cực kỳ
-                                            tối giản, cho dâu rể không cần ảnh, dùng để mời cưới và thông báo cưới.<br>
-                                        </div>
-                                    </div><a href="https://www.mewedding.online/giao-dien-simple-vip" target="_blank"
-                                        id="BUTTON173" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT173" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div data-action="true" id="BUTTON174" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT174" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON175" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_SHAPE175" class='ladi-element ladi-button-shape'>
-                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                                xml:space="preserve" preserveAspectRatio="none" width="100%"
-                                                height="100%" class="" fill="rgba(248, 203, 28, 1)">
-                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                            </svg></div>
-                                    </div>
-                                    <div id="BUTTON_TEXT175" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="BUTTON176" class='ladi-element'>
-                                <div class='ladi-button ladi-transition'>
-                                    <div class="ladi-button-background"></div>
-                                    <div id="BUTTON_TEXT176" class='ladi-element ladi-button-headline'>
-                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP234" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP232" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP233" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX107" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-pasiona-vip"
-                                                target="_blank" id="IMAGE83" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="HEADLINE236" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Pasiona<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH119" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Mộng mơ, say đắm là từ để
-                                                    diễn tả cho giao diện này. Tạo cảm giác nhẹ nhàng và dễ chịu cho
-                                                    người xem, các chi tiết được sắp xếp tỷ mỉ và tinh tế.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-pasiona-vip"
-                                                target="_blank" id="BUTTON177" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT177" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON178" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT178" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON179" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE179" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT179" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON180" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT180" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="IMAGE85" class='ladi-element'>
-                                <div class='ladi-image'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP235" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP220" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP209" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX100" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-romany-vip"
-                                                target="_blank" id="IMAGE76" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div id="BUTTON137" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_SHAPE137" class='ladi-element ladi-button-shape'>
-                                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                                x="0px" y="0px" viewBox="0 0 100 100"
-                                                                enable-background="new 0 0 100 100" xml:space="preserve"
-                                                                preserveAspectRatio="none" width="100%" height="100%"
-                                                                class="" fill="rgba(248, 203, 28, 1)">
-                                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                            </svg></div>
-                                                    </div>
-                                                    <div id="BUTTON_TEXT137" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-action="true" id="HEADLINE229" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Romany<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH112" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Lãng mạn nhưng rộn ràng, đầy
-                                                    đủ và chi tiết, tạo cảm giác hào hứng rất nhiều cho người xem. Sẽ là
-                                                    trải nghiệm tuyệt vời cho Dâu Rể và khách mời.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-romany-vip"
-                                                target="_blank" id="BUTTON138" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT138" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON139" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT139" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON140" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT140" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="IMAGE86" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP244" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP245" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP246" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX110" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-radiant-vip"
-                                                target="_blank" id="IMAGE90" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="HEADLINE240" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Radiant<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH123" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Mẫu thiệp rạng rỡ với chủ đề
-                                                    tình yêu bất ngờ và hạnh phúc, giao diện tươi sáng và thông thoáng,
-                                                    cuốn hút mọi người xem.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-radiant-vip"
-                                                target="_blank" id="BUTTON188" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT188" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON189" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT189" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON190" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE190" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT190" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON191" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT191" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="IMAGE91" class='ladi-element'>
-                                <div class='ladi-image'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP258" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP240" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX109" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/kho-bia-thiep" target="_blank"
-                                        id="IMAGE88" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div id="BUTTON184" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE184" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT184" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Bìa thiệp - VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="GROUP241" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="HEADLINE238" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Bìa Thiệp <span
-                                                        style="font-weight: normal; font-size: 14px;">(Bên ngoài thiệp
-                                                        chính)</span></h3>
-                                            </div>
-                                            <div id="PARAGRAPH121" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Là thiệp mời bọc bên ngoài
-                                                    thiệp chính. Dùng để <span style="font-weight: bold;">Ghi tên khách
-                                                        mời</span>, thông báo ngày cưới, mời cưới cá nhân hoá theo từng
-                                                    khách.<br></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-action="true" id="GROUP242" class='ladi-element'>
-                                        <div class='ladi-group'><a href="https://www.mewedding.online/kho-bia-thiep"
-                                                target="_blank" id="BUTTON185" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT185" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem và chọn Bìa thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON186" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT186" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem mô tả</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP255" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE95" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE243" class='ladi-element'>
-                                        <h3 class='ladi-headline'>FREE<br></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP259" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div id="GROUP249" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX111" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div>
-                                    <div id="IMAGE92" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON192" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE192" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT192" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Quà Tặng - VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="GROUP250" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="HEADLINE241" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Thiệp Mời <span
-                                                        style="font-weight: normal; font-size: 14px;">(Trong thiệp
-                                                        chính)</span></h3>
-                                            </div>
-                                            <div id="PARAGRAPH124" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Là thiệp mời thể hiện thông
-                                                    tin ngày cưới của 2 nhà Dâu Rể. Có thể <span
-                                                        style="text-decoration-line: underline;">ghi tên<span
-                                                            style="font-weight: bold;"> </span>khách mời</span>, cá nhân
-                                                    hóa thiệp. Và nằm trong thiệp chính luôn.<br></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="GROUP251" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BUTTON193" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT193" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem và chọn Thiệp mời</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-action="true" id="BUTTON194" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT194" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem mô tả</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP256" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE96" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE244" class='ladi-element'>
-                                        <h3 class='ladi-headline'>FREE<br></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP260" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP252" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="BOX112" class='ladi-element'>
-                                        <div class='ladi-box ladi-transition'></div>
-                                    </div><a href="https://www.mewedding.online/kho-bia-thiep" target="_blank"
-                                        id="IMAGE93" class='ladi-element'>
-                                        <div class='ladi-image ladi-transition'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </a>
-                                    <div id="BUTTON195" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE195" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT195" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Quà Tặng - VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="GROUP253" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="HEADLINE242" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Video Chibi</h3>
-                                            </div>
-                                            <div id="PARAGRAPH125" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Là video chibi hoạt hình cho
-                                                    dâu rể, theo các mẫu có sẵn, có thể dùng để trình chiếu ở nhà hàng,
-                                                    sự kiện cưới.<br></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-action="true" id="GROUP254" class='ladi-element'>
-                                        <div class='ladi-group'><a href="https://www.mewedding.online/kho-bia-thiep"
-                                                target="_blank" id="BUTTON196" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT196" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem và chọn Video Chibi</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON197" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT197" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem mô tả</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP257" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE97" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE245" class='ladi-element'>
-                                        <h3 class='ladi-headline'>QUÀ TẶNG<br></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP267" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP223" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP219" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div data-action="true" id="GROUP217" class='ladi-element'>
-                                                <div class='ladi-group'>
-                                                    <div id="BOX101" class='ladi-element'>
-                                                        <div class='ladi-box ladi-transition'></div>
-                                                    </div><a href="https://www.mewedding.online/giao-dien-flowers-vip"
-                                                        id="IMAGE77" class='ladi-element'>
-                                                        <div class='ladi-image ladi-transition'>
-                                                            <div class="ladi-image-background"></div>
-                                                        </div>
-                                                    </a>
-                                                    <div data-action="true" id="HEADLINE230" class='ladi-element'>
-                                                        <h3 class='ladi-headline ladi-transition'>Flowers<br></h3>
-                                                    </div>
-                                                    <div id="PARAGRAPH113" class='ladi-element'>
-                                                        <div class='ladi-paragraph ladi-transition'>Chủ đề Tình Yêu đơm
-                                                            hoa. Lãng mạn và nhẹ nhàng. Tạo cảm giác thân thương trìu
-                                                            mến. Vô cùng cảm xúc và thích thú.<br></div>
-                                                    </div><a href="https://www.mewedding.online/giao-dien-flowers-vip"
-                                                        target="_blank" id="BUTTON148" class='ladi-element'>
-                                                        <div class='ladi-button ladi-transition'>
-                                                            <div class="ladi-button-background"></div>
-                                                            <div id="BUTTON_TEXT148"
-                                                                class='ladi-element ladi-button-headline'>
-                                                                <p class='ladi-headline'>Xem thiệp</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <div data-action="true" id="BUTTON149" class='ladi-element'>
-                                                        <div class='ladi-button ladi-transition'>
-                                                            <div class="ladi-button-background"></div>
-                                                            <div id="BUTTON_TEXT149"
-                                                                class='ladi-element ladi-button-headline'>
-                                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="BUTTON150" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT150" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON158" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_SHAPE158" class='ladi-element ladi-button-shape'>
-                                                <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
-                                                        y="0px" viewBox="0 0 100 100"
-                                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                                        fill="rgba(248, 203, 28, 1)">
-                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                    </svg></div>
-                                            </div>
-                                            <div id="BUTTON_TEXT158" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Giao diện VIP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP261" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE98" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE246" class='ladi-element'>
-                                        <h3 class='ladi-headline'>TOP 3</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="GROUP265" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div data-action="true" id="GROUP211" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP199" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX94" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-bustle-vip"
-                                                target="_blank" id="IMAGE70" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div id="BUTTON113" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_SHAPE113" class='ladi-element ladi-button-shape'>
-                                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                                x="0px" y="0px" viewBox="0 0 100 100"
-                                                                enable-background="new 0 0 100 100" xml:space="preserve"
-                                                                preserveAspectRatio="none" width="100%" height="100%"
-                                                                class="" fill="rgba(248, 203, 28, 1)">
-                                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                            </svg></div>
-                                                    </div>
-                                                    <div id="BUTTON_TEXT113" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div data-action="true" id="HEADLINE223" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Bustle<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH106" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Giao diện náo nhiệt nhộn
-                                                    nhịp, mang đến sự thích thú và hào hứng. Tạo ra những nét đặc sắc
-                                                    riêng vô cùng tinh tế, đáng yêu.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-bustle-vip"
-                                                target="_blank" id="BUTTON114" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT114" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON115" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT115" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="BUTTON141" class='ladi-element'>
-                                        <div class='ladi-button ladi-transition'>
-                                            <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT141" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP262" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE99" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE247" class='ladi-element'>
-                                        <h3 class='ladi-headline'>TOP 1</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(1)->first(); @endphp
                     <div data-action="true" id="GROUP266" class='ladi-element'>
                         <div class='ladi-group'>
-                            <div data-action="true" id="GROUP212" class='ladi-element'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
                                 <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP200" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div id="BOX95" class='ladi-element'>
-                                                <div class='ladi-box ladi-transition'></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-noble-vip"
-                                                target="_blank" id="IMAGE71" class='ladi-element'>
-                                                <div class='ladi-image ladi-transition'>
-                                                    <div class="ladi-image-background"></div>
-                                                </div>
-                                            </a>
-                                            <div id="BUTTON116" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_SHAPE116" class='ladi-element ladi-button-shape'>
-                                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                                x="0px" y="0px" viewBox="0 0 100 100"
-                                                                enable-background="new 0 0 100 100" xml:space="preserve"
-                                                                preserveAspectRatio="none" width="100%" height="100%"
-                                                                class="" fill="rgba(248, 203, 28, 1)">
-                                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                            </svg></div>
-                                                    </div>
-                                                    <div id="BUTTON_TEXT116" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                                    </div>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
                                                 </div>
                                             </div>
-                                            <div data-action="true" id="HEADLINE224" class='ladi-element'>
-                                                <h3 class='ladi-headline ladi-transition'>Noble<br></h3>
-                                            </div>
-                                            <div id="PARAGRAPH107" class='ladi-element'>
-                                                <div class='ladi-paragraph ladi-transition'>Chủ đề tình yêu Rạng Rỡ vui
-                                                    tươi với phong cách Luxury. Tối ưu giao diện hiển thị. Tạo sự dễ
-                                                    chịu, rộn ràng đằm thắm cho người xem.<br></div>
-                                            </div><a href="https://www.mewedding.online/giao-dien-noble-vip"
-                                                target="_blank" id="BUTTON117" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT117" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Xem thiệp</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div data-action="true" id="BUTTON118" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_TEXT118" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Chọn thiệp</p>
-                                                    </div>
-                                                </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="BUTTON142" class='ladi-element'>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT142" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="GROUP263" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE100" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE248" class='ladi-element'>
-                                        <h3 class='ladi-headline'>TOP 2<br></h3>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(2)->first(); @endphp
+                    <div data-action="true" id="GROUP267" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(3)->first(); @endphp
+                    <div data-action="true" id="GROUP235" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(4)->first(); @endphp
+                    <div data-action="true" id="GROUP213" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(5)->first(); @endphp
                     <div data-action="true" id="GROUP269" class='ladi-element'>
                         <div class='ladi-group'>
-                            <div data-action="true" id="GROUP216" class='ladi-element'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
                                 <div class='ladi-group'>
-                                    <div data-action="true" id="GROUP208" class='ladi-element'>
-                                        <div class='ladi-group'>
-                                            <div data-action="true" id="GROUP207" class='ladi-element'>
-                                                <div class='ladi-group'>
-                                                    <div id="BOX99" class='ladi-element'>
-                                                        <div class='ladi-box ladi-transition'></div>
-                                                    </div><a href="https://www.mewedding.online/kho-giao-dien-wd10"
-                                                        id="IMAGE75" class='ladi-element'>
-                                                        <div class='ladi-image ladi-transition'>
-                                                            <div class="ladi-image-background"></div>
-                                                        </div>
-                                                    </a>
-                                                    <div data-action="true" id="HEADLINE228" class='ladi-element'>
-                                                        <h3 class='ladi-headline ladi-transition'>Brightly<br></h3>
-                                                    </div>
-                                                    <div id="PARAGRAPH111" class='ladi-element'>
-                                                        <div class='ladi-paragraph ladi-transition'>Giao diện đơn giản
-                                                            nhẹ hàng trong sáng nhưng vô cùng tinh tế. Cảm giác cuốn hút
-                                                            thích thú lộ rõ khi người xem theo dõi nó.<br></div>
-                                                    </div><a href="https://www.mewedding.online/kho-giao-dien-wd10"
-                                                        target="_blank" id="BUTTON134" class='ladi-element'>
-                                                        <div class='ladi-button ladi-transition'>
-                                                            <div class="ladi-button-background"></div>
-                                                            <div id="BUTTON_TEXT134"
-                                                                class='ladi-element ladi-button-headline'>
-                                                                <p class='ladi-headline'>Xem thiệp</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <div data-action="true" id="BUTTON135" class='ladi-element'>
-                                                        <div class='ladi-button ladi-transition'>
-                                                            <div class="ladi-button-background"></div>
-                                                            <div id="BUTTON_TEXT135"
-                                                                class='ladi-element ladi-button-headline'>
-                                                                <p class='ladi-headline'>Chọn thiệp</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
                                                 </div>
                                             </div>
-                                            <div id="BUTTON136" class='ladi-element'>
-                                                <div class='ladi-button ladi-transition'>
-                                                    <div class="ladi-button-background"></div>
-                                                    <div id="BUTTON_SHAPE136" class='ladi-element ladi-button-shape'>
-                                                        <div class='ladi-shape'><svg xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                                                                x="0px" y="0px" viewBox="0 0 100 100"
-                                                                enable-background="new 0 0 100 100" xml:space="preserve"
-                                                                preserveAspectRatio="none" width="100%" height="100%"
-                                                                class="" fill="rgba(248, 203, 28, 1)">
-                                                                <use xlink:href="#shape_WghkBkKmqG"></use>
-                                                            </svg></div>
-                                                    </div>
-                                                    <div id="BUTTON_TEXT136" class='ladi-element ladi-button-headline'>
-                                                        <p class='ladi-headline'>Giao diện VIP</p>
-                                                    </div>
-                                                </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="BUTTON146" class='ladi-element'>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
-                                            <div id="BUTTON_TEXT146" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="GROUP268" class='ladi-element'>
-                                <div class='ladi-group'>
-                                    <div id="IMAGE102" class='ladi-element'>
-                                        <div class='ladi-image'>
-                                            <div class="ladi-image-background"></div>
-                                        </div>
-                                    </div>
-                                    <div id="HEADLINE250" class='ladi-element'>
-                                        <h3 class='ladi-headline'>NỔI BẬT<br></h3>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(6)->first(); @endphp
+                    <div data-action="true" id="GROUP258" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(7)->first(); @endphp
+                    <div data-action="true" id="GROUP259" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(8)->first(); @endphp
+                    <div data-action="true" id="GROUP260" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div  id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+
                 </div>
             </div>
             <div id="SECTION20" data-tab-id="SECTION_TABS18" class='ladi-section'>
@@ -13677,9 +12954,9 @@
                     </div>
                 </div>
             </div>
-        
-          @livewire('inc.footer')
-            
+
+            @livewire('inc.footer')
+
         </div>
         <div id="backdrop-popup" class="backdrop-popup"></div>
         <div id="backdrop-dropbox" class="backdrop-dropbox"></div>

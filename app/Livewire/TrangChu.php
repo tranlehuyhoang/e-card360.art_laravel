@@ -12,7 +12,7 @@ class TrangChu extends Component
     public function mount()
     {
         // Lấy 8 WeddingCard từ database
-        $this->weddingCards = WeddingCard::take(8)->get();
+        $this->weddingCards = WeddingCard::take(9)->get();
     }
 
     public function render()
