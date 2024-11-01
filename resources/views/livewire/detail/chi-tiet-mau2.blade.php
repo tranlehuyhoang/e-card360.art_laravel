@@ -10,43 +10,29 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="profile" href="https://gmpg.org/xfn/11">
-            <meta property="og:image"
-                content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE-683x1024.jpeg" />
+           {{-- Assuming $invitation is passed to the view --}}
+<title>{{ $invitation->seo_title ?? '' }}</title>
+<meta name="description" content="{{ $invitation->seo_description ?? '' }}" />
+<meta name="robots"
+      content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+<link rel="canonical" href="{{ request()->fullUrl() }}">
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ $invitation->seo_title ?? '' }}" />
+<meta property="og:url" content="{{ request()->fullUrl() }}" />
+<meta property="og:site_name" content="Thiệp cưới online" />
+<meta property="og:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+<meta property="og:image:secure_url" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+<meta property="og:image:width" content="854" />
+<meta property="og:image:height" content="1280" />
+<meta property="og:image:alt" content="{{ $invitation->seo_title ?? '' }}" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $invitation->seo_title ?? '' }}" />
+<meta name="twitter:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+       
 
-            <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-            <title>Mẫu Thiệp Vàng Gold - Thiệp cưới online</title>
-            <meta name="robots"
-                content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href="/mau-thiep/mau-thiep-vang-gold/" />
-            <meta property="og:locale" content="vi_VN" />
-            <meta property="og:type" content="article" />
-            <meta property="og:title" content="Mẫu Thiệp Vàng Gold - Thiệp cưới online" />
-            <meta property="og:url" content="/mau-thiep/mau-thiep-vang-gold/" />
-            <meta property="og:site_name" content="Thiệp cưới online" />
-            <meta property="og:updated_time" content="2024-03-15T06:25:42+00:00" />
-            <meta property="og:image"
-                content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg" />
-            <meta property="og:image:secure_url"
-                content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg" />
-            <meta property="og:image:width" content="854" />
-            <meta property="og:image:height" content="1280" />
-            <meta property="og:image:alt" content="Mẫu Thiệp Vàng Gold" />
-            <meta property="og:image:type" content="image/jpeg" />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Mẫu Thiệp Vàng Gold - Thiệp cưới online" />
-            <meta name="twitter:image"
-                content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg" />
-            <!-- /Rank Math WordPress SEO plugin -->
-
-            <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-            <link rel='dns-prefetch' href='//unpkg.com' />
-            <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online &raquo;"
-                href="/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online &raquo; Dòng bình luận"
-                href="/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml"
-                title="Thiệp cưới online &raquo; Mẫu Thiệp Vàng Gold Dòng bình luận"
-                href="/mau-thiep/mau-thiep-vang-gold/feed/" />
+          
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
 /*! This file is auto-generated */
@@ -493,7 +479,7 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt="" style="max-width: 150px;"
+                        <img src="https://i.imgur.com/saxukyR.png" alt="" style="max-width: 150px;"
                             class="uk-animation-slide-top">
 
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
@@ -948,91 +934,15 @@
                             Gửi lời chúc đến cặp đôi </h2>
                         <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
                             <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
-                            <form wire:submit.prevent="createMessage">
-                                <div class="input-group uk-margin-top" style="color:rgb(255, 255, 255)">
-                                    <label for="">Tên của bạn</label>
-                                    <input style="border:1px solid white ;color:rgb(0, 0, 0)" wire:model="authorName" type="text"
-                                        class="input blur-bg" required />
-                                </div>
-                                <div class="input-group uk-margin-top">
-                                    <label for="" style="color:white">Lời nhắn gửi</label>
-                                    <textarea style="border:1px solid white; color:rgb(0, 0, 0)" wire:model="messageContent"
-                                        class="input-text text-white blur-bg" cols="30" rows="5" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary send_message uk-margin-top"
-                                    style="color:white">Gửi lời chúc</button>
-                            </form>
+                            @livewire('form.message', ['invitationId' => $invitation->id])
                         </div>
                     </div>
                 </section>
                 <!-- END TIN NHẮN -->
 
                 <!-- FORM XÁC NHẬN -->
-                <section id="form" class="form" style="display:block">
-                    <div class="container">
-                        <form wire:submit.prevent="confirmAttendance"
-                            style="background-image:url(https://static.vecteezy.com/system/resources/previews/016/407/415/original/paper-cut-sweet-pink-envelope-and-heart-with-copy-space-for-design-valentine-s-day-or-love-day-background-concept-send-a-letter-to-a-lover-couple-free-vector.jpg)">
-                            <h2 class="section-title">Xác nhận tham dự</h2>
-                            <p class="sub-title text-center " style="
-                            text-align: center;
-                        ">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
-                            <div class="form-container">
-                                <div class="group-radio">
-                                    <label class="radio-container">TƯ GIA NHÀ GÁI
-                                        <span class="tooltip">
-                                            <p>{{ $invitation->bride_family_address }}</p>
-                                        </span>
-                                        <input type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ GÁI" name="attendanceLocation" required>
-                                        <span class="checkmark"></span>
-                                    </label>
+                @livewire('form.attendance', ['invitationId' => $invitation->id, 'invitation' => $invitation])
 
-                                    <label class="radio-container">TƯ GIA NHÀ TRAI
-                                        <span class="tooltip">
-                                            <p>{{ $invitation->groom_family_address }}</p>
-                                        </span>
-                                        <input checked type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ TRAI" name="attendanceLocation" required>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="group-input">
-                                    <label>Tên Khách Mời</label>
-                                    <input type="text" class="input" wire:model="attendeeName" required placeholder="Tên Khách Mời">
-                                </div>
-
-                                <div class="group-input">
-                                    <p class="group-title"></p>
-                                    <div class="group-select">
-                                        <select wire:model="attendanceStatus" class="uk-text-truncate"
-                                            style="max-width:320px" required>
-                                            <option value="">Chọn trạng thái tham dự</option>
-                                            <option value="Có tôi sẽ đến">Có tôi sẽ đến</option>
-                                            <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham dự
-                                                được !</option>
-                                        </select>
-                                        <i class='bx bx-chevron-down'></i>
-                                    </div>
-                                    <div class="group-select">
-                                        <select wire:model="numberOfGuests" required>
-                                            <option value="">Chọn số lượng người</option>
-                                            <option value="1">1 Người</option>
-                                            <option value="2">2 Người</option>
-                                            <option value="3">3 Người</option>
-                                        </select>
-                                        <i class='bx bx-chevron-down'></i>
-                                    </div>
-                                </div>
-                                <div class="group-input">
-                                    <label>Ghi chú</label>
-                                    <textarea wire:model="attendanceNote" cols="30" rows="4" placeholder="Nhập ghi chú của bạn"></textarea>
-                                </div>
-                            
-                                <div class="group-input">
-                                    <button type="submit" class="wedding-submit" style="margin: 10px 0;">Xác nhận</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
 
 
                 <!-- END FORM XÁC NHẬN -->

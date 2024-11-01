@@ -80,20 +80,5 @@ class ChiTietMau2 extends Component
         }
     }
 
-    public function createMessage()
-    {
-        $this->validate([
-            'authorName' => 'required|string|max:255',
-            'messageContent' => 'required|string',
-        ]);
-
-        Message::create([
-            'wedding_invitation_id' => $this->invitation->id,
-            'name' => $this->authorName,
-            'message' => $this->messageContent,
-        ]);
-
-        $this->reset(['authorName', 'messageContent']);
-        session()->flash('message', 'Lời chúc đã được gửi thành công!');
-    }
+    
 }

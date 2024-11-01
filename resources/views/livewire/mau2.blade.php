@@ -9,13 +9,11 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="profile" href="https://gmpg.org/xfn/11">
-            <meta property="og:image"
-                content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE-683x1024.jpeg" />
+         
 
             <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
             <title>Mẫu Thiệp Vàng Gold - Thiệp cưới online</title>
-            <meta name="robots"
-                content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+         
             <link rel="canonical" href="/mau-thiep/mau-thiep-vang-gold/" />
             <meta property="og:locale" content="vi_VN" />
             <meta property="og:type" content="article" />
@@ -35,17 +33,8 @@
             <meta name="twitter:title" content="Mẫu Thiệp Vàng Gold - Thiệp cưới online" />
             <meta name="twitter:image"
                 content="/assets_1/wp-content/uploads/2024/01/6CF32DE4-3EF7-49AC-B042-E4FA3AFE1CFE.jpeg" />
-            <!-- /Rank Math WordPress SEO plugin -->
-
-            <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-            <link rel='dns-prefetch' href='//unpkg.com' />
-            <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online &raquo;"
-                href="/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online &raquo; Dòng bình luận"
-                href="/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml"
-                title="Thiệp cưới online &raquo; Mẫu Thiệp Vàng Gold Dòng bình luận"
-                href="/mau-thiep/mau-thiep-vang-gold/feed/" />
+ 
+          
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
 /*! This file is auto-generated */
@@ -505,7 +494,7 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt=""
+                        <img src="https://i.imgur.com/saxukyR.png" alt=""
                             style="max-width: 150px;" class="uk-animation-slide-top">
 
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">

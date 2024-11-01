@@ -514,7 +514,7 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt=""
+                        <img src="https://i.imgur.com/saxukyR.png" alt=""
                             style="max-width: 150px;" class="uk-animation-slide-top">
 
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">

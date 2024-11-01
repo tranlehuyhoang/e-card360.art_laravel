@@ -215,6 +215,25 @@ class WeddingInvitationResource extends Resource
                                     ->label('Banner 5')
                                     ->preserveFilenames(),
                             ]),
+                            Forms\Components\Tabs\Tab::make('SEO Settings')->schema([
+                                Forms\Components\TextInput::make('seo_title')
+                                    ->label('Tiêu đề')
+                                    ->required()
+                                    ->maxLength(255),
+                        
+                                Forms\Components\Textarea::make('seo_description')
+                                    ->label('Mô tả website')
+                                    ->required()
+                                    ->maxLength(500),
+                        
+                                Forms\Components\FileUpload::make('seo_image')
+                                    ->label('Ảnh website'),
+                                  
+                                  
+                        
+                                Forms\Components\TextInput::make('background_music')
+                                    ->label('Link nhạc'),
+                            ]),
 
                     ])->columnSpanFull(),
             ]);

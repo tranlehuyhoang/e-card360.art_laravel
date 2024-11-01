@@ -25,7 +25,6 @@ class WeddingInvitationResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
     protected static ?string $navigationLabel = 'Thiệp Cưới';
 
-    protected static ?string $navigationGroup = 'Quản Lý';
 
     public static function form(Form $form): Form
     {

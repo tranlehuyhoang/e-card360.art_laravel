@@ -2,43 +2,14 @@
     <div>
         <!doctype html>
         <html lang="vi" prefix="og: https://ogp.me/ns#">
-    
+
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="profile" href="https://gmpg.org/xfn/11">
-            <meta property="og:image" content="/assets_1/wp-content/uploads/2023/12/img9-768x1024.jpg" />
-    
-            <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+
             <title>Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online</title>
-            <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href="/mau-thiep/mau-thiep-hien-dai-2/" />
-            <meta property="og:locale" content="vi_VN" />
-            <meta property="og:type" content="article" />
-            <meta property="og:title" content="Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online" />
-            <meta property="og:url" content="/mau-thiep/mau-thiep-hien-dai-2/" />
-            <meta property="og:site_name" content="Thiệp cưới online" />
-            <meta property="og:updated_time" content="2024-04-13T03:39:23+00:00" />
-            <meta property="og:image" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <meta property="og:image:secure_url" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <meta property="og:image:width" content="1280" />
-            <meta property="og:image:height" content="1706" />
-            <meta property="og:image:alt" content="Mẫu Thiệp Hiện Đại 2" />
-            <meta property="og:image:type" content="image/jpeg" />
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online" />
-            <meta name="twitter:image" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <!-- /Rank Math WordPress SEO plugin -->
-    
-            <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-            <link rel='dns-prefetch' href='//unpkg.com' />
-            <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online &raquo;"
-                href="/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online &raquo; Dòng bình luận"
-                href="/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml"
-                title="Thiệp cưới online &raquo; Mẫu Thiệp Hiện Đại 2 Dòng bình luận"
-                href="/mau-thiep/mau-thiep-hien-dai-2/feed/" />
+
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
     /*! This file is auto-generated */
@@ -64,11 +35,11 @@
                 .wp-block-rank-math-toc-block nav ol {
                     counter-reset: item
                 }
-    
+
                 .wp-block-rank-math-toc-block nav ol li {
                     display: block
                 }
-    
+
                 .wp-block-rank-math-toc-block nav ol li:before {
                     content: counters(item, ".") ". ";
                     counter-increment: item
@@ -85,7 +56,7 @@
                     padding: calc(.667em + 2px) calc(1.333em + 2px);
                     font-size: 1.125em
                 }
-    
+
                 .wp-block-file__button {
                     background: #32373c;
                     color: #fff;
@@ -142,284 +113,283 @@
                     --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
                     --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
                 }
-    
+
                 :where(.is-layout-flex) {
                     gap: 0.5em;
                 }
-    
+
                 :where(.is-layout-grid) {
                     gap: 0.5em;
                 }
-    
+
                 body .is-layout-flex {
                     display: flex;
                 }
-    
+
                 .is-layout-flex {
                     flex-wrap: wrap;
                     align-items: center;
                 }
-    
+
                 .is-layout-flex> :is(*, div) {
                     margin: 0;
                 }
-    
+
                 body .is-layout-grid {
                     display: grid;
                 }
-    
+
                 .is-layout-grid> :is(*, div) {
                     margin: 0;
                 }
-    
+
                 :where(.wp-block-columns.is-layout-flex) {
                     gap: 2em;
                 }
-    
+
                 :where(.wp-block-columns.is-layout-grid) {
                     gap: 2em;
                 }
-    
+
                 :where(.wp-block-post-template.is-layout-flex) {
                     gap: 1.25em;
                 }
-    
+
                 :where(.wp-block-post-template.is-layout-grid) {
                     gap: 1.25em;
                 }
-    
+
                 .has-black-color {
                     color: var(--wp--preset--color--black) !important;
                 }
-    
+
                 .has-cyan-bluish-gray-color {
                     color: var(--wp--preset--color--cyan-bluish-gray) !important;
                 }
-    
+
                 .has-white-color {
                     color: var(--wp--preset--color--white) !important;
                 }
-    
+
                 .has-pale-pink-color {
                     color: var(--wp--preset--color--pale-pink) !important;
                 }
-    
+
                 .has-vivid-red-color {
                     color: var(--wp--preset--color--vivid-red) !important;
                 }
-    
+
                 .has-luminous-vivid-orange-color {
                     color: var(--wp--preset--color--luminous-vivid-orange) !important;
                 }
-    
+
                 .has-luminous-vivid-amber-color {
                     color: var(--wp--preset--color--luminous-vivid-amber) !important;
                 }
-    
+
                 .has-light-green-cyan-color {
                     color: var(--wp--preset--color--light-green-cyan) !important;
                 }
-    
+
                 .has-vivid-green-cyan-color {
                     color: var(--wp--preset--color--vivid-green-cyan) !important;
                 }
-    
+
                 .has-pale-cyan-blue-color {
                     color: var(--wp--preset--color--pale-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-cyan-blue-color {
                     color: var(--wp--preset--color--vivid-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-purple-color {
                     color: var(--wp--preset--color--vivid-purple) !important;
                 }
-    
+
                 .has-black-background-color {
                     background-color: var(--wp--preset--color--black) !important;
                 }
-    
+
                 .has-cyan-bluish-gray-background-color {
                     background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
                 }
-    
+
                 .has-white-background-color {
                     background-color: var(--wp--preset--color--white) !important;
                 }
-    
+
                 .has-pale-pink-background-color {
                     background-color: var(--wp--preset--color--pale-pink) !important;
                 }
-    
+
                 .has-vivid-red-background-color {
                     background-color: var(--wp--preset--color--vivid-red) !important;
                 }
-    
+
                 .has-luminous-vivid-orange-background-color {
                     background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
                 }
-    
+
                 .has-luminous-vivid-amber-background-color {
                     background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
                 }
-    
+
                 .has-light-green-cyan-background-color {
                     background-color: var(--wp--preset--color--light-green-cyan) !important;
                 }
-    
+
                 .has-vivid-green-cyan-background-color {
                     background-color: var(--wp--preset--color--vivid-green-cyan) !important;
                 }
-    
+
                 .has-pale-cyan-blue-background-color {
                     background-color: var(--wp--preset--color--pale-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-cyan-blue-background-color {
                     background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-purple-background-color {
                     background-color: var(--wp--preset--color--vivid-purple) !important;
                 }
-    
+
                 .has-black-border-color {
                     border-color: var(--wp--preset--color--black) !important;
                 }
-    
+
                 .has-cyan-bluish-gray-border-color {
                     border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
                 }
-    
+
                 .has-white-border-color {
                     border-color: var(--wp--preset--color--white) !important;
                 }
-    
+
                 .has-pale-pink-border-color {
                     border-color: var(--wp--preset--color--pale-pink) !important;
                 }
-    
+
                 .has-vivid-red-border-color {
                     border-color: var(--wp--preset--color--vivid-red) !important;
                 }
-    
+
                 .has-luminous-vivid-orange-border-color {
                     border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
                 }
-    
+
                 .has-luminous-vivid-amber-border-color {
                     border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
                 }
-    
+
                 .has-light-green-cyan-border-color {
                     border-color: var(--wp--preset--color--light-green-cyan) !important;
                 }
-    
+
                 .has-vivid-green-cyan-border-color {
                     border-color: var(--wp--preset--color--vivid-green-cyan) !important;
                 }
-    
+
                 .has-pale-cyan-blue-border-color {
                     border-color: var(--wp--preset--color--pale-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-cyan-blue-border-color {
                     border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
                 }
-    
+
                 .has-vivid-purple-border-color {
                     border-color: var(--wp--preset--color--vivid-purple) !important;
                 }
-    
+
                 .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
                     background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
                 }
-    
+
                 .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
                     background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
                 }
-    
+
                 .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
                     background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
                 }
-    
+
                 .has-luminous-vivid-orange-to-vivid-red-gradient-background {
                     background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
                 }
-    
+
                 .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
                     background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
                 }
-    
+
                 .has-cool-to-warm-spectrum-gradient-background {
                     background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
                 }
-    
+
                 .has-blush-light-purple-gradient-background {
                     background: var(--wp--preset--gradient--blush-light-purple) !important;
                 }
-    
+
                 .has-blush-bordeaux-gradient-background {
                     background: var(--wp--preset--gradient--blush-bordeaux) !important;
                 }
-    
+
                 .has-luminous-dusk-gradient-background {
                     background: var(--wp--preset--gradient--luminous-dusk) !important;
                 }
-    
+
                 .has-pale-ocean-gradient-background {
                     background: var(--wp--preset--gradient--pale-ocean) !important;
                 }
-    
+
                 .has-electric-grass-gradient-background {
                     background: var(--wp--preset--gradient--electric-grass) !important;
                 }
-    
+
                 .has-midnight-gradient-background {
                     background: var(--wp--preset--gradient--midnight) !important;
                 }
-    
+
                 .has-small-font-size {
                     font-size: var(--wp--preset--font-size--small) !important;
                 }
-    
+
                 .has-medium-font-size {
                     font-size: var(--wp--preset--font-size--medium) !important;
                 }
-    
+
                 .has-large-font-size {
                     font-size: var(--wp--preset--font-size--large) !important;
                 }
-    
+
                 .has-x-large-font-size {
                     font-size: var(--wp--preset--font-size--x-large) !important;
                 }
-    
+
                 :where(.wp-block-post-template.is-layout-flex) {
                     gap: 1.25em;
                 }
-    
+
                 :where(.wp-block-post-template.is-layout-grid) {
                     gap: 1.25em;
                 }
-    
+
                 :where(.wp-block-columns.is-layout-flex) {
                     gap: 2em;
                 }
-    
+
                 :where(.wp-block-columns.is-layout-grid) {
                     gap: 2em;
                 }
-    
+
                 :root :where(.wp-block-pullquote) {
                     font-size: 1.5em;
                     line-height: 1.6;
                 }
             </style>
             <link rel='stylesheet' id='uikit-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='reset uikit-css'
                 href='/assets_1/wp-content/themes/wedding-studio/css/reset1.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='remixicon-css'
@@ -427,15 +397,14 @@
             <link rel='stylesheet' id='preload-css'
                 href='/assets_1/wp-content/themes/wedding-studio/css/preload.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='wedding reset-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='fancybox-css'
-                href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?ver=1.0.0' media='all' />
+                href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?ver=1.0.0'
+                media='all' />
             <link rel='stylesheet' id='swiper slide-css'
                 href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='animation-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='aos style-css'
                 href='/assets_1/wp-content/themes/wedding-studio/css/aos.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='footer style-css'
@@ -446,14 +415,12 @@
                 href='/assets_1/wp-content/themes/wedding-studio/css/theme.css?ver=1.0.0' media='all' />
             <script src="/assets_1/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js">
             </script>
-            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-                id="jquery-migrate-js"></script>
-            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0"
-                id="Jquery-js">
+            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js">
+            </script>
+            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0" id="Jquery-js">
             </script>
             <link rel="https://api.w.org/" href="/wp-json/" />
-            <link rel="alternate" title="JSON" type="application/json"
-                href="/wp-json/wp/v2/mau-thiep/1304" />
+            <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/mau-thiep/1304" />
             <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
             <meta name="generator" content="WordPress 6.6.2" />
             <link rel='shortlink' href='/?p=1304' />
@@ -478,33 +445,32 @@
                 href="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-180x180.png" />
             <meta name="msapplication-TileImage"
                 content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png" />
-            <link rel="stylesheet"
-                href="/assets_1/wp-content/themes/wedding-studio/assets/hiendai2/css/style.css">
+            <link rel="stylesheet" href="/assets_1/wp-content/themes/wedding-studio/assets/hiendai2/css/style.css">
         </head>
-    
+
         <body
             class="mau-thiep-template mau-thiep-template-templates mau-thiep-template-hiendai2 mau-thiep-template-templateshiendai2-php single single-mau-thiep postid-1304 no-sidebar">
-    
+
             <body>
                 <!-- PRELOAD -->
                 <div id="preloader" class="uk-position-fixed uk-background-muted uk-position-z-index"
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
-    
+
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt=""
-                            style="max-width: 150px;" class="uk-animation-slide-top">
-    
+                        <img src="https://i.imgur.com/saxukyR.png" alt="" style="max-width: 150px;"
+                            class="uk-animation-slide-top">
+
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                             Mẫu Thiệp Hiện Đại 2</h2>
-    
+
                     </div>
-    
+
                 </div>
                 <!-- END PRELOAD -->
                 <main>
                     <!-- BANNER -->
                     <section id="banner" class="section-banner">
-    
+
                         <div class="banner-container">
                             <img src="/assets_1/wp-content/themes/wedding-studio/assets/hiendai2/img/bg-banner.png"
                                 alt="" class="banner-bg">
@@ -530,7 +496,7 @@
                             <div class="banner-name-right">
                                 <h2 class="bride_name" data-aos="fade-left" data-aos-duration="3000">Phương Ánh</h2>
                             </div>
-    
+
                         </div>
                         <div class="date-group" data-aos="fade-up" data-aos-duration="2000">
                             <div class="banner-date">04</div>
@@ -543,8 +509,8 @@
                     <section id="name" class="section-name">
                         <div class="container name uk-width-1-1">
                             <div class="group-name">
-                                <h2 class="uk-heading-small script-font uk-text-center uk-padding-small" data-aos="fade-up"
-                                    data-aos-duration="3000">
+                                <h2 class="uk-heading-small script-font uk-text-center uk-padding-small"
+                                    data-aos="fade-up" data-aos-duration="3000">
                                     Công Thành </h2>
                                 <span class="a">&</span>
                                 <h2 class="uk-heading-small script-font uk-text-center uk-padding-small"
@@ -558,11 +524,11 @@
                                 .
                                 <span class="invitation_year">2024</span>
                             </div>
-    
+
                         </div>
                     </section>
                     <!-- END NAME -->
-    
+
                     <!-- ABOUT -->
                     <section id="about" class="section-about">
                         <div class="section-heading">
@@ -583,12 +549,11 @@
                                         cùng gia đình.</p>
                                     <hr />
                                 </div>
-    
+
                             </div>
                             <div class="about-card" style="order:1">
                                 <div class="about-media" data-aos="fade-right" data-aos-duration="3000">
-                                    <img src="/assets_1/wp-content/uploads/2024/01/img6.jpg" alt=""
-                                        class="groom_img">
+                                    <img src="/assets_1/wp-content/uploads/2024/01/img6.jpg" alt="" class="groom_img">
                                 </div>
                                 <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
                                     <p class="title">Chú rể</p>
@@ -599,13 +564,13 @@
                                         hướng ngoại.</p>
                                     <hr />
                                 </div>
-    
+
                             </div>
                         </div>
                     </section>
                     <!-- END ABOUT -->
                     <!-- TIMELINE -->
-    
+
                     <section id="time-line" class="time-line-section">
                         <div class="time-line container">
                             <span class="line1"></span>
@@ -656,7 +621,7 @@
                         </div>
                     </section>
                     <!-- END TIMELINE -->
-    
+
                     <!-- ALBUM -->
                     <section id="album" class="uk-section" data-aos="fade-up" data-aos-duration="3000">
                         <div class="section-heading">
@@ -758,20 +723,20 @@
                             padding: 80px 0;
                             background: var(--bg)
                         }
-    
+
                         #video .section-title {
                             text-align: center;
                             color: var(--primary-color)
                         }
-    
+
                         #video .subtitle {
                             text-align: center;
                         }
-    
+
                         .video-container {
                             margin-top: 40px
                         }
-    
+
                         .video-list {
                             display: flex;
                             flex-direction: column;
@@ -779,7 +744,7 @@
                             justify-content: center;
                             align-items: center;
                         }
-    
+
                         .video-list iframe {
                             aspect-ratio: 16/9;
                             width: 100%;
@@ -796,11 +761,11 @@
                             </h2>
                         </div>
                         <div class="video-container">
-    
+
                             <div class="video-list">
                                 <div class="video-item">
                                 </div>
-    
+
                             </div>
                         </div>
                     </section>
@@ -814,7 +779,7 @@
                             </div>
                             <div class="uk-section">
                                 <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-    
+
                                     <div class="invitation-card">
                                         <div class="invitation-media">
                                             <img src="/assets_1/wp-content/uploads/2024/01/926C5FC6-16AB-4C56-9CBE-F9EF8B613250.jpeg"
@@ -822,7 +787,7 @@
                                         </div>
                                         <div class="invitation-body">
                                             <h3 class="invitation-title">TƯ GIA NHÀ GÁI</h3>
-    
+
                                             <div class="uk-light">
                                                 <a href="tel:981742365" class="uk-icon-button uk-margin-small-right"
                                                     target="_blank" uk-icon="receiver"></a>
@@ -834,7 +799,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="invitation-card">
                                         <div class="invitation-media">
                                             <img src="/assets_1/wp-content/uploads/2024/01/D2AEBDFB-38E9-44DD-A9EC-E3657031EB30.jpeg"
@@ -842,7 +807,7 @@
                                         </div>
                                         <div class="invitation-body">
                                             <h3 class="invitation-title">TƯ GIA NHÀ TRAI</h3>
-    
+
                                             <div class="uk-light">
                                                 <a href="tel:981742365" class="uk-icon-button uk-margin-small-right"
                                                     target="_blank" uk-icon="receiver"></a>
@@ -862,7 +827,7 @@
                     <!-- DRESS CODE -->
                     <!-- END DRESS CODE -->
                     <!-- COUNT DOWN -->
-    
+
                     <section id="countdown-secton"
                         class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
                         style="background-image:url(/assets_1/wp-content/uploads/2024/01/79F59410-7275-47A9-906F-9BA0E1C03B47.jpeg)">
@@ -885,21 +850,21 @@
                                     </div>
                                     <div class="uk-countdown-label uk-margin-small uk-text-center ">Ngày</div>
                                 </div>
-    
+
                                 <div>
                                     <div
                                         class="uk-countdown-number uk-countdown-hours uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
                                     </div>
                                     <div class="uk-countdown-label uk-margin-small uk-text-center ">Giờ</div>
                                 </div>
-    
+
                                 <div>
                                     <div
                                         class="uk-countdown-number uk-countdown-minutes uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
                                     </div>
                                     <div class="uk-countdown-label uk-margin-small uk-text-center ">Phút</div>
                                 </div>
-    
+
                                 <div>
                                     <div
                                         class="uk-countdown-number uk-countdown-seconds uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
@@ -907,13 +872,13 @@
                                     <div class="uk-countdown-label uk-margin-small uk-text-center ">Giây</div>
                                 </div>
                             </div>
-    
+
                         </div>
                     </section>
-    
+
                     <!-- END COUNT DOWN -->
-    
-    
+
+
                     <!-- LỜI CHÚC -->
                     <!-- TIN NHẮN -->
                     <section id="message" class="section-message uk-background-cover uk-section"
@@ -930,18 +895,18 @@
                   mua xe 4 bánh nhé. Phải thật hạnh phúc mày nhé! Hi hi.</p>
               </div> -->
                             </div>
-    
+
                             <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
-    
+
                                 <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
                                 <form action="" id="messageForm" method="POST">
-    
+
                                     <input type='hidden' id="postId" value='1304' />
                                     <div class="input-group uk-margin-top" style="color:white">
                                         <label for="">
                                             Tên của bạn </label>
-                                        <input style="border:1px solid white" id="m_name" type="text" class="input blur-bg"
-                                            value="" required />
+                                        <input style="border:1px solid white" id="m_name" type="text"
+                                            class="input blur-bg" value="" required />
                                     </div>
                                     <div class="input-group uk-margin-top">
                                         <label for="" style="color:white">
@@ -1025,18 +990,20 @@
                                 <p class="sub-title">Hãy cho chúng tôi biết bạn sẽ đến tham dự nhé!</p>
                                 <div class="form-container">
                                     <div class="group-radio">
-    
+
                                         <label class="radio-container">TƯ GIA NHÀ GÁI <span class="tooltip">
                                                 <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                                             </span>
-                                            <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ GÁI">
+                                            <input type="radio" name="fav_language" id="nha_trai"
+                                                value="TƯ GIA NHÀ GÁI">
                                             <span class="checkmark"></span>
                                         </label>
-    
+
                                         <label class="radio-container">TƯ GIA NHÀ TRAI <span class="tooltip">
                                                 <p>ẤP HẠ, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
                                             </span>
-                                            <input type="radio" name="fav_language" id="nha_trai" value="TƯ GIA NHÀ TRAI">
+                                            <input type="radio" name="fav_language" id="nha_trai"
+                                                value="TƯ GIA NHÀ TRAI">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -1045,14 +1012,15 @@
                                         <input type="text" class="input" id="f_name" required=""
                                             placeholder="Tên Khách Mời">
                                     </div>
-    
+
                                     <div class="group-input">
                                         <p class="group-title"></p>
                                         <div class="group-select">
                                             <select name="" id="wedding-select" class="uk-text-truncate"
                                                 style="max-width:320px">
                                                 <option value="Có tôi sẽ đến">Có tôi sẽ đến </option>
-                                                <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham dự
+                                                <option value="Xin Lỗi tôi không tham dự được !">Xin Lỗi tôi không tham
+                                                    dự
                                                     được
                                                     ! </option>
                                             </select>
@@ -1073,17 +1041,17 @@
               </textarea>
                                     </div>
                                     <div class="message-form">
-    
+
                                     </div>
                                     <div class="group-input">
                                         <button type="submit" class="wedding-submit">Xác nhận</button>
                                     </div>
                                 </div>
-    
+
                             </form>
                         </div>
                     </section>
-    
+
                     <script>
                         //XỬ LÝ FORM
     $(document).ready(function(){
@@ -1130,12 +1098,13 @@
     })
                     </script>
                     <!-- END FORM XÁC NHẬN -->
-    
+
                     <!-- GỬI QUÀ -->
                     <section id="gift" class="section-gift" style="display:block">
                         <div class="container">
                             <p class="subtitle"></p>
-                            <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ DÂU VÀ
+                            <h2 class="uk-heading-small uk-text-center script-font uk-text-cappercase">GỬI QUÀ ĐẾN CÔ
+                                DÂU VÀ
                                 CHÚ
                                 RỂ</h2>
                             <a href="#box-gift" data-fancybox="" class="btn btn-primary">
@@ -1146,7 +1115,7 @@
                                             d="M216 72h-35.08c.39-.33.79-.65 1.17-1A29.53 29.53 0 0 0 192 49.57A32.62 32.62 0 0 0 158.44 16A29.53 29.53 0 0 0 137 25.91a54.94 54.94 0 0 0-9 14.48a54.94 54.94 0 0 0-9-14.48A29.53 29.53 0 0 0 97.56 16A32.62 32.62 0 0 0 64 49.57A29.53 29.53 0 0 0 73.91 71c.38.33.78.65 1.17 1H40a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16v64a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-64a16 16 0 0 0 16-16V88a16 16 0 0 0-16-16m-67-35.49a13.69 13.69 0 0 1 10-4.5h.49A16.62 16.62 0 0 1 176 49.08a13.69 13.69 0 0 1-4.5 10c-9.49 8.4-25.24 11.36-35 12.4c1.2-10.59 4.5-25.98 12.5-34.97m-64.09.36A16.63 16.63 0 0 1 96.59 32h.49a13.69 13.69 0 0 1 10 4.5c8.39 9.48 11.35 25.2 12.39 34.92c-9.72-1-25.44-4-34.92-12.39a13.69 13.69 0 0 1-4.5-10a16.6 16.6 0 0 1 4.82-12.16ZM40 88h80v32H40Zm16 48h64v64H56Zm144 64h-64v-64h64Zm16-80h-80V88h80z" />
                                     </g>
                                 </svg>
-    
+
                             </a>
                             <div id="box-gift">
                                 <div class="gift-container" id="gift-container">
@@ -1158,27 +1127,28 @@
                                         <div class="gift-body">
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
-    
+
                         </div>
-    
-    
+
+
                     </section>
                     <!-- END GỬI QUÀ -->
-    
+
                     <!-- THANKYOU -->
                     <!-- THANK YOU -->
                     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
                         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-                        <img src="/assets_1/wp-content/uploads/2024/01/0D651757-8A73-4D91-80F8-6977659C564C.jpeg"
-                            alt="" class="thankyou-bg thankyou_img" style="object-position:" />
+                        <img src="/assets_1/wp-content/uploads/2024/01/0D651757-8A73-4D91-80F8-6977659C564C.jpeg" alt=""
+                            class="thankyou-bg thankyou_img" style="object-position:" />
                         <div class="thankyou-body container uk-position-relative uk-position-z-index">
                             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
                                 data-aos-duration="2000">Thank you!</h2>
                             <p class="thankyou-des" data-aos="fade" data-aos-duration="3000">
-                            <p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám ơn !
+                            <p>Sự hiện diện của quý vị là niềm vui và vinh hạnh cho gia đình chúng tôi, Chân thành cám
+                                ơn !
                             </p>
                             <p><img loading="lazy" decoding="async" class="aligncenter wp-image-11769 size-thumbnail"
                                     src="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/04/12120950/music-150x150.png"
@@ -1212,12 +1182,11 @@
      $(':root').css('--secondary-color', '');
      $(':root').css('--bg', '');
                 </script>
-    
+
                 <!-- AUDIO -->
-                <audio
-                    src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3"
+                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3"
                     controls autoplay id="audio">
-    
+
                 </audio>
                 <!-- END AUDIO -->
                 <!-- FOOTER -->
@@ -1230,29 +1199,30 @@
                     <i class='ri-volume-mute-fill'></i>
                 </button>
                 <!-- END FOOTER -->
-    
+
                 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?ver=1.0.0"
                     id="fancybox js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0"
-                    id="uikit js-js"></script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0" id="uikit js-js">
+                </script>
                 <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0"
                     id="uikit icon-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0"
-                    id="preloader js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0"
-                    id="aos js-js">
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0" id="preloader js-js">
                 </script>
-                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=1.0.0" id="swiper slide-js">
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0" id="aos js-js">
                 </script>
-                <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js?ver=1.0.0" id="scrollrevea-js">
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=1.0.0"
+                    id="swiper slide-js">
+                </script>
+                <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js?ver=1.0.0"
+                    id="scrollrevea-js">
                 </script>
                 <script src="/assets_1/wp-content/themes/wedding-studio/js/main-wedding.js?ver=1.0.0"
                     id="main wedding-js"></script>
-                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2" id="comment-reply-js"
-                    async data-wp-strategy="async"></script>
-    
+                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2" id="comment-reply-js" async
+                    data-wp-strategy="async"></script>
+
             </body>
-    
+
         </html>
         <script>
             var swiper = new Swiper(".banner-slide", {

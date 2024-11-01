@@ -60,6 +60,10 @@ class WeddingInvitation extends Model
         'groom_family_description',
         'bride_family_time',
         'groom_family_time',
+        'seo_title',          // New field
+        'seo_description',    // New field
+        'seo_image',          // New field
+        'background_music',    // New field
     ];
     protected $casts = [
         'event_album' => 'array', // Chuyển đổi sang mảng

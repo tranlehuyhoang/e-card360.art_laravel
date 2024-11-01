@@ -491,7 +491,7 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
     
                     <div class="uk-position-center uk-text-center">
-                        <img src="/assets_1/wp-content/uploads/2024/01/logo-doc3.png" alt=""
+                        <img src="https://i.imgur.com/saxukyR.png" alt=""
                             style="max-width: 150px;" class="uk-animation-slide-top">
     
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
@@ -878,7 +878,7 @@
                                     d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z" />
                             </svg>
                             <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid
-                                uk-countdown="date: 2024-02-04 00:00:00">
+                                uk-countdown="date: 2024-02-09 00:00:00">
                                 <div>
                                     <div
                                         class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
