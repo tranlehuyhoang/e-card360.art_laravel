@@ -866,7 +866,7 @@
                                         <a href="" class="phone_number" data-fancybox>
                                             <i class="ri-image-circle-fill"></i>
                                         </a>
-                                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map"
+                                        <a href="{{ $invitation->bride_family_map_link }}" class="invi_map"
                                             target="_blank">
                                             <i class="ri-map-2-fill"></i>
                                         </a>
