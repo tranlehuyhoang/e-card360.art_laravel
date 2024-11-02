@@ -20,6 +20,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Widgets\WeddingInvitationChart;
 use App\Filament\Widgets\NewUsersChart;
 use App\Filament\Widgets\LatestWeddingInvitationsWidget;
+use App\Http\Middleware\CheckAdminRole;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -47,7 +48,7 @@ class AdminPanelProvider extends PanelProvider
                 LatestWeddingInvitationsWidget::class,
             ])
             ->plugins([
-                // \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
                 \Hasnayeen\Themes\ThemesPlugin::make()
             ])
             ->middleware([
@@ -65,6 +66,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+     
             ])
             ->brandName('E-CARD360.ART');
     }
