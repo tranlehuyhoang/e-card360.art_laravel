@@ -3,36 +3,34 @@
     <div>
 
 
-        <!doctype html>
-        <html lang="vi" prefix="og: https://ogp.me/ns#">
 
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="profile" href="https://gmpg.org/xfn/11">
-           {{-- Assuming $invitation is passed to the view --}}
-<title>{{ $invitation->seo_title ?? '' }}</title>
-<meta name="description" content="{{ $invitation->seo_description ?? '' }}" />
-<meta name="robots"
-      content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-<link rel="canonical" href="{{ request()->fullUrl() }}">
-<meta property="og:locale" content="vi_VN" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="{{ $invitation->seo_title ?? '' }}" />
-<meta property="og:url" content="{{ request()->fullUrl() }}" />
-<meta property="og:site_name" content="Thiệp cưới online" />
-<meta property="og:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
-<meta property="og:image:secure_url" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
-<meta property="og:image:width" content="854" />
-<meta property="og:image:height" content="1280" />
-<meta property="og:image:alt" content="{{ $invitation->seo_title ?? '' }}" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ $invitation->seo_title ?? '' }}" />
-<meta name="twitter:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
-       
+            {{-- Assuming $invitation is passed to the view --}}
+            <title>{{ $invitation->seo_title ?? '' }}</title>
+            <meta name="description" content="{{ $invitation->seo_description ?? '' }}" />
+            <meta name="robots"
+                content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href="{{ request()->fullUrl() }}">
+            <meta property="og:locale" content="vi_VN" />
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta property="og:url" content="{{ request()->fullUrl() }}" />
+            <meta property="og:site_name" content="Thiệp cưới online" />
+            <meta property="og:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:secure_url" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:width" content="854" />
+            <meta property="og:image:height" content="1280" />
+            <meta property="og:image:alt" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta property="og:image:type" content="image/jpeg" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta name="twitter:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
 
-          
+
+
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
 /*! This file is auto-generated */
@@ -1057,9 +1055,6 @@
                     data-wp-strategy="async"></script>
 
             </body>
-
-        </html>
-
 
 
     </div>

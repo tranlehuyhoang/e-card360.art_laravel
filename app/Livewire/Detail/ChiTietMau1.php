@@ -20,6 +20,7 @@ class ChiTietMau1 extends Component
     public $authorName;
     public $messageContent;
 
+    // Nhận slug từ URL và tìm WeddingInvitation tương ứng.
     public function mount($code)
     {
         $this->invitation = WeddingInvitation::where('invitation_code', $code)->firstOrFail();
@@ -31,7 +32,7 @@ class ChiTietMau1 extends Component
 
         return view('livewire.detail.chi-tiet-mau1', [
             'invitation' => $this->invitation,
-            'messages' => $messages ?? collect(),
+            'messages' => $messages ?? collect(), // Sử dụng một collection rỗng nếu $messages là null
         ]);
     }
 
@@ -79,20 +80,5 @@ class ChiTietMau1 extends Component
         }
     }
 
-    public function createMessage()
-    {
-        $this->validate([
-            'authorName' => 'required|string|max:255',
-            'messageContent' => 'required|string',
-        ]);
-
-        Message::create([
-            'wedding_invitation_id' => $this->invitation->id,
-            'name' => $this->authorName,
-            'message' => $this->messageContent,
-        ]);
-
-        $this->reset(['authorName', 'messageContent']);
-        session()->flash('message', 'Lời chúc đã được gửi thành công!');
-    }
+    
 }

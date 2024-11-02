@@ -1,44 +1,31 @@
 <div>
     <div>
-        <!doctype html>
-        <html lang="vi" prefix="og: https://ogp.me/ns#">
-    
+ 
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="profile" href="https://gmpg.org/xfn/11">
-            <meta property="og:image" content="/assets_1/wp-content/uploads/2023/12/img9-768x1024.jpg" />
+         
     
             <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-            <title>Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online</title>
-            <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href="/mau-thiep/mau-thiep-hien-dai-2/" />
+            <title>{{ $invitation->seo_title ?? '' }}</title>
+            <meta name="description" content="{{ $invitation->seo_description ?? '' }}" />
+            <meta name="robots"
+                content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href="{{ request()->fullUrl() }}">
             <meta property="og:locale" content="vi_VN" />
             <meta property="og:type" content="article" />
-            <meta property="og:title" content="Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online" />
-            <meta property="og:url" content="/mau-thiep/mau-thiep-hien-dai-2/" />
+            <meta property="og:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta property="og:url" content="{{ request()->fullUrl() }}" />
             <meta property="og:site_name" content="Thiệp cưới online" />
-            <meta property="og:updated_time" content="2024-04-13T03:39:23+00:00" />
-            <meta property="og:image" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <meta property="og:image:secure_url" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <meta property="og:image:width" content="1280" />
-            <meta property="og:image:height" content="1706" />
-            <meta property="og:image:alt" content="Mẫu Thiệp Hiện Đại 2" />
+            <meta property="og:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:secure_url" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:width" content="854" />
+            <meta property="og:image:height" content="1280" />
+            <meta property="og:image:alt" content="{{ $invitation->seo_title ?? '' }}" />
             <meta property="og:image:type" content="image/jpeg" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Mẫu Thiệp Hiện Đại 2 - Thiệp cưới online" />
-            <meta name="twitter:image" content="/assets_1/wp-content/uploads/2023/12/img9.jpg" />
-            <!-- /Rank Math WordPress SEO plugin -->
-    
-            <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-            <link rel='dns-prefetch' href='//unpkg.com' />
-            <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online &raquo;"
-                href="/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online &raquo; Dòng bình luận"
-                href="/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml"
-                title="Thiệp cưới online &raquo; Mẫu Thiệp Hiện Đại 2 Dòng bình luận"
-                href="/mau-thiep/mau-thiep-hien-dai-2/feed/" />
+            <meta name="twitter:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta name="twitter:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
     /*! This file is auto-generated */
@@ -1252,8 +1239,7 @@
                     async data-wp-strategy="async"></script>
     
             </body>
-    
-        </html>
+ 
         <script>
             var swiper = new Swiper(".banner-slide", {
           effect: "fade",

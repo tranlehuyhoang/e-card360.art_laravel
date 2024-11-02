@@ -72,7 +72,11 @@ class WeddingCardResource extends Resource
                 Tables\Columns\TextColumn::make('id')->label('ID')->searchable(),
                 Tables\Columns\TextColumn::make('template_name')->label('Tên Mẫu')->searchable(),
                 Tables\Columns\ImageColumn::make('image')->label('Ảnh'),
-                Tables\Columns\TextColumn::make('demo_link')->label('Link Demo')->searchable(),
+                     Tables\Columns\TextColumn::make('demo_link')
+                    ->label('Link Demo')
+                    ->searchable()
+                    ->formatStateUsing(fn($state) => '<a href="' . $state . '" target="_blank" rel="noopener noreferrer">' . $state . '</a>')
+                    ->html(),
                 Tables\Columns\TextColumn::make('price')->label('Giá')->money('VND')->searchable(),
             ])
             ->filters([

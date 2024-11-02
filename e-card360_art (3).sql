@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 01, 2024 at 01:23 PM
+-- Generation Time: Nov 02, 2024 at 04:45 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -47,7 +47,8 @@ INSERT INTO `attendances` (`id`, `wedding_invitation_id`, `name`, `status`, `loc
 (1, 1, '123', 'Xin Lỗi tôi không tham dự được !', 'TƯ GIA NHÀ TRAI', 2, '123', '2024-10-22 03:31:15', '2024-10-22 03:31:15'),
 (2, 1, '123', 'Có tôi sẽ đến', 'TƯ GIA NHÀ GÁI', 1, NULL, '2024-10-22 03:35:11', '2024-10-22 03:35:11'),
 (3, 11, '123', 'Có tôi sẽ đến', 'TƯ GIA NHÀ TRAI', 2, '123', '2024-11-01 11:57:37', '2024-11-01 11:57:37'),
-(4, 11, '123', 'Xin Lỗi tôi không tham dự được !', 'TƯ GIA NHÀ GÁI', 2, '123123', '2024-11-01 12:03:43', '2024-11-01 12:03:43');
+(4, 11, '123', 'Xin Lỗi tôi không tham dự được !', 'TƯ GIA NHÀ GÁI', 2, '123123', '2024-11-01 12:03:43', '2024-11-01 12:03:43'),
+(5, 11, '123', 'Xin Lỗi tôi không tham dự được !', 'TƯ GIA NHÀ TRAI', 2, '123', '2024-11-02 03:13:50', '2024-11-02 03:13:50');
 
 -- --------------------------------------------------------
 
@@ -66,13 +67,13 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1730463374),
-('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1730463374;', 1730463374),
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1730460435),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1730460435;', 1730460435),
+('356a192b7913b04c54574d18c28d46e6395428ab', 'i:4;', 1730518555),
+('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1730518555;', 1730518555),
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:2;', 1730517109),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1730517109;', 1730517109),
 ('c249f2149727eeb79f1792b01e586e68c4ec6608', 'i:2;', 1729908793),
 ('c249f2149727eeb79f1792b01e586e68c4ec6608:timer', 'i:1729908793;', 1729908793),
-('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:46:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:18:\"view_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:22:\"view_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:20:\"create_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:20:\"update_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:21:\"restore_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:25:\"restore_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:23:\"replicate_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:21:\"reorder_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:20:\"delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:24:\"delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:26:\"force_delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:30:\"force_delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:24:\"view_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:28:\"view_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:26:\"create_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:26:\"update_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:27:\"restore_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:31:\"restore_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:29:\"replicate_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:27:\"reorder_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:26:\"delete_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:30:\"delete_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:32:\"force_delete_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:36:\"force_delete_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:20:\"widget_NewUsersChart\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:29:\"widget_WeddingInvitationChart\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:37:\"widget_LatestWeddingInvitationsWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1730463594),
+('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:46:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:18:\"view_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:22:\"view_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:20:\"create_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:20:\"update_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:21:\"restore_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:25:\"restore_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:23:\"replicate_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:21:\"reorder_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:20:\"delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:24:\"delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:26:\"force_delete_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:30:\"force_delete_any_wedding::card\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:24:\"view_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:28:\"view_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:26:\"create_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:26:\"update_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:27:\"restore_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:31:\"restore_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:29:\"replicate_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:27:\"reorder_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:26:\"delete_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:30:\"delete_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:32:\"force_delete_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:36:\"force_delete_any_wedding::invitation\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:20:\"widget_NewUsersChart\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:29:\"widget_WeddingInvitationChart\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:37:\"widget_LatestWeddingInvitationsWidget\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1730603434),
 ('theme', 's:6:\"sunset\";', 2045268921);
 
 -- --------------------------------------------------------
@@ -159,7 +160,8 @@ CREATE TABLE `messages` (
 
 INSERT INTO `messages` (`id`, `created_at`, `updated_at`, `wedding_invitation_id`, `name`, `message`) VALUES
 (9, '2024-11-01 11:44:30', '2024-11-01 11:44:30', 11, '123123', '123123123'),
-(10, '2024-11-01 11:48:49', '2024-11-01 11:48:49', 1, '123123', '123123');
+(10, '2024-11-01 11:48:49', '2024-11-01 11:48:49', 1, '123123', '123123'),
+(11, '2024-11-02 03:13:39', '2024-11-02 03:13:39', 11, '123123', '123123');
 
 -- --------------------------------------------------------
 
@@ -414,9 +416,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('OiDz36AwllmGLcDe3HnvEpfTuPamthLbGDcwapct', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiRlRaNWsxcUM4bjN0Z3lrOTNWQXd2MEpZbkxqSGF2RWRsa2FvdHlwUyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC8yLzEyMzEyMzEyMyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkTTFMS3cvdHJMWENMYVBHSFJ5WGI3LlZjOXBrRGdzMU5hTjlEYTltNlRPWGdHNTRBM3MvV0ciO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1730463783),
-('rz1HTHRp8Tt9Tb8Mex6V2XqOv5HDQaH5SoA5anUS', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiZHJLUnVJUjhFNFJZNWZuRW9SYlhobzc3S083NnVldHVsUXdEZkhnYSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Nzg6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91c2VyL3dlZGRpbmctaW52aXRhdGlvbnMvMTEvZWRpdD9hY3RpdmVSZWxhdGlvbk1hbmFnZXI9MSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkTTFMS3cvdHJMWENMYVBHSFJ5WGI3LlZjOXBrRGdzMU5hTjlEYTltNlRPWGdHNTRBM3MvV0ciO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1730461492),
-('v57keUrNbH25re5c7POri1XvGdeBYKRwrX5xc3xS', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiNXBEOU9BR3dsVGVvcWQ3RHdNOWp5ZnVsdzVTZVN2cGxNR1o1U2dmayI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQxOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vd2VkZGluZy1jYXJkcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRNMUxLdy90ckxYQ0xhUEdIUnlYYjcuVmM5cGtEZ3MxTmFOOURhOW02VE9YZ0c1NEEzcy9XRyI7fQ==', 1730459523);
+('evjzRNnFRiwsZAtSIeSJOrxRlM8GwcHQFxsCe7Kf', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiZmg3cERIWUJaT1A0NlRtTnBLTUdhOWxXRkJiaThGajNyV3FmYTEyTSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1730515923),
+('Z7eedjPEllPf1M5wLxNEzI11aLe4vJaw1sLcRsiC', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoidVR6Mm5LZm16clBkYjFOZWtxb1I0TkVqSkt1czJoOEd0S3dWbUhtTSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC8yLzEyMzEyMyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRNMUxLdy90ckxYQ0xhUEdIUnlYYjcuVmM5cGtEZ3MxTmFOOURhOW02VE9YZ0c1NEEzcy9XRyI7czo4OiJmaWxhbWVudCI7YTowOnt9czo2OiJ0YWJsZXMiO2E6MTp7czoyNToiTGlzdFdlZGRpbmdDYXJkc19wZXJfcGFnZSI7czoyOiI1MCI7fX0=', 1730519080);
 
 -- --------------------------------------------------------
 
@@ -469,15 +470,20 @@ CREATE TABLE `wedding_cards` (
 --
 
 INSERT INTO `wedding_cards` (`id`, `template_name`, `image`, `demo_link`, `price`, `created_at`, `updated_at`, `stt`, `description`) VALUES
-(75, 'Mẫu 1', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-1', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 1, ''),
-(76, 'Mẫu 2', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-2', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 2, ''),
-(77, 'Mẫu 3', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-3', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 3, ''),
-(78, 'Mẫu 4', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-4', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 4, ''),
-(79, 'Mẫu 5', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-5', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 5, ''),
-(80, 'Mẫu 6', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-6', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 6, ''),
-(81, 'Mẫu 7', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-7', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 7, ''),
-(82, 'Mẫu 8', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-8', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 8, ''),
-(83, 'Mẫu 9', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-9', 600000.00, '2024-10-16 05:56:37', '2024-10-22 02:27:25', 9, '');
+(75, 'Hiện Đại 2', 'wedding_cards/01JAAPHAJCMX9BQC7Z5SC6PS93.png', '/mau-1', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:18:04', 1, 'Mẫu Thiệp Hiện Đại 2'),
+(76, 'Vàng Gold', 'wedding_cards/01JBNE3P72MTNS41GPP5M17YQ8.png', '/mau-2', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:18:42', 2, 'Mẫu Thiệp Vàng Gold'),
+(77, 'Korea', 'wedding_cards/01JBNE51C0JJPZAWF2S5VAZW1S.png', '/mau-3', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:19:26', 3, 'Mẫu thiệp cưới korea'),
+(78, 'Sang Trọng', 'wedding_cards/01JBNE63QCT91HRN3K9NXEYK60.png', '/mau-4', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:20:02', 4, 'Mẫu Thiệp Sang Trọng'),
+(79, 'Quý Phái', 'wedding_cards/01JBNE76TKQ9917CY4E0H83N7S.png', '/mau-5', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:20:37', 5, 'Mẫu Thiệp Quý Phái'),
+(80, 'Nhẹ Nhàng', 'wedding_cards/01JBNE8843CB69ZTPN1V06NKQE.png', '/mau-6', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:21:12', 6, 'Mẫu Thiệp Nhẹ Nhàng'),
+(81, 'Hiện Đại', 'wedding_cards/01JBNEZ59GG5CW85CMF4H70R9J.png', '/mau-7', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:33:42', 7, 'Hiện Đại'),
+(82, 'Cổ Điển', 'wedding_cards/01JBNEZPX15WB7B5A3QV1ZZ2G4.png', '/mau-8', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:34:00', 8, 'Cổ Điển'),
+(83, 'Lãng Mạn', 'wedding_cards/01JBNF0APP0K060XN7JK27CFDQ.png', '/mau-9', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:34:21', 9, 'Lãng Mạn'),
+(119, 'Mẫu Biển', 'wedding_cards/01JBNF0W7N9ZR3ZVVENV6QATZ7.png', '/mau-10', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:34:39', 10, 'Mẫu Biển'),
+(120, 'Mẫu China', 'wedding_cards/01JBNF1DT8E7GC0S8GBGWP7AGT.png', '/mau-11', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:34:57', 11, 'Mẫu China'),
+(121, 'Cô Ba Sài Gòn', 'wedding_cards/01JBNF1YW8HXD9YF5EAN40H9TF.png', '/mau-12', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:35:14', 12, 'Cô Ba Sài Gòn'),
+(122, 'Xanh Luxury', 'wedding_cards/01JBNF2GWH9N5207JV92E9V2JM.png', '/mau-13', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:35:33', 13, 'Xanh Luxury'),
+(123, 'Xanh Lá', 'wedding_cards/01JBNF346ZX9GWCXJ5ZSP3C809.png', '/mau-14', 600000.00, '2024-10-16 05:56:37', '2024-11-02 03:35:52', 14, 'Xanh Lá');
 
 -- --------------------------------------------------------
 
@@ -686,7 +692,7 @@ ALTER TABLE `wedding_invitations`
 -- AUTO_INCREMENT for table `attendances`
 --
 ALTER TABLE `attendances`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -704,7 +710,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -734,7 +740,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `wedding_cards`
 --
 ALTER TABLE `wedding_cards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT for table `wedding_invitations`
