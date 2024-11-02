@@ -495,13 +495,13 @@
                             <div class="banner-slide swiper">
                                 <div class="swiper-wrapper">
                                     @foreach ($invitation->event_album as $image)
-                                        <div class="swiper-slide">
-                                            <img src="{{ Storage::url($image) }}" alt="Event Album Image" />
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <img src="{{ Storage::url($image) }}" alt="Event Album Image" />
+                                    </div>
                                     @endforeach
                                 </div>
                             </div>
-                            
+
 
                             <!-- Groom and Bride names -->
                             <div class="banner-name-left">
@@ -765,11 +765,12 @@
                                             <address class="uk-margin-remove">
                                                 <p>{{ $invitation->bride_family_address }}</p>
                                             </address>
-                                            
+
                                             <div class="invi_time">
                                                 @php
-                                      
-                                                $brideFamilyTime =  \Carbon\Carbon::parse($invitation->bride_family_time);
+
+                                                $brideFamilyTime =
+                                                \Carbon\Carbon::parse($invitation->bride_family_time);
                                                 @endphp
 
                                                 <p class="fw-bold">Vào lúc <span class="invi_hours">{{
@@ -812,8 +813,9 @@
                                             </address>
                                             <div class="invi_time">
                                                 @php
-                                      
-                                                $groomFamilyTime =  \Carbon\Carbon::parse($invitation->groom_family_time);
+
+                                                $groomFamilyTime =
+                                                \Carbon\Carbon::parse($invitation->groom_family_time);
                                                 @endphp
 
                                                 <p class="fw-bold">Vào lúc <span class="invi_hours">{{
@@ -868,7 +870,7 @@
                                     d="M8.106 18.247C5.298 16.083 2 13.542 2 9.137C2 4.274 7.5.825 12 5.501C16.5.825 22 4.274 22 9.137c0 .834-.118 1.6-.329 2.31a4.203 4.203 0 0 0-2.619-.947c-.89-.005-1.758.274-2.553.81c-1.39-.933-2.956-1.058-4.33-.395c-1.635.79-2.669 2.556-2.669 4.484c0 2.306 1.149 3.923 2.342 5.095c-.948-.076-1.897-.808-2.88-1.583c-.277-.219-.564-.44-.856-.664Z" />
                             </svg>
                             <div class="uk-grid-small uk-child-width-1-4 uk-flex-center uk-margin-large-top" uk-grid
-                            uk-countdown="date: {{ $invitation->event_time }}">
+                                uk-countdown="date: {{ $invitation->event_time }}">
                                 <div>
                                     <div
                                         class="uk-countdown-number uk-countdown-days uk-padding-small uk-flex uk-flex-center uk-flex-middle blur-bg uk-border-rounded text-white">
@@ -907,16 +909,16 @@
                     <!-- LỜI CHÚC -->
                     <!-- TIN NHẮN -->
                     <section id="message" class="section-message uk-background-cover uk-section"
-                    style="background-image:url({{ Storage::url($invitation->banner3)}}); display:block">
-                    <div class="message-container container uk-position-relative uk-position-z-index">
-                        <h2 class="section-title uk-light" style="color:white">
-                            Gửi lời chúc đến cặp đôi </h2>
-                        <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
-                            <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
-                            @livewire('form.message', ['invitationId' => $invitation->id])
+                        style="background-image:url({{ Storage::url($invitation->banner3)}}); display:block">
+                        <div class="message-container container uk-position-relative uk-position-z-index">
+                            <h2 class="section-title uk-light" style="color:white">
+                                Gửi lời chúc đến cặp đôi </h2>
+                            <div class="uk-padding-small uk-border-rounded blur-bg" style="border:1px solid white">
+                                <h3 class="form-title" style="color:white">Gửi lời chúc</h3>
+                                @livewire('form.message', ['invitationId' => $invitation->id])
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
                     <!-- END TIN NHẮN -->
                     <script>
                         fetch('/wp-json/wp/v2/comments?post=1304&per_page=100',
@@ -1050,9 +1052,8 @@
                                 <div class="gift-container" id="gift-container">
                                     <div class="gift-card">
                                         <div class="gift-qr">
-                                        <img src="{{ Storage::url($invitation->event_payment_qr) }}" alt=""
-
-                                                alt="" class="groom_qr" style="max-width:100%" />
+                                            <img src="{{ Storage::url($invitation->event_payment_qr) }}" alt="" alt=""
+                                                class="groom_qr" style="max-width:100%" />
                                         </div>
                                         <div class="gift-body">
                                         </div>
@@ -1072,7 +1073,6 @@
                     <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
                         <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
                         <img src="{{ Storage::url($invitation->banner4)}}" alt="" class="thankyou-bg thankyou_img"
-
                             class="thankyou-bg thankyou_img" style="object-position:" />
                         <div class="thankyou-body container uk-position-relative uk-position-z-index">
                             <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
