@@ -523,8 +523,8 @@
 
                                     <div class="group-add">
                                         <p>Địa điểm tổ chức</p>
-                                        <span class="banner_location_name">{{ $invitation->venue_name }}</span>
-                                        <span class="banner_location_address">{{ $invitation->venue_address }}</span>
+                                        <span class="banner_location_name">{{ $invitation->event_location }}</span>
+                                        <span class="banner_location_address">{{ $invitation->event_address }}</span>
                                     </div>
                                 </div>
 
@@ -535,7 +535,7 @@
                                     <a href="#gift" class="">
                                         <i class="ri-gift-2-fill"></i>
                                     </a>
-                                    <a href="https://www.google.com/maps/place/{{ urlencode($invitation->venue_address) }}"
+                                    <a href="https://www.google.com/maps/place/{{ urlencode($invitation->event_address) }}"
                                         target="_blank">
                                         <i class='ri-map-2-line'></i>
                                     </a>
@@ -962,7 +962,7 @@
 
 
                 <section id="time-line" class="time-line-section img_bg bg_overlay"
-                    style="background-image:url(/assets_1/wp-content/uploads/2023/12/img2.jpg)">
+                    style="background-image:url({{ Storage::url($invitation->banner2)}})">
                     <div class="time-line container">
                         <div class="section-heading">
                             <p class="subtitle">CÂU CHUYỆN TÌNH YÊU</p>
@@ -1305,9 +1305,7 @@ $(document).ready(function(){
 
                                             class="groom_qr" style="max-width:100%" />
                                     </div>
-                                    <div class="gift-body">
-                                        <p>PHƯƠNG ÁNH</p>
-                                    </div>
+                              
                                 </div>
 
                             </div>

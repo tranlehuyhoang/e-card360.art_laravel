@@ -8,44 +8,25 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="profile" href="https://gmpg.org/xfn/11">
-            <meta property="og:image"
-                content="/assets_1/wp-content/uploads/2024/01/z5060765930765_f2c89c4573931fd9ea0c55b0bc74d82f-683x1024.jpg" />
-
-            <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-            <title>Mẫu Thiệp Quý Phái - Thiệp cưới online</title>
+            <title>{{ $invitation->seo_title ?? '' }}</title>
+            <meta name="description" content="{{ $invitation->seo_description ?? '' }}" />
             <meta name="robots"
                 content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href="/mau-thiep/mau-thiep-quy-phai/" />
+            <link rel="canonical" href="{{ request()->fullUrl() }}">
             <meta property="og:locale" content="vi_VN" />
             <meta property="og:type" content="article" />
-            <meta property="og:title" content="Mẫu Thiệp Quý Phái - Thiệp cưới online" />
-            <meta property="og:url" content="/mau-thiep/mau-thiep-quy-phai/" />
+            <meta property="og:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta property="og:url" content="{{ request()->fullUrl() }}" />
             <meta property="og:site_name" content="Thiệp cưới online" />
-            <meta property="og:updated_time" content="2024-03-27T02:21:05+00:00" />
-            <meta property="og:image"
-                content="/assets_1/wp-content/uploads/2024/01/z5060765930765_f2c89c4573931fd9ea0c55b0bc74d82f.jpg" />
-            <meta property="og:image:secure_url"
-                content="/assets_1/wp-content/uploads/2024/01/z5060765930765_f2c89c4573931fd9ea0c55b0bc74d82f.jpg" />
-            <meta property="og:image:width" content="960" />
-            <meta property="og:image:height" content="1440" />
-            <meta property="og:image:alt" content="Mẫu Thiệp Quý Phái" />
+            <meta property="og:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:secure_url" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
+            <meta property="og:image:width" content="854" />
+            <meta property="og:image:height" content="1280" />
+            <meta property="og:image:alt" content="{{ $invitation->seo_title ?? '' }}" />
             <meta property="og:image:type" content="image/jpeg" />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Mẫu Thiệp Quý Phái - Thiệp cưới online" />
-            <meta name="twitter:image"
-                content="/assets_1/wp-content/uploads/2024/01/z5060765930765_f2c89c4573931fd9ea0c55b0bc74d82f.jpg" />
-            <!-- /Rank Math WordPress SEO plugin -->
-
-            <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
-            <link rel='dns-prefetch' href='//unpkg.com' />
-            <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thiệp cưới online &raquo;"
-                href="/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Thiệp cưới online &raquo; Dòng bình luận"
-                href="/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml"
-                title="Thiệp cưới online &raquo; Mẫu Thiệp Quý Phái Dòng bình luận"
-                href="/mau-thiep/mau-thiep-quy-phai/feed/" />
+            <meta name="twitter:title" content="{{ $invitation->seo_title ?? '' }}" />
+            <meta name="twitter:image" content="{{ Storage::url($invitation->seo_image) ?? '' }}" />
             <script>
                 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
 /*! This file is auto-generated */
@@ -66,8 +47,7 @@
                 }
             </style>
             <link rel='stylesheet' id='wp-block-library-css'
-                href='/assets_1/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2'
-                media='all' />
+                href='/assets_1/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2' media='all' />
             <style id='rank-math-toc-block-style-inline-css'>
                 .wp-block-rank-math-toc-block nav ol {
                     counter-reset: item
@@ -426,49 +406,38 @@
                 }
             </style>
             <link rel='stylesheet' id='uikit-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/uikit.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='reset uikit-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/reset1.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/reset1.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='remixicon-css'
                 href='https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='preload-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/preload.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/preload.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='wedding reset-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/reset-wedding.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='fancybox-css'
                 href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?ver=1.0.0'
                 media='all' />
             <link rel='stylesheet' id='swiper slide-css'
                 href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='animation-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/animation.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='aos style-css'
                 href='/assets_1/wp-content/themes/wedding-studio/css/aos.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='footer style-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/footer.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/footer.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='wedding style-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/wedding.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/wedding.css?ver=1.0.0' media='all' />
             <link rel='stylesheet' id='theme-css'
-                href='/assets_1/wp-content/themes/wedding-studio/css/theme.css?ver=1.0.0'
-                media='all' />
+                href='/assets_1/wp-content/themes/wedding-studio/css/theme.css?ver=1.0.0' media='all' />
             <script src="/assets_1/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js">
             </script>
-            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-                id="jquery-migrate-js"></script>
-            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0"
-                id="Jquery-js"></script>
+            <script src="/assets_1/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js">
+            </script>
+            <script src="/assets_1/wp-content/themes/wedding-studio/js/jquery.min.js?ver=1.0.0" id="Jquery-js"></script>
             <link rel="https://api.w.org/" href="/wp-json/" />
-            <link rel="alternate" title="JSON" type="application/json"
-                href="/wp-json/wp/v2/mau-thiep/1013" />
-            <link rel="EditURI" type="application/rsd+xml" title="RSD"
-                href="/xmlrpc.php?rsd" />
+            <link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/mau-thiep/1013" />
+            <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
             <meta name="generator" content="WordPress 6.6.2" />
             <link rel='shortlink' href='/?p=1013' />
             <link rel="alternate" title="oNhúng (JSON)" type="application/json+oembed"
@@ -492,8 +461,7 @@
                 href="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-180x180.png" />
             <meta name="msapplication-TileImage"
                 content="https://thiepdientu.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2024/03/26115441/cropped-logo-favicon-270x270.png" />
-            <link rel="stylesheet"
-                href="/assets_1/wp-content/themes/wedding-studio/assets/quyphai/css.css">
+            <link rel="stylesheet" href="/assets_1/wp-content/themes/wedding-studio/assets/quyphai/css.css">
         </head>
 
         <body
@@ -505,8 +473,8 @@
                     style=" left: 0; bottom:0; top:0; width: 100%; z-index:99999;">
 
                     <div class="uk-position-center uk-text-center">
-                        <img src="https://i.imgur.com/saxukyR.png" alt=""
-                            style="max-width: 150px;" class="uk-animation-slide-top">
+                        <img src="https://i.imgur.com/saxukyR.png" alt="" style="max-width: 150px;"
+                            class="uk-animation-slide-top">
 
                         <h2 class="uk-text-center uk-marign-remove uk-text-bold uk-h4  uk-animation-slide-bottom">
                             Mẫu Thiệp Quý Phái</h2>
@@ -519,40 +487,47 @@
                 <header>
                     <div class="banner grid">
                         <span class="banner-bg">
-                            <img src="/assets_1/wp-content/uploads/2024/01/z5060765916088_25e0608ecb8682d6d608edbf876a64e1.jpg"
-                                alt="Thiệp cưới online" class="kenburns-top banner_top"
-                                style="object-position:center center">
+                            <img src="{{ Storage::url($invitation->banner1) }}" alt="Thiệp cưới online"
+                                class="kenburns-top banner_top" style="object-position:center center">
                         </span>
 
                         <h1 class="title-font banner-title" data-aos="fade-down" data-aos-duration="3000">
                             <p>Save <span> the </span> Date</p>
                         </h1>
                         <div class="name">
-                            Công Thành<br />
+                            {{ $invitation->groom_name }}<br />
                             &<br />
-                            Phương Ánh </div>
+                            {{ $invitation->bride_name }}
+                        </div>
                         <p class="des script-font">Chung vui cùng gia đình chúng tôi</p>
+
                         <div class="box-time title-font" data-aos="flip-up" data-aos-duration="3000">
                             <span class="name_day">
-                                CHỦ NHẬT </span>
+                                {{ \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('l') }}
+                            </span>
                             <span class="calendar">
-                                <p class="month invitation_month">02</p>
-                                <p class="day invitation_day">04</p>
-                                <p class="year invitation_year">2024</p>
+                                <p class="month invitation_month">{{
+                                    \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</p>
+                                <p class="day invitation_day">{{
+                                    \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</p>
+                                <p class="year invitation_year">{{
+                                    \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</p>
                             </span>
                             <span class="time invitation_time">
-                                10H00 </span>
+                                {{ \Carbon\Carbon::parse($invitation->event_date)->format('H:i') }}
+                            </span>
                         </div>
 
                         <div class="location" data-aos="fade-up" data-aos-duration="3000">
                             <p class="script-font">Tại</p>
-                            <h4 class="name_palace">Luxury Palace</h4>
-                            <P class="address invitation_address">171 Nguyễn Thái Sơn, P8, Gò Vấp</P>
+                            <h4 class="name_palace">{{ $invitation->event_location }}</h4>
+                            <p class="address invitation_address">{{ $invitation->event_address }}</p>
                         </div>
+
                         <div class="group-button" data-aos="fade-up" data-aos-duration="3000">
+                            <a href="tel:+{{ $invitation->contact_number }}" class="btn btn-secondary">Gọi</a>
                             <a href="#form" class="btn btn-secondary">Đăng kí tham dự</a>
-                            <a href="https://www.google.com/maps/place/11%C2%B051'41.9%22N+108%C2%B013'07.0%22E/@11.8616389,108.2186111,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.8616389!4d108.2186111?entry=ttu"
-                                class="btn btn-secondary">Địa điểm tổ chức</a>
+                            <a href="{{$invitation->event_map_link }}" class="btn btn-secondary">Địa điểm tổ chức</a>
                             <a href="#gift" class="btn btn-secondary gift">Gửi quà</a>
                         </div>
                     </div>
@@ -561,8 +536,7 @@
                 <!-- ABOUT -->
                 <div class="about grid">
                     <span class="bg-top">
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/quyphai/img/bg-leaf-top.png"
-                            alt="">
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/quyphai/img/bg-leaf-top.png" alt="">
                     </span>
                     <span class="bg-bottom">
                         <img src="/assets_1/wp-content/themes/wedding-studio/assets/quyphai/img/bg-leaf-bottom.png"
@@ -1239,8 +1213,7 @@ $(document).ready(function(){
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio
-                    src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-1.mp3"
+                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-1.mp3"
                     controls autoplay id="audio">
 
                 </audio>
@@ -1258,23 +1231,21 @@ $(document).ready(function(){
 
                 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?ver=1.0.0"
                     id="fancybox js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0"
-                    id="uikit js-js"></script>
-                <script
-                    src="/assets_1/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0"
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0" id="uikit js-js">
+                </script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0"
                     id="uikit icon-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0"
-                    id="preloader js-js"></script>
-                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0"
-                    id="aos js-js"></script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/preloader.js?ver=1.0.0" id="preloader js-js">
+                </script>
+                <script src="/assets_1/wp-content/themes/wedding-studio/js/aos.js?ver=1.0.0" id="aos js-js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=1.0.0"
                     id="swiper slide-js"></script>
                 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js?ver=1.0.0"
                     id="scrollrevea-js"></script>
                 <script src="/assets_1/wp-content/themes/wedding-studio/js/main-wedding.js?ver=1.0.0"
                     id="main wedding-js"></script>
-                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2"
-                    id="comment-reply-js" async data-wp-strategy="async"></script>
+                <script src="/assets_1/wp-includes/js/comment-reply.min.js?ver=6.6.2" id="comment-reply-js" async
+                    data-wp-strategy="async"></script>
 
             </body>
 
