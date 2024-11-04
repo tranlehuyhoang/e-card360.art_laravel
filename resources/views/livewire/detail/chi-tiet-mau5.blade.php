@@ -525,7 +525,7 @@
                         </div>
 
                         <div class="group-button" data-aos="fade-up" data-aos-duration="3000">
-                            <a href="tel:+{{ $invitation->contact_number }}" class="btn btn-secondary">Gọi</a>
+                            <a href="tel:{{ $invitation->event_phone }}" class="btn btn-secondary">Gọi</a>
                             <a href="#form" class="btn btn-secondary">Đăng kí tham dự</a>
                             <a href="{{$invitation->event_map_link }}" class="btn btn-secondary">Địa điểm tổ chức</a>
                             <a href="#gift" class="btn btn-secondary gift">Gửi quà</a>

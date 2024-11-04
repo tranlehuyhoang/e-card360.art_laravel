@@ -517,13 +517,13 @@
                             </div>
                         </div>
                         <div class="social-link">
-                            <a href="tel:+{{ $invitation->contact_number }}" class="">
+                            <a href="tel:{{ $invitation->event_phone }}" class="">
                                 <i class="ri-phone-fill"></i>
                             </a>
                             <a href="#gift" class="">
                                 <i class="ri-gift-2-fill"></i>
                             </a>
-                            <a href="https://www.google.com/maps/place/{{ urlencode($invitation->event_address) }}"
+                            <a href="{{ ($invitation->event_map_link) }}"
                                 target="_blank">
                                 <i class="ri-map-2-line"></i>
                             </a>

@@ -519,7 +519,7 @@
                     </div>
 
                     <div class="group-button">
-                        <a href="tel:+{{ $invitation->contact_number }}" class="btn btn-pri">
+                        <a href="tel:{{ $invitation->event_phone }}" class="btn btn-pri">
                             <i class="ri-phone-fill"></i>
                             <span>Gọi</span>
                         </a>
@@ -527,7 +527,7 @@
                             <i class="ri-gift-fill"></i>
                             <span>Gửi quà</span>
                         </a>
-                        <a href="https://www.google.com/maps/place/{{ urlencode($invitation->event_address) }}"
+                        <a href="{{ ($invitation->event_map_link) }}"
                             target="_blank" class="btn btn-pri">
                             <i class='ri-map-2-line'></i>
                             <span>Bản đồ</span>
