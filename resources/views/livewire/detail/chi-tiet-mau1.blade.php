@@ -485,14 +485,43 @@
                 <!-- END PRELOAD -->
                 <main>
                     <!-- BANNER -->
-                    <section id="banner" class="section-banner">
-                        <div class="banner-container">
-                            <!-- Background image -->
-                            <img src="/assets_1/wp-content/themes/wedding-studio/assets/hiendai2/img/bg-banner.png"
-                                alt="" class="banner-bg">
+                    <div id="banner" class="section-banner">
+                        <!-- Background images -->
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/leaf1.png" alt=""
+                            class="bg-top-left" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/leaf1.png" alt=""
+                            class="bg-top-right">
+                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/sun.png" alt=""
+                            class="bg-sun" data-aos="fade-left" data-aos-duration="2000">
 
-                            <!-- Image slider for banner -->
-                            <div class="banner-slide swiper">
+                        <div class="banner container">
+                            <div class="banner-data">
+                                <h1 class="banner-title" data-aos="fade-down" data-aos-duration="1000">
+                                    <p>Save <span>The</span> Date</p>
+                                </h1>
+
+                                <div class="banner-name">
+                                    <h2 class="groom_name" data-aos="fade-down" data-aos-duration="3000">
+                                        {{ $invitation->groom_name }}
+                                    </h2>
+                                    <span>&</span>
+                                    <h2 class="bride_name" data-aos="fade-up" data-aos-duration="3000">
+                                        {{ $invitation->bride_name }}
+                                    </h2>
+                                    <div class="banner-date-group" data-aos="fade-up" data-aos-duration="3000">
+                                        <span class="banner-date">{{
+                                            \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
+                                        <span class="banner-month">{{
+                                            \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
+                                        <span class="banner-year">{{
+                                            \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</span>
+                                    </div>
+                                </div>
+
+                                <span class="slogan" data-aos="fade-up" data-aos-duration="1000"></span>
+                            </div>
+
+                            <div class="banner-media swiper banner-slide">
                                 <div class="swiper-wrapper">
                                     @foreach ($invitation->event_album as $image)
                                     <div class="swiper-slide">
@@ -501,30 +530,8 @@
                                     @endforeach
                                 </div>
                             </div>
-
-
-                            <!-- Groom and Bride names -->
-                            <div class="banner-name-left">
-                                <h2 class="groom_name" data-aos="fade-right" data-aos-duration="3000">{{
-                                    $invitation->groom_name }}</h2>
-                            </div>
-                            <div class="banner-name-right">
-                                <h2 class="bride_name" data-aos="fade-left" data-aos-duration="3000">{{
-                                    $invitation->bride_name }}</h2>
-                            </div>
                         </div>
-
-                        <!-- Event Date -->
-                        <div class="date-group" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="banner-date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('d') }}
-                            </div>
-                            <div class="banner-date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('m') }}
-                            </div>
-                            <div class="banner-date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}
-                            </div>
-                        </div>
-                    </section>
-
+                    </div>
                     <!-- END BANNER -->
                     <!-- NAME -->
                     <section id="name" class="section-name">
@@ -920,114 +927,14 @@
                         </div>
                     </section>
                     <!-- END TIN NHẮN -->
-                    <script>
-                        fetch('/wp-json/wp/v2/comments?post=1304&per_page=100',
-        {
-         method: 'GET',
-        }
-        )
-        
-      .then(response => response.json())
-      .then(data => {
-        mess_item = ''
-        for(let i in data){
-            if(!i) {
-              $('.list_message').attr('class','hidden')
-            }
-            c_author = data[i].author_name
-            c_content = data[i].content.rendered
-           
-            mess_item += '<div class="blur-bg uk-padding-small uk-border-rounded uk-light"> <h3 class="user_message">'+c_author+'</h3> <p class="message_body">'+c_content+'</p> </div>'
-        }
-        $('.list_message').html(mess_item)
-      })
-    
-      //FORM
-     $('#messageForm').submit(function (e) { 
-      e.preventDefault();
-      const postId = $(this).find('#postId').val()
-      const name = $(this).find('#m_name').val()
-      const mess = $(this).find('#m_text').val()
-      const data = JSON.stringify({
-        post: postId,
-        author_name: name,
-        content: mess,
-      });
-      ACTION_URL = '/wp-json/wp/v2/comments'
-      fetch(ACTION_URL, {
-        method: 'post',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: data,
-      })
-        .then((response) => {
-          if (response.ok === true) {
-            mess_new = '<div class=" uk-light blur-bg uk-padding-small uk-border-rounded" data-aos="fade-up" data-aos-duration="2000"> <i class="bx bxs-quote-alt-left"></i> <h3 class="user_message">'+name+'</h3> <p class="message_body">'+mess+'</p> </div>'
-            $('.list_message').prepend(mess_new)
-            $('#messageForm')[0].reset()
-          }
-          return response.json();
-        })
-        .then((object) => {
-          // Comment submission failed.
-          // Output `object.message` to see the error message.
-        })
-        .catch(error => console.error('Error:', error));
-     });
-     
-                    </script>
+
                     <!-- END LỜI CHÚC -->
                     <!-- FORM XÁC NHẬN -->
                     <!-- FROM XÁC NHẬN -->
                     @livewire('form.attendance', ['invitationId' => $invitation->id, 'invitation' => $invitation])
 
 
-                    <script>
-                        //XỬ LÝ FORM
-    $(document).ready(function(){
-      $('.message-form').fadeOut(300)
-      $('#form').on('submit', function(e){
-          e.preventDefault();
-          f_userName = "Công Thành-Phương Ánh"
-          f_check = $('input[type="radio"]:checked').val()
-          f_name = $(this).find('#f_name').val()
-          f_numUser = $('#num_user').find('option:selected').val()
-          f_select = $('#wedding-select').find('option:selected').val()
-          f_text = $(this).find('#f_text').val()
-          var form_data = {
-              'entry.737056527': f_userName,
-              'entry.642873731': f_check,
-              'entry.1699210899': f_name,
-              'entry.369695229': f_numUser,
-              'entry.1528762541': f_select,
-              'entry.1679764871': f_text,
-          }
-         $('.wedding-submit[type="submit"]').text('Đang gửi ...')
-         $.ajax({
-          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
-          type: "POST",
-          data : form_data,
-          dataType: "xml",
-          statusCode: {
-              0: function() {
-                  mess_form = 'Chúng mình xin chân thành cám ơn !'
-                  $('.message-form').html(mess_form)
-                  $('button[type="submit"]').addClass('success')
-                  $('button[type="submit"]').removeClass('btn_primary')
-                  $('button[type="submit"]').attr('disabled','true')
-                  $('button[type="submit"]').text('Đã xác nhận')
-                  $('.message-form').fadeIn(300)
-              },
-              200: function() {
-                  alert('200')
-              }
-          }
-          })
-      })
-      return false;
-    })
-                    </script>
+
                     <!-- END FORM XÁC NHẬN -->
 
                     <!-- GỬI QUÀ -->
