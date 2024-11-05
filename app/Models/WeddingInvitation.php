@@ -64,6 +64,9 @@ class WeddingInvitation extends Model
         'seo_description',    // New field
         'seo_image',          // New field
         'background_music',    // New field
+        'total_amount',    // New field
+        'payment_status',    // New field
+        'package',    // New field
     ];
     protected $casts = [
         'event_album' => 'array', // Chuyển đổi sang mảng

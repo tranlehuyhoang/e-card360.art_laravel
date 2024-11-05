@@ -23,7 +23,7 @@ class WeddingInvitationResource extends Resource
     protected static ?string $model = WeddingInvitation::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
-    protected static ?string $navigationLabel = 'Thiệp Cưới';
+    protected static ?string $navigationLabel = 'Tạo Thiệp Cưới';
 
 
     public static function form(Form $form): Form
@@ -34,6 +34,126 @@ class WeddingInvitationResource extends Resource
                     ->tabs([
                         Forms\Components\Tabs\Tab::make('Thông Tin Chung')
                             ->schema([
+                                // Section for Customer Information
+                                Forms\Components\Section::make('Thông Tin Khách Hàng')
+                                    ->schema([
+                                        Forms\Components\Select::make('customer_id')
+                                            ->required()
+                                            ->options(User::all()->pluck('email', 'id')) // Lấy danh sách người dùng
+                                            ->label('ID Khách Hàng')
+                                            ->default(auth()->user()->id), // Chọn người dùng đã đăng nhập
+                                    ]),
+                                Forms\Components\Section::make('Chi Tiết Thiệp Mời')
+                                    ->schema([
+                                        Forms\Components\Select::make('invitation_template_id')
+                                            ->label('ID Mẫu Thiệp')
+                                            ->options(WeddingCard::all()->pluck('template_name', 'id')) // Assuming 'template_name' is the display value
+                                            ->nullable()
+                                            ->required()
+                                            ->live()
+                                            ->disabled(fn($get) => $get('id') !== null) // Vô hiệu hóa nếu đang chỉnh sửa
+                                            ->afterStateUpdated(function (callable $get, callable $set) {
+                                                $templateId = $get('invitation_template_id');
+                                                $amount = 0;
+
+                                                // Lấy giá của mẫu thiệp nếu tồn tại
+                                                if ($templateId) {
+                                                    $templatePrice = WeddingCard::find($templateId)->price; // Lấy giá mẫu thiệp
+                                                    $amount = $templatePrice ?: 0; // Nếu không tìm thấy giá, gán là 0
+                                                }
+
+                                                // Cập nhật tổng tiền
+                                                $totalAmount = $amount + $get('total_amount'); // Thêm giá gói vào tổng tiền
+                                                $set('total_amount', $totalAmount);
+                                            }),
+
+                                        Forms\Components\TextInput::make('invitation_code')
+                                            ->label('Mã Thiệp')
+                                            ->required()
+                                            ->disabled()
+                                            ->reactive()
+                                            ->dehydrated(true)
+                                            ->unique(WeddingInvitation::class, 'invitation_code', ignoreRecord: true)
+                                            ->afterStateHydrated(function (callable $get, callable $set) {
+                                                // Chỉ tạo mã nếu invitation_code đang rỗng.
+                                                if (!$get('invitation_code')) {
+                                                    $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+                                                    $randomString = '';
+
+                                                    // Lặp để đảm bảo mã không trùng.
+                                                    do {
+                                                        $randomString = '';
+                                                        for ($i = 0; $i < 60; $i++) {
+                                                            $randomString .= $characters[random_int(0, strlen($characters) - 1)];
+                                                        }
+
+                                                        // Kiểm tra xem mã đã tồn tại chưa, trừ mã hiện tại (nếu có).
+                                                        $exists = WeddingInvitation::where('invitation_code', $randomString)
+                                                            ->whereKeyNot($get('id')) // Bỏ qua chính bản ghi hiện tại.
+                                                            ->exists();
+                                                    } while ($exists);
+
+                                                    // Gán mã không trùng vào field.
+                                                    $set('invitation_code', $randomString);
+                                                }
+                                            }),
+
+                                        // Thêm trường tổng tiền
+                                        Forms\Components\TextInput::make('total_amount')
+                                            ->label('Tổng Tiền')
+                                            ->required()
+                                            ->dehydrated()
+                                            ->numeric() // Đảm bảo rằng trường này là số
+                                            ->default(0), // Giá trị mặc định
+
+                                        // Thêm trường trạng thái thanh toán
+                                        Forms\Components\Select::make('payment_status')
+                                            ->label('Trạng Thái Thanh Toán')
+                                            ->disabled()
+                                            ->options([
+                                                'pending' => 'Chưa Thanh Toán',
+                                                'completed' => 'Đã Thanh Toán',
+                                                'failed' => 'Thất Bại',
+                                            ])
+                                            ->default('pending') // Giá trị mặc định
+                                            ->required(),
+
+                                        // Thêm trường gói
+                                        Forms\Components\Select::make('package')
+                                            ->label('Gói')
+                                            ->options([
+                                                'basic' => 'Gói Cơ Bản',
+                                                'standard' => 'Gói Tiêu Chuẩn',
+                                                'premium' => 'Gói Cao Cấp',
+                                            ])
+                                            ->default('basic') // Giá trị mặc định
+                                            ->required()
+                                            ->live()
+                                            ->reactive()
+                                            ->disabled(fn($get) => $get('id') !== null) // Vô hiệu hóa nếu đang chỉnh sửa
+                                            ->afterStateUpdated(function (callable $get, callable $set) {
+                                                $packagePrice = 0;
+                                                $package = $get('package');
+
+                                                // Xác định giá dựa trên gói
+                                                switch ($package) {
+                                                    case 'basic':
+                                                        $packagePrice = 168000;
+                                                        break;
+                                                    case 'standard':
+                                                        $packagePrice = 295000;
+                                                        break;
+                                                    case 'premium':
+                                                        $packagePrice = 450000;
+                                                        break;
+                                                }
+
+                                                // Cập nhật tổng tiền
+                                                $totalAmount = $get('total_amount') + $packagePrice; // Thêm giá gói vào tổng tiền
+                                                $set('total_amount', $totalAmount);
+                                            }),
+                                    ]),
+                                // Section for Event Information
                                 Forms\Components\Section::make('Thông Tin Tổ Chức')
                                     ->schema([
                                         Forms\Components\DateTimePicker::make('event_time')
@@ -85,7 +205,7 @@ class WeddingInvitationResource extends Resource
                                 Forms\Components\FileUpload::make('groom_image')
                                     ->label('Ảnh Chú Rể'),
                             ]),
-                            Forms\Components\Tabs\Tab::make('Nhà Trai')
+                        Forms\Components\Tabs\Tab::make('Nhà Trai')
                             ->schema([
                                 Forms\Components\TextInput::make('groom_family_address')
                                     ->label('Địa Chỉ Nhà Trai'),
@@ -120,6 +240,7 @@ class WeddingInvitationResource extends Resource
                                 Forms\Components\DateTimePicker::make('bride_family_time')
                                     ->label('Thời Gian Nhà Gái'),
                             ]),
+
                         Forms\Components\Tabs\Tab::make('Love Story')
                             ->schema([
                                 Forms\Components\DatePicker::make('first_meeting_date')
@@ -146,7 +267,7 @@ class WeddingInvitationResource extends Resource
                                     ->multiple() // Cho phép tải nhiều ảnh
                                     ->preserveFilenames(),
                             ]),
-                            Forms\Components\Tabs\Tab::make('Banner')
+                        Forms\Components\Tabs\Tab::make('Banner')
                             ->schema([
                                 Forms\Components\FileUpload::make('banner1')
                                     ->label('Banner 1')
@@ -168,6 +289,24 @@ class WeddingInvitationResource extends Resource
                                     ->label('Banner 5')
                                     ->preserveFilenames(),
                             ]),
+                        Forms\Components\Tabs\Tab::make('SEO Settings')->schema([
+                            Forms\Components\TextInput::make('seo_title')
+                                ->label('Tiêu đề')
+                                ->maxLength(255),
+
+                            Forms\Components\Textarea::make('seo_description')
+                                ->label('Mô tả website')
+                                ->maxLength(500),
+
+                            Forms\Components\FileUpload::make('seo_image')
+                                ->label('Ảnh website'),
+
+
+
+                            Forms\Components\TextInput::make('background_music')
+                                ->label('Link nhạc'),
+                        ]),
+
                     ])->columnSpanFull(),
             ]);
     }
@@ -185,17 +324,26 @@ class WeddingInvitationResource extends Resource
                 Tables\Columns\TextColumn::make('invitationTemplate.template_name')
                     ->label('Tên mẫu thiệp')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('customer.email')
-                    ->label('Email khách hàng')
-                    ->searchable(),
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Ngày tạo')
                     ->dateTime()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('invitationTemplate.demo_link')
                     ->label('Xem thiệp')
-                    ->url(fn ($record) => '/' . $record->invitationTemplate->stt . '/' . $record->invitation_code)
+                    ->url(fn($record) => '/' . $record->invitationTemplate->stt . '/' . $record->invitation_code)
                     ->openUrlInNewTab(),
+                Tables\Columns\BadgeColumn::make('payment_status')
+                    ->label('Trạng Thái Thanh Toán')
+
+                    ->colors([
+                        'pending' => 'danger',  // Màu vàng cho trạng thái "Chưa Thanh Toán"
+                        'completed' => 'success', // Màu xanh cho trạng thái "Đã Thanh Toán"
+                        'failed' => 'warning',     // Màu đỏ cho trạng thái "Thất Bại"
+                    ]),
+                Tables\Columns\TextColumn::make('total_amount')
+                    ->label('Tổng Tiền')
+                    ->money('vnd'), // Giả sử bạn muốn hiển thị tiền tệ
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('invitationTemplate')
@@ -212,11 +360,11 @@ class WeddingInvitationResource extends Resource
                         return $query
                             ->when(
                                 $data['created_from'],
-                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', '>=', $date),
+                                fn(Builder $query, $date): Builder => $query->whereDate('created_at', '>=', $date),
                             )
                             ->when(
                                 $data['created_until'],
-                                fn (Builder $query, $date): Builder => $query->whereDate('created_at', '<=', $date),
+                                fn(Builder $query, $date): Builder => $query->whereDate('created_at', '<=', $date),
                             );
                     })
             ])
@@ -228,8 +376,23 @@ class WeddingInvitationResource extends Resource
                         ->label('Chỉnh sửa'),
                     Tables\Actions\DeleteAction::make()
                         ->label('Xóa'),
-                    Tables\Actions\RestoreAction::make()
-                        ->label('Khôi phục'),
+                    Tables\Actions\Action::make(name: 'pay')
+                        ->label('Thanh toán')
+                        ->icon('heroicon-o-credit-card')
+                        ->action(function (WeddingInvitation $record) {
+                            // Xử lý logic thanh toán ở đây
+                            // Ví dụ: Cập nhật trạng thái thanh toán hoặc xử lý giao dịch
+                            $record->update(['payment_status' => 'completed']); // Cập nhật trạng thái thanh toán
+                        })
+                        ->modalContent(function (WeddingInvitation $record) {
+                            return view('partials.payment-modal', [
+                                'qrCode' => '234234', // Thay thế bằng mã QR thực tế nếu có
+                                'amount' => $record->total_amount,
+                                'invoiceCode' => $record->invitation_code,
+                            ]);
+                        })
+                        ->modalButton('Xác nhận thanh toán')
+                        ->visible(fn(WeddingInvitation $record) => $record->payment_status === 'pending'),
                 ])
             ])
             ->bulkActions([
@@ -239,7 +402,6 @@ class WeddingInvitationResource extends Resource
                 ]),
             ]);
     }
-
     public static function getRelations(): array
     {
         return [
