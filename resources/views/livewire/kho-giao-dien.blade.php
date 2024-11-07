@@ -10323,7 +10323,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10338,7 +10339,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10358,7 +10360,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10391,7 +10393,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10406,7 +10409,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10426,7 +10430,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10459,7 +10463,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10474,7 +10479,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10494,7 +10500,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10527,7 +10533,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10542,7 +10549,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10562,7 +10570,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10595,7 +10603,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10610,7 +10619,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10630,7 +10640,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10663,7 +10673,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10678,7 +10689,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10698,7 +10710,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10731,7 +10743,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10746,7 +10759,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10766,7 +10780,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10799,7 +10813,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10814,7 +10829,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10834,7 +10850,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -10867,7 +10883,8 @@
                                     <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
                                         <div class='ladi-image ladi-transition'>
                                             <div class="ladi-image-background"
-                                                style="background-image: url('{{ Storage::url($card->image) }}');"></div>
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
                                         </div>
                                     </a>
                                     <div id="BUTTON119" class='ladi-element'>
@@ -10882,7 +10899,8 @@
                                                 </div>
                                             </div>
                                             <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
-                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }} VNĐ</p>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -10902,7 +10920,357 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div  id="BUTTON121" class='ladi-element'>
+                                    <div id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(9)->first(); @endphp
+                    <div data-action="true" id="GROUP214" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(10)->first(); @endphp
+                    <div data-action="true" id="GROUP215" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(11)->first(); @endphp
+                    <div data-action="true" id="GROUP224" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(12)->first(); @endphp
+                    <div data-action="true" id="GROUP228" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON121" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
+                                                <a href="/user/register" class='ladi-headline'>Chọn thiệp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BUTTON143" class='ladi-element'>
+                                <div class='ladi-button ladi-transition'>
+                                    <div class="ladi-button-background"></div>
+                                    <div id="BUTTON_TEXT143" class='ladi-element ladi-button-headline'>
+                                        <p class='ladi-headline'>Xem thiệp của các cặp đôi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    @if($weddingCards->isNotEmpty())
+                    @php $card = $weddingCards->skip(13)->first(); @endphp
+                    <div data-action="true" id="GROUP229" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div data-action="true" id="GROUP201" class='ladi-element'>
+                                <div class='ladi-group'>
+                                    <div id="BOX96" class='ladi-element'>
+                                        <div class='ladi-box ladi-transition'></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="IMAGE72" class='ladi-element'>
+                                        <div class='ladi-image ladi-transition'>
+                                            <div class="ladi-image-background"
+                                                style="background-image: url('{{ Storage::url($card->image) }}');">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON119" class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_SHAPE119" class='ladi-element ladi-button-shape'>
+                                                <div class='ladi-shape'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                        viewBox="0 0 100 100" fill="rgba(248, 203, 28, 1)">
+                                                        <use xlink:href="#shape_WghkBkKmqG"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div id="BUTTON_TEXT119" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>{{ number_format($card->price, 0, ',', '.') }}
+                                                    VNĐ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-action="true" id="HEADLINE225" class='ladi-element'>
+                                        <h3 class='ladi-headline ladi-transition'>{{ $card->template_name }}<br></h3>
+                                    </div>
+                                    <div id="PARAGRAPH108" class='ladi-element'>
+                                        <div class='ladi-paragraph ladi-transition'>{{ $card->description ?? 'Mô tả
+                                            không có.' }}<br></div>
+                                    </div>
+                                    <a href="{{ $card->demo_link }}" target="_blank" id="BUTTON120"
+                                        class='ladi-element'>
+                                        <div class='ladi-button ladi-transition'>
+                                            <div class="ladi-button-background"></div>
+                                            <div id="BUTTON_TEXT120" class='ladi-element ladi-button-headline'>
+                                                <p class='ladi-headline'>Xem thiệp</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="BUTTON121" class='ladi-element'>
                                         <div class='ladi-button ladi-transition'>
                                             <div class="ladi-button-background"></div>
                                             <div id="BUTTON_TEXT121" class='ladi-element ladi-button-headline'>
@@ -13467,6 +13835,30 @@
     </body>
 
     </html>
+    <style>
+        #GROUP214 {
+            top: 2008.6px;
+
+        }
+
+        #GROUP215 {
+            top: 2008.6px;
+
+        }
+
+        #GROUP224 {
+            top: 2008.6px;
+
+        }
+
+        #GROUP228 {
+            top: 2677.97px;
+        }
+
+        #GROUP229 {
+            top: 2673.97px;
+        }
+    </style>
     <!--Publish time: Tue, 01 Oct 2024 16:50:44 GMT-->
     <!--LadiPage build time: Fri, 27 Sep 2024 07:02:17 GMT-->
 </div>

@@ -23,12 +23,33 @@ class LatestWeddingInvitationsWidget extends BaseWidget
                 WeddingInvitation::query()->latest()->limit(5)
             )
             ->columns([
+                Tables\Columns\TextColumn::make('id')
+                    ->label('ID'),
                 Tables\Columns\TextColumn::make('invitation_code')
                     ->label('Mã thiệp'),
                 Tables\Columns\TextColumn::make('invitationTemplate.template_name')
                     ->label('Tên mẫu'),
                 Tables\Columns\TextColumn::make('customer.email')
                     ->label('Email khách hàng'),
+                    Tables\Columns\TextColumn::make('total_amount')
+                    ->label('Tổng tiền')
+                    ->money('VND', true), // Hiển thị số tiền với định dạng tiền tệ
+
+                // Cột Gói
+                Tables\Columns\TextColumn::make('package')
+                    ->label('Gói')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('package')
+                    ->label('Gói')
+                    ->sortable(),
+                    Tables\Columns\TextColumn::make('payment_status')
+                    ->label('Trạng thái thanh toán')
+                    ->formatStateUsing(fn ($state) => match($state) {
+                        'completed' => 'Đã thanh toán',
+                        'pending' => 'Chưa thanh toán',
+                        default => 'Thất bại',
+                    })
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('event_date')
                     ->label('Ngày tổ chức')
                     ->date('d/m/Y'),

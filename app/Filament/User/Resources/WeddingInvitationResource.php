@@ -71,21 +71,30 @@ class WeddingInvitationResource extends Resource
                                             ->label('Mã Thiệp')
                                             ->required()
                                             ->disabled()
-                                            ->reactive()
                                             ->dehydrated(true)
                                             ->unique(WeddingInvitation::class, 'invitation_code', ignoreRecord: true)
                                             ->afterStateHydrated(function (callable $get, callable $set) {
                                                 // Chỉ tạo mã nếu invitation_code đang rỗng.
                                                 if (!$get('invitation_code')) {
-                                                    $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-                                                    $randomString = '';
+                                                    $characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; // Chỉ gồm chữ cái viết hoa
+                                                    $digits = '0123456789'; // Chỉ gồm chữ số
 
                                                     // Lặp để đảm bảo mã không trùng.
                                                     do {
-                                                        $randomString = '';
-                                                        for ($i = 0; $i < 60; $i++) {
-                                                            $randomString .= $characters[random_int(0, strlen($characters) - 1)];
+                                                        // Tạo 3 chữ cái viết hoa ngẫu nhiên
+                                                        $randomLetters = '';
+                                                        for ($i = 0; $i < 3; $i++) {
+                                                            $randomLetters .= $characters[random_int(0, strlen($characters) - 1)];
                                                         }
+
+                                                        // Tạo 7 chữ số ngẫu nhiên
+                                                        $randomDigits = '';
+                                                        for ($i = 0; $i < 7; $i++) {
+                                                            $randomDigits .= $digits[random_int(0, strlen($digits) - 1)];
+                                                        }
+
+                                                        // Kết hợp để tạo mã gồm 3 chữ cái viết hoa và 7 chữ số
+                                                        $randomString = $randomLetters . $randomDigits;
 
                                                         // Kiểm tra xem mã đã tồn tại chưa, trừ mã hiện tại (nếu có).
                                                         $exists = WeddingInvitation::where('invitation_code', $randomString)
@@ -344,6 +353,14 @@ class WeddingInvitationResource extends Resource
                 Tables\Columns\TextColumn::make('total_amount')
                     ->label('Tổng Tiền')
                     ->money('vnd'), // Giả sử bạn muốn hiển thị tiền tệ
+                Tables\Columns\TextColumn::make('payment_status')
+                    ->label('Trạng thái thanh toán')
+                    ->formatStateUsing(fn($state) => match ($state) {
+                        'completed' => 'Đã thanh toán',
+                        'pending' => 'Chưa thanh toán',
+                        default => 'Thất bại',
+                    })
+                    ->sortable(),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('invitationTemplate')

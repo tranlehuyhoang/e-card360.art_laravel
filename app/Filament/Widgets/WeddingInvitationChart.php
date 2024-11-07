@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Filament\Widgets;
 
 use App\Models\WeddingInvitation;
@@ -18,10 +17,9 @@ class WeddingInvitationChart extends ChartWidget
 
         $data = WeddingInvitation::select(
             DB::raw('COUNT(*) as count'),
-            DB::raw('SUM(wedding_cards.price) as total'),
+            DB::raw('SUM(wedding_invitations.total_amount) as total'), // Sửa thành wedding_invitations.total_amount
             DB::raw("DATE_FORMAT(wedding_invitations.created_at, '%Y-%m') as month")
         )
-        ->join('wedding_cards', 'wedding_invitations.invitation_template_id', '=', 'wedding_cards.id')
         ->whereBetween('wedding_invitations.created_at', [$startDate, $endDate])
         ->groupBy('month')
         ->orderBy('month')
@@ -103,3 +101,4 @@ class WeddingInvitationChart extends ChartWidget
         ];
     }
 }
+ 

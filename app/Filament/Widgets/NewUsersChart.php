@@ -3,20 +3,32 @@
 namespace App\Filament\Widgets;
 
 use App\Models\User;
+use App\Models\WeddingInvitation;
 use Filament\Widgets\ChartWidget;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class NewUsersChart extends ChartWidget
 {
-    protected static ?string $heading = 'Người dùng mới 12 tháng gần nhất';
+    protected static ?string $heading = 'Người dùng mới và Thiệp cưới 12 tháng gần nhất';
 
     protected function getData(): array
     {
         $endDate = Carbon::now()->endOfMonth();
         $startDate = $endDate->copy()->subMonths(11)->startOfMonth();
 
-        $data = User::select(
+        // Fetch new user data
+        $userData = User::select(
+            DB::raw('COUNT(*) as count'),
+            DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month")
+        )
+        ->whereBetween('created_at', [$startDate, $endDate])
+        ->groupBy('month')
+        ->orderBy('month')
+        ->get();
+
+        // Fetch wedding invitations data
+        $invitationData = WeddingInvitation::select(
             DB::raw('COUNT(*) as count'),
             DB::raw("DATE_FORMAT(created_at, '%Y-%m') as month")
         )
@@ -27,6 +39,7 @@ class NewUsersChart extends ChartWidget
 
         $months = [];
         $userCounts = [];
+        $invitationCounts = [];
 
         // Mảng ánh xạ tên tháng tiếng Anh sang tiếng Việt
         $vietnameseMonths = [
@@ -43,8 +56,14 @@ class NewUsersChart extends ChartWidget
             $englishMonth = $currentDate->format('M');
             $vietnameseMonth = $vietnameseMonths[$englishMonth];
             $months[] = $vietnameseMonth . ' ' . $currentDate->format('Y');
-            $monthData = $data->firstWhere('month', $monthKey);
-            $userCounts[] = $monthData ? $monthData->count : 0;
+
+            // Get the counts for each month
+            $userMonthData = $userData->firstWhere('month', $monthKey);
+            $invitationMonthData = $invitationData->firstWhere('month', $monthKey);
+
+            $userCounts[] = $userMonthData ? $userMonthData->count : 0;
+            $invitationCounts[] = $invitationMonthData ? $invitationMonthData->count : 0;
+
             $currentDate->addMonth();
         }
 
@@ -55,6 +74,12 @@ class NewUsersChart extends ChartWidget
                     'data' => $userCounts,
                     'borderColor' => '#4CAF50',
                     'backgroundColor' => 'rgba(76, 175, 80, 0.2)',
+                ],
+                [
+                    'label' => 'Số lượng thiệp cưới',
+                    'data' => $invitationCounts,
+                    'borderColor' => '#FF6384',
+                    'backgroundColor' => 'rgba(255, 99, 132, 0.2)',
                 ],
             ],
             'labels' => $months,
@@ -74,7 +99,7 @@ class NewUsersChart extends ChartWidget
                     'beginAtZero' => true,
                     'title' => [
                         'display' => true,
-                        'text' => 'Số người dùng mới',
+                        'text' => 'Số lượng',
                     ],
                 ],
             ],

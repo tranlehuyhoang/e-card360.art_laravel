@@ -50,7 +50,7 @@
                         <div class='ladi-button ladi-transition'>
                             <div class="ladi-button-background"></div>
                             <div id="BUTTON_TEXT2" class='ladi-element ladi-button-headline'>
-                                <p class='ladi-headline ladi-transition'>Bắt đầu</p>
+                                <p onclick="window.location.href='/user/register'" class="ladi-headline ladi-transition">Bắt đầu</p>
                             </div>
                         </div>
                     </a>
