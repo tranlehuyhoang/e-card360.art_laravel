@@ -21,6 +21,7 @@ use App\Filament\Widgets\WeddingInvitationChart;
 use App\Filament\Widgets\NewUsersChart;
 use App\Filament\Widgets\LatestWeddingInvitationsWidget;
 use App\Http\Middleware\CheckAdminRole;
+use App\Http\Middleware\CheckUserLogin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -66,6 +67,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+                CheckUserLogin::class,
      
             ])
             ->brandName('E-CARD360.ART');
