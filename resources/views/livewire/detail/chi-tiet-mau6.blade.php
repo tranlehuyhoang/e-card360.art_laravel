@@ -517,11 +517,17 @@
                                     <h3 class="banner-title"></h3>
                                     <div class="invitation-banner">
                                         <div class="time-banner">
-                                            <span class="banner_month">{{ \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
-                                            <div class="banner_date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</div>
-                                            <span class="banner_year">{{ \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</span>
+                                            <span class="banner_month">{{ \Carbon\Carbon::parse($invitation->event_time)->format('m') }}</span>
+                                            <div class="banner_date">{{ \Carbon\Carbon::parse($invitation->event_time)->format('d') }}</div>
+                                            <span class="banner_year">{{ \Carbon\Carbon::parse($invitation->event_time)->format('Y') }}</span>
                                         </div>
-                                        <p class="ngay_am">Nhằm ngày {{ \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('j \\tháng n \\năm Y') }}</p>
+                                        <p class="ngay_am">Nhằm ngày 
+                                            {{ \Carbon\Carbon::parse($invitation->event_time)->format('d') }}
+   tháng {{ \Carbon\Carbon::parse($invitation->event_time)->format('m') }}
+   năm {{ \Carbon\Carbon::parse($invitation->event_time)->format('Y') }}
+
+                                        </p>
+
                                     </div>
                                     <div class="banner-address">
                                         <p>Hôn lễ được tổ chức tại</p>
@@ -636,7 +642,8 @@
                                     <img src="{{ Storage::url($invitation->bride_family_image) }}" alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -673,7 +680,8 @@
                                     <img src="{{ Storage::url($invitation->groom_family_image) }}" alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -997,9 +1005,7 @@ $(document).ready(function(){
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio
-                    src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-2.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
 
                 </audio>
                 <!-- END AUDIO -->

@@ -510,18 +510,20 @@
                             </h1>
 
                             <div class="banner-name">
-
                                 <h2 class="groom_name" data-aos="fade-down" data-aos-duration="3000">
-                                    Công Thành </h2>
+                                    {{ $invitation->groom_name }}
+                                </h2>
                                 <span>&</span>
                                 <h2 class="bride_name" data-aos="fade-up" data-aos-duration="3000">
-                                    Phương Ánh </h2>
+                                    {{ $invitation->bride_name }}
+                                </h2>
                                 <div class="banner-date-group" data-aos="fade-up" data-aos-duration="3000">
-                                    <span class="banner-date">04</span>
-                                    <span class="banner-month">02</span>
-                                    <span class="banner-year">2024</span>
+                                    <span class="banner-date">{{ \Carbon\Carbon::parse($invitation->event_time)->format('d') }}</span>
+                                    <span class="banner-month">{{ \Carbon\Carbon::parse($invitation->event_time)->format('m') }}</span>
+                                    <span class="banner-year">{{ \Carbon\Carbon::parse($invitation->event_time)->format('Y') }}</span>
                                 </div>
                             </div>
+                            
 
                             <span class="slogan" data-aos="fade-up" data-aos-duration="1000"></span>
 
@@ -1017,8 +1019,7 @@
                 </script>
 
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-4.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
 
                 </audio>
                 <!-- END AUDIO -->

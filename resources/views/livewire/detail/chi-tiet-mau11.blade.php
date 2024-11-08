@@ -546,7 +546,7 @@
                             <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
                                 <p class="title">Cô dâu</p>
                                 <h3 class="bride_name">{{ $invitation->bride_name }}</h3>
-                                <p class="bride_birthday">{{ \Carbon\Carbon::parse($invitation->bride_birthday)->format('d/m/Y') }}</p>
+                                <p class="bride_birthday">{{ \Carbon\Carbon::parse($invitation->bride_birth_date)->format('d/m/Y') }}</p>
                                 <p class="bride_des">{{ $invitation->bride_description }}</p>
                                 <hr />
                             </div>
@@ -558,7 +558,7 @@
                             <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
                                 <p class="title">Chú rể</p>
                                 <h3 class="groom_name">{{ $invitation->groom_name }}</h3>
-                                <p class="groom_birthday">{{ \Carbon\Carbon::parse($invitation->groom_birthday)->format('d/m/Y') }}</p>
+                                <p class="groom_birthday">{{ \Carbon\Carbon::parse($invitation->groom_birth_date)->format('d/m/Y') }}</p>
                                 <p class="groom_des">{{ $invitation->groom_description }}</p>
                                 <hr />
                             </div>
@@ -582,7 +582,7 @@
                                     <img src="{{ Storage::url($invitation->first_meeting_image) }}" alt="" class="timline-img">
                                 </div>
                                 <div class="timeline-body">
-                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('Y') }}</span>
+                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y') }}</span>
                                     <span class="title">Lần đầu gặp gỡ</span>
                                     <p class="timeline-des uk-margin-remove">Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.</p>
                                 </div>
@@ -594,7 +594,7 @@
                                     <img src="{{ Storage::url($invitation->dating_image) }}" alt="" class="timline-img">
                                 </div>
                                 <div class="timeline-body">
-                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->dating_date)->format('Y') }}</span>
+                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y') }}</span>
                                     <span class="title">Hẹn hò</span>
                                     <p class="timeline-des uk-margin-remove">Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập.</p>
                                 </div>
@@ -758,7 +758,8 @@
                                     <img src="{{ Storage::url($invitation->bride_family_image) }}" alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -795,7 +796,8 @@
                                     <img src="{{ Storage::url($invitation->groom_family_image) }}" alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -934,9 +936,8 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio
-                    src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-7.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

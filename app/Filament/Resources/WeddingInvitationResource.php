@@ -49,7 +49,6 @@ class WeddingInvitationResource extends Resource
                                             ->nullable()
                                             ->required()
                                             ->live()
-                                            ->disabled(fn($get) => $get('id') !== null) // Vô hiệu hóa nếu đang chỉnh sửa
                                             ->afterStateUpdated(function (callable $get, callable $set) {
                                                 $templateId = $get('invitation_template_id');
                                                 $amount = 0;
@@ -68,7 +67,7 @@ class WeddingInvitationResource extends Resource
                                         Forms\Components\TextInput::make('invitation_code')
                                             ->label('Mã Thiệp')
                                             ->required()
-                                            ->disabled()
+                                            
                                             ->dehydrated(true)
                                             ->unique(WeddingInvitation::class, 'invitation_code', ignoreRecord: true)
                                             ->afterStateHydrated(function (callable $get, callable $set) {
@@ -136,7 +135,6 @@ class WeddingInvitationResource extends Resource
                                             ->required()
                                             ->live()
                                             ->reactive()
-                                            ->disabled(fn($get) => $get('id') !== null) // Vô hiệu hóa nếu đang chỉnh sửa
                                             ->afterStateUpdated(function (callable $get, callable $set) {
                                                 $packagePrice = 0;
                                                 $package = $get('package');
@@ -162,7 +160,7 @@ class WeddingInvitationResource extends Resource
                                 // Section for Event Information
                                 Forms\Components\Section::make('Thông Tin Tổ Chức')
                                     ->schema([
-                                        Forms\Components\DateTimePicker::make('event_time')
+                                        Forms\Components\DateTimePicker::make(name: 'event_time')
                                             ->label('Giờ Tổ Chức'),
                                         Forms\Components\DatePicker::make('event_date')
                                             ->label('Ngày Tổ Chức'),

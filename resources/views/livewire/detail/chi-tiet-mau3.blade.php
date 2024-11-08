@@ -633,7 +633,7 @@
 
 
                         <div class="count-down section-countdown img_bg bg_overlay"
-                            style="background-image:url(/assets_1/wp-content/uploads/2023/12/img5.jpg)">
+                            style="background-image:url({{Storage::url($invitation->banner5)}})">
                             <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                             <h2 class="section-title">
                                 SAVE THE DATE </h2>
@@ -687,7 +687,8 @@
                                         alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -729,7 +730,8 @@
                                         alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -978,7 +980,7 @@
                                 </div>
                                 <div class="timeline-body">
                                     <span class="story-date">{{
-                                        \Carbon\Carbon::parse($invitation->first_meeting_date)->format('Y')
+                                        \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y')
                                         }}</span>
                                     <span class="title">Lần đầu gặp gỡ</span>
                                     <p class="timeline-des uk-margin-remove">
@@ -995,7 +997,7 @@
                                 </div>
                                 <div class="timeline-body">
                                     <span class="story-date">{{
-                                        \Carbon\Carbon::parse($invitation->dating_date)->format('Y')
+                                        \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y')
                                         }}</span>
                                     <span class="title">Hẹn hò</span>
                                     <p class="timeline-des uk-margin-remove">
@@ -1260,8 +1262,8 @@
                 </script>
 
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2023/12/Shane-Filan-Beautiful-In-White-Official-Video-1.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

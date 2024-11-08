@@ -485,53 +485,41 @@
                 <!-- END PRELOAD -->
                 <main>
                     <!-- BANNER -->
-                    <div id="banner" class="section-banner">
-                        <!-- Background images -->
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/leaf1.png" alt=""
-                            class="bg-top-left" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/leaf1.png" alt=""
-                            class="bg-top-right">
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/codien2/img-bg/sun.png" alt=""
-                            class="bg-sun" data-aos="fade-left" data-aos-duration="2000">
+                    <section id="banner" class="section-banner">
 
-                        <div class="banner container">
-                            <div class="banner-data">
-                                <h1 class="banner-title" data-aos="fade-down" data-aos-duration="1000">
-                                    <p>Save <span>The</span> Date</p>
-                                </h1>
-
-                                <div class="banner-name">
-                                    <h2 class="groom_name" data-aos="fade-down" data-aos-duration="3000">
-                                        {{ $invitation->groom_name }}
-                                    </h2>
-                                    <span>&</span>
-                                    <h2 class="bride_name" data-aos="fade-up" data-aos-duration="3000">
-                                        {{ $invitation->bride_name }}
-                                    </h2>
-                                    <div class="banner-date-group" data-aos="fade-up" data-aos-duration="3000">
-                                        <span class="banner-date">{{
-                                            \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
-                                        <span class="banner-month">{{
-                                            \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
-                                        <span class="banner-year">{{
-                                            \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</span>
-                                    </div>
-                                </div>
-
-                                <span class="slogan" data-aos="fade-up" data-aos-duration="1000"></span>
-                            </div>
-
-                            <div class="banner-media swiper banner-slide">
+                        <div class="banner-container">
+                            <img src="/assets_1/wp-content/themes/wedding-studio/assets/hiendai2/img/bg-banner.png"
+                                alt="" class="banner-bg">
+                            <div class="banner-slide swiper">
                                 <div class="swiper-wrapper">
-                                    @foreach ($invitation->event_album as $image)
-                                    <div class="swiper-slide">
-                                        <img src="{{ Storage::url($image) }}" alt="Event Album Image" />
-                                    </div>
+                                    @foreach($invitation->event_album as $image)
+                                        <div class="swiper-slide">
+                                            <img src="{{ Storage::url($image) }}" alt="Event Image" />
+                                        </div>
                                     @endforeach
                                 </div>
+                                
                             </div>
+                            <div class="banner-name-left">
+                                <h2 class="groom_name" data-aos="fade-right" data-aos-duration="3000"> {{ $invitation->groom_name }}</h2>
+                            </div>
+                            <div class="banner-name-right">
+                                <h2 class="bride_name" data-aos="fade-left" data-aos-duration="3000"> {{ $invitation->bride_name }}</h2>
+                            </div>
+
                         </div>
-                    </div>
+                        <div class="date-group" data-aos="fade-up" data-aos-duration="2000">
+                            @php
+                            // Assuming $invitation->event_time is a datetime object or a formatted date string
+                            $eventDate = \Carbon\Carbon::parse($invitation->event_time);
+                        @endphp
+                        
+                        <div class="banner-date">{{ $eventDate->format('d') }}</div>
+                        <div class="banner-date">{{ $eventDate->format('m') }}</div>
+                        <div class="banner-date">{{ $eventDate->format('Y') }}</div>
+                        
+                        </div>
+                    </section>
                     <!-- END BANNER -->
                     <!-- NAME -->
                     <section id="name" class="section-name">
@@ -624,7 +612,7 @@
                                     </div>
                                     <div class="timeline-body">
                                         <span class="date story_1">{{
-                                            \Carbon\Carbon::parse($invitation->first_meeting_date)->format('Y')
+                                            \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y')
                                             }}</span>
                                         <span class="title">Lần đầu gặp gỡ</span>
                                     </div>
@@ -637,7 +625,7 @@
                                     </div>
                                     <div class="timeline-body">
                                         <span class="date story_1">{{
-                                            \Carbon\Carbon::parse($invitation->dating_date)->format('Y') }}</span>
+                                            \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y') }}</span>
                                         <span class="title">Hẹn hò</span>
                                     </div>
                                 </div>
@@ -770,7 +758,8 @@
                                         <div class="invitation-body">
                                             <h3 class="invitation-title">TƯ GIA NHÀ GÁI</h3>
                                             <address class="uk-margin-remove">
-                                                <p>{{ $invitation->bride_family_address }}</p>
+                                             <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                             </address>
 
                                             <div class="invi_time">
@@ -816,7 +805,8 @@
                                         <div class="invitation-body">
                                             <h3 class="invitation-title">TƯ GIA NHÀ TRAI</h3>
                                             <address class="uk-margin-remove">
-                                                <p>{{ $invitation->groom_family_address }}</p>
+                                           <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                             </address>
                                             <div class="invi_time">
                                                 @php
@@ -1022,8 +1012,7 @@
                 </script>
 
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
 
                 </audio>
                 <!-- END AUDIO -->

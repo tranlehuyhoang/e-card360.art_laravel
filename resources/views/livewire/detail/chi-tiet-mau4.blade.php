@@ -569,7 +569,7 @@
 
                         <!-- COUNTDOWN -->
                         <div class="count-down section-countdown img_bg bg_overlay"
-                            style="background-image:url(/assets_1/wp-content/uploads/2023/12/img5.jpg)">
+                            style="background-image:url({{Storage::url($invitation->banner4)}})">
                             <p class="subtitle">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                             <h2 class="section-title">SAVE THE DATE</h2>
                             <svg class="heartbeat" width="64" height="64" viewBox="0 0 24 24"
@@ -621,7 +621,8 @@
                                         alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -663,7 +664,8 @@
                                         alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -1033,7 +1035,7 @@ $(document).ready(function(){
                 <!-- THANK YOU -->
                 <section id="thankyou" class="section-thankyou bg_overlay uk-position-z-index">
                     <div class="uk-overlay uk-overlay-primary uk-position-cover"> </div>
-                    <img src="/assets_1/wp-content/uploads/2024/01/0D651757-8A73-4D91-80F8-6977659C564C.jpeg" alt=""
+                    <img src="{{Storage::url($invitation->banner5)}}" alt=""
                         class="thankyou-bg thankyou_img" style="object-position:" />
                     <div class="thankyou-body container uk-position-relative uk-position-z-index">
                         <h2 class="script-font uk-heading-medium uk-text-center text-white" data-aos="fade-up"
@@ -1074,8 +1076,8 @@ $(document).ready(function(){
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

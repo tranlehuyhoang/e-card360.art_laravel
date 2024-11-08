@@ -503,18 +503,18 @@
 
                         <div class="box-time title-font" data-aos="flip-up" data-aos-duration="3000">
                             <span class="name_day">
-                                {{ \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('l') }}
+                                {{ \Carbon\Carbon::parse($invitation->event_time)->translatedFormat('l') }}
                             </span>
                             <span class="calendar">
                                 <p class="month invitation_month">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</p>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('m') }}</p>
                                 <p class="day invitation_day">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</p>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('d') }}</p>
                                 <p class="year invitation_year">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</p>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('Y') }}</p>
                             </span>
                             <span class="time invitation_time">
-                                {{ \Carbon\Carbon::parse($invitation->event_date)->format('H:i') }}
+                                {{ \Carbon\Carbon::parse($invitation->event_time)->format('H:i') }}
                             </span>
                         </div>
 
@@ -727,7 +727,8 @@
                                     <img src="{{ Storage::url($invitation->bride_family_image) }}" alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -758,7 +759,8 @@
                                     <img src="{{ Storage::url($invitation->groom_family_image) }}" alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -797,7 +799,7 @@
 
                 <section id="countdown-secton"
                     class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
-                    style="background-image:url(/assets_1/wp-content/uploads/2024/01/z5060765908936_084b787c8360faec0a1655e889c8832f.jpg)">
+                    style="background-image:url({{Storage::url($invitation->banner5)}})">
                     <div class="uk-container">
                         <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                         <h2 class="uk-heading-small uk-text-center script-font">
@@ -999,8 +1001,7 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-1.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
 
                 </audio>
                 <!-- END AUDIO -->

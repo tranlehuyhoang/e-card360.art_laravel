@@ -502,15 +502,15 @@
                             
                             <div>
                                 <p>Vào Lúc</p>
-                                <p class="banner-time">{{ \Carbon\Carbon::parse($invitation->event_date)->format('H:i') }}</p>
+                                <p class="banner-time">{{ \Carbon\Carbon::parse($invitation->event_time)->format('H:i') }}</p>
                             </div>
                             
                             <div class="banner-date">
-                                <span class="day_name">{{ \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('l') }}</span>
+                                <span class="day_name">{{ \Carbon\Carbon::parse($invitation->event_time)->translatedFormat('l') }}</span>
                                 <span>|</span>
-                                <span class="banner_date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
+                                <span class="banner_date">{{ \Carbon\Carbon::parse($invitation->event_time)->format('d') }}</span>
                                 <span>|</span>
-                                <span class="banner_month">{{ \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
+                                <span class="banner_month">{{ \Carbon\Carbon::parse($invitation->event_time)->format('m') }}</span>
                             </div>
                             
                             <div class="banner-address uk-position-relative uk-position-z-index">
@@ -536,53 +536,7 @@
 
 
                 <!-- ABOUT -->
-                <section id="banner" class="section-banner">
-                    <div class="banner-container container">
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/xanhluxury/img/top-right.png" alt="" class="bg-top-right" data-aos="fade-down-left" data-aos-duration="2000">
-                        <img src="/assets_1/wp-content/themes/wedding-studio/assets/xanhluxury/img/bottom-left.png" alt="" class="bg-bottom-left" data-aos="fade-up-right" data-aos-duration="2000">
-                        
-                        <h1 class="banner-title" data-aos="fade-down" data-aos-duration="2000">
-                            <p>Save The Date</p>
-                        </h1>
-                        
-                        <div class="banner-name">
-                            {{ $invitation->groom_name }}<br />
-                            &<br />
-                            {{ $invitation->bride_name }}
-                        </div>
-                        
-                        <div class="banner-date">
-                            <div class="date1">
-                                <span class="name_day day_name">{{ \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('l') }}</span>
-                            </div>
-                            <div class="date2">
-                                <span class="invitation_month banner_month">{{ \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
-                                <span class="invitation_day banner_date">{{ \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
-                                <span class="invitation_year banner_year">{{ \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</span>
-                            </div>
-                            <div class="date3">
-                                <span>AT </span><span class="invitation_time banner_time">{{ \Carbon\Carbon::parse($invitation->event_date)->format('H:i') }}</span>
-                            </div>
-                        </div>
-                        
-                        <div class="banner-location" data-aos="fade-up" data-aos-duration="2000">
-                            <h4 class="name_palace banner_location_name">{{ $invitation->event_location }}</h4>
-                            <p class="invitation_address banner_location_address">{{ $invitation->event_address }}</p>
-                        </div>
-                        
-                        <div class="social-link">
-                            <a href="tel:{{ $invitation->event_phone }}">
-                                <i class='ri-phone-fill'></i>
-                            </a>
-                            <a href="#gift">
-                                <i class='ri-gift-fill'></i>
-                            </a>
-                            <a href="{{ $invitation->event_map_link }}" target="_blank">
-                                <i class='ri-map-fill'></i>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+         
                 
                 <section id="about" class="section-about">
                     <div class="section-heading">
@@ -597,7 +551,7 @@
                             <div class="about-data" data-aos="fade-right" data-aos-duration="3000">
                                 <p class="title">Cô dâu</p>
                                 <h3 class="bride_name">{{ $invitation->bride_name }}</h3>
-                                <p class="bride_birthday">{{ \Carbon\Carbon::parse($invitation->bride_birthday)->format('d/m/Y') }}</p>
+                                <p class="bride_birthday">{{ \Carbon\Carbon::parse($invitation->bride_birth_date)->format('d/m/Y') }}</p>
                                 <p class="bride_des">{{ $invitation->bride_description }}</p>
                                 <hr />
                             </div>
@@ -610,7 +564,7 @@
                             <div class="about-data" data-aos="fade-left" data-aos-duration="3000">
                                 <p class="title">Chú rể</p>
                                 <h3 class="groom_name">{{ $invitation->groom_name }}</h3>
-                                <p class="groom_birthday">{{ \Carbon\Carbon::parse($invitation->groom_birthday)->format('d/m/Y') }}</p>
+                                <p class="groom_birthday">{{ \Carbon\Carbon::parse($invitation->groom_birth_date)->format('d/m/Y') }}</p>
                                 <p class="groom_des">{{ $invitation->groom_description }}</p>
                                 <hr />
                             </div>
@@ -635,7 +589,7 @@
                                     <img src="{{ Storage::url($invitation->first_meeting_image) }}" alt="" class="timline-img">
                                 </div>
                                 <div class="timeline-body">
-                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('Y') }}</span>
+                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y') }}</span>
                                     <span class="title">Lần đầu gặp gỡ</span>
                                     <p class="timeline-des uk-margin-remove">Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói chuyện với một người xa lạ chưa từng quen.</p>
                                 </div>
@@ -647,7 +601,7 @@
                                     <img src="{{ Storage::url($invitation->dating_image) }}" alt="" class="timline-img">
                                 </div>
                                 <div class="timeline-body">
-                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->dating_date)->format('Y') }}</span>
+                                    <span class="story-date">{{ \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y') }}</span>
                                     <span class="title">Hẹn hò</span>
                                     <p class="timeline-des uk-margin-remove">Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong từng dòng người tấp nập.</p>
                                 </div>
@@ -806,102 +760,93 @@
                     <div class="container">
                         <div class="section-heading">
                             <h2 class="section-title">
-                                <p>Trân trọng kình mời</p>
+                                <p>Trân trọng kính mời</p>
                             </h2>
                         </div>
                         <div class="invitation">
                             <div class="invitation-container">
-                                <div class="invitation-card"> <img
-                                        src="/assets_1/wp-content/uploads/2024/01/9E2D097B-4E2F-4FF2-9F6F-3D1BEC1955B6-e1705078033877.jpeg"
-                                        alt="" />
+                                <!-- Bride's Family Card -->
+                                <div class="invitation-card">
+                                    <img src="{{ Storage::url($invitation->bride_family_image) }}" alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>ẤP TÂN PHÚ A, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                        <p>{{ $invitation->bride_family_address }}</p>
                                     </address>
                                     <div class="invitation-body">
+                                        @php
+                                            $brideFamilyTime = \Carbon\Carbon::parse($invitation->bride_family_time);
+                                        @endphp
                                         <div class="invi_time">
                                             <p class="fw-bold">Vào lúc
-                                                <span class="invi_hours">
-                                                    10:00 </span>
+                                                <span class="invi_hours">{{ $brideFamilyTime->format('H:i') }}</span>
                                             </p>
                                             <div class="invi_group_time">
-
-                                                <span class="invi_date_text">
-                                                    Thứ bảy </span>
+                                                <span class="invi_date_text">{{ $brideFamilyTime->locale('vi')->dayName }}</span>
                                                 <span class="invi_date_number">
-                                                    <p class="invi_date">03</p> /
-                                                    <p class="invi_month">02</p>
+                                                    <p class="invi_date">{{ $brideFamilyTime->format('d') }}</p> /
+                                                    <p class="invi_month">{{ $brideFamilyTime->format('m') }}</p>
                                                 </span>
-                                                <span class="invi_year_text">
-                                                    2024 </span>
+                                                <span class="invi_year_text">{{ $brideFamilyTime->format('Y') }}</span>
                                             </div>
-
-                                            <p class="invi_amlich">Nhằm ngày 24 tháng 12 năm Quý Mão</p>
+                                            <p class="invi_amlich">Nhằm ngày {{ $invitation->bride_family_description ?? '24 tháng 12 năm Quý Mão' }}</p>
                                         </div>
-
                                     </div>
                                     <div class="social-link">
-                                        <a href="tel:(+84)981742365" class="phone_number">
-                                            <i class="ri-phone-fill"></i></i>
+                                        <a href="tel:{{ $invitation->bride_family_phone }}" class="phone_number">
+                                            <i class="ri-phone-fill"></i>
                                         </a>
                                         <a href="" class="phone_number" data-fancybox>
                                             <i class="ri-image-circle-fill"></i>
                                         </a>
-                                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map"
-                                            target="_blank">
+                                        <a href="{{ $invitation->bride_family_map_link }}" class="invi_map" target="_blank">
                                             <i class="ri-map-2-fill"></i>
                                         </a>
                                     </div>
-
-
                                 </div>
-                                <div class="invitation-card"> <img
-                                        src="/assets_1/wp-content/uploads/2024/01/3BC80F6B-B4DE-49FC-8F23-046ADBBC4F05-e1705078098829.jpeg"
-                                        alt="" />
+                
+                                <!-- Groom's Family Card -->
+                                <div class="invitation-card">
+                                    <img src="{{ Storage::url($invitation->groom_family_image) }}" alt="" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>ẤP HẠ, XÃ TÂN BÌNH, HUYỆN THANH BÌNH, TỈNH ĐỒNG THÁP</p>
+                                        <p>{{ $invitation->groom_family_address }}</p>
                                     </address>
                                     <div class="invitation-body">
+                                        @php
+                                            $groomFamilyTime = \Carbon\Carbon::parse($invitation->groom_family_time);
+                                        @endphp
                                         <div class="invi_time">
                                             <p class="fw-bold">Vào lúc
-                                                <span class="invi_hours">
-                                                    10:00 </span>
+                                                <span class="invi_hours">{{ $groomFamilyTime->format('H:i') }}</span>
                                             </p>
                                             <div class="invi_group_time">
-
-                                                <span class="invi_date_text">
-                                                    Chủ Nhật </span>
+                                                <span class="invi_date_text">{{ $groomFamilyTime->locale('vi')->dayName }}</span>
                                                 <span class="invi_date_number">
-                                                    <p class="invi_date">04</p> /
-                                                    <p class="invi_month">02</p>
+                                                    <p class="invi_date">{{ $groomFamilyTime->format('d') }}</p> /
+                                                    <p class="invi_month">{{ $groomFamilyTime->format('m') }}</p>
                                                 </span>
-                                                <span class="invi_year_text">
-                                                    2024 </span>
+                                                <span class="invi_year_text">{{ $groomFamilyTime->format('Y') }}</span>
                                             </div>
-
-                                            <p class="invi_amlich">Nhằm ngày 25 tháng 12 năm Quý Mão</p>
+                                            <p class="invi_amlich">Nhằm ngày {{ $invitation->groom_family_description ?? '24 tháng 12 năm Quý Mão' }}</p>
                                         </div>
-
                                     </div>
                                     <div class="social-link">
-                                        <a href="tel:(+84)981742365" class="phone_number">
-                                            <i class="ri-phone-fill"></i></i>
+                                        <a href="tel:{{ $invitation->groom_family_phone }}" class="phone_number">
+                                            <i class="ri-phone-fill"></i>
                                         </a>
                                         <a href="" class="phone_number" data-fancybox>
                                             <i class="ri-image-circle-fill"></i>
                                         </a>
-                                        <a href="https://maps.app.goo.gl/fPfvAhoTgquMLP8m9" class="invi_map"
-                                            target="_blank">
+                                        <a href="{{ $invitation->groom_family_map_link }}" class="invi_map" target="_blank">
                                             <i class="ri-map-2-fill"></i>
                                         </a>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
+                
                 <!-- END INVITATION -->
                 <!-- DRESS CODE -->
                 <!-- END DRESS CODE -->
@@ -1003,8 +948,8 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-10.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

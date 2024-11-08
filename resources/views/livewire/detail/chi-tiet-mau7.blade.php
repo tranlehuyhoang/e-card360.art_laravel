@@ -613,7 +613,7 @@
                                 </div>
                                 <div class="timeline-body">
                                     <span class="date story_1">{{
-                                        \Carbon\Carbon::parse($invitation->first_meeting_date)->format('Y') }}</span>
+                                        \Carbon\Carbon::parse($invitation->first_meeting_date)->format('d - m - Y') }}</span>
                                     <span class="title">Lần đầu gặp gỡ</span>
                                     <p class="timeline-des uk-margin-remove">
                                     <p>Ngày ấy vu vơ đăng một dòng status trên facebook than thở, vu vơ đùa giỡn nói
@@ -629,7 +629,7 @@
                                 </div>
                                 <div class="timeline-body">
                                     <span class="date story_1">{{
-                                        \Carbon\Carbon::parse($invitation->dating_date)->format('Y') }}</span>
+                                        \Carbon\Carbon::parse($invitation->dating_date)->format('d - m - Y') }}</span>
                                     <span class="title">Hẹn hò</span>
                                     <p class="timeline-des uk-margin-remove">
                                     <p>Mỗi chiều cuối tuần thường chạy xe vòng quanh qua những con phố, len lỏi trong
@@ -753,7 +753,8 @@
                                     <div class="invitation-body">
                                         <h3 class="invitation-title">TƯ GIA NHÀ GÁI</h3>
                                         <address class="uk-margin-remove">
-                                            <p>{{ $invitation->bride_family_address }}</p>
+                                         <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                         </address>
                                         <div class="uk-light">
                                             <a href="tel:{{ $invitation->bride_family_phone }}"
@@ -777,7 +778,8 @@
                                     <div class="invitation-body">
                                         <h3 class="invitation-title">TƯ GIA NHÀ TRAI</h3>
                                         <address class="uk-margin-remove">
-                                            <p>{{ $invitation->groom_family_address }}</p>
+                                       <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                         </address>
                                         <div class="uk-light">
                                             <a href="tel:{{ $invitation->groom_family_phone }}"
@@ -799,7 +801,7 @@
                 <!-- COUNTDOWN SECTION -->
                 <section id="countdown-section"
                     class="uk-background-cover uk-section uk-section-large uk-text-center uk-light"
-                    style="background-image:url(/assets_1/wp-content/uploads/2024/01/79F59410-7275-47A9-906F-9BA0E1C03B47.jpeg)">
+                    style="background-image:url({{Storage::url($invitation->banner5)}})">
                     <div class="uk-container">
                         <p class="uk-text-center">CÙNG ĐẾM NGƯỢC THỜI GIAN</p>
                         <h2 class="uk-heading-small uk-text-center script-font">SAVE THE DATE</h2>
@@ -943,8 +945,8 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

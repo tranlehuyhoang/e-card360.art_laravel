@@ -11,7 +11,8 @@
                     <div class="group-radio">
                         <label class="radio-container">TƯ GIA NHÀ GÁI
                             <span class="tooltip">
-                                <p>{{ $invitation->bride_family_address }}</p>
+                             <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                             </span>
                             <input type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ GÁI"
                                 name="attendanceLocation" required>
@@ -20,7 +21,8 @@
 
                         <label class="radio-container">TƯ GIA NHÀ TRAI
                             <span class="tooltip">
-                                <p>{{ $invitation->groom_family_address }}</p>
+                           <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                             </span>
                             <input checked type="radio" wire:model="attendanceLocation" value="TƯ GIA NHÀ TRAI"
                                 name="attendanceLocation" required>

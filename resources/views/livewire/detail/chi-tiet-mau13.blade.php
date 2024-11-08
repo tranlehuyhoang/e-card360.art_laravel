@@ -501,19 +501,19 @@
                         <div class="banner-date">
                             <div class="date1">
                                 <span class="name_day day_name">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->translatedFormat('l') }}</span>
+                                    \Carbon\Carbon::parse($invitation->event_time)->translatedFormat('l') }}</span>
                             </div>
                             <div class="date2">
                                 <span class="invitation_month banner_month">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('m') }}</span>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('m') }}</span>
                                 <span class="invitation_day banner_date">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('d') }}</span>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('d') }}</span>
                                 <span class="invitation_year banner_year">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('Y') }}</span>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('Y') }}</span>
                             </div>
                             <div class="date3">
                                 <span>AT </span><span class="invitation_time banner_time">{{
-                                    \Carbon\Carbon::parse($invitation->event_date)->format('H:i') }}</span>
+                                    \Carbon\Carbon::parse($invitation->event_time)->format('H:i') }}</span>
                             </div>
                         </div>
                         <div class="banner-location" data-aos="fade-up" data-aos-duration="2000">
@@ -552,7 +552,7 @@
                                 <p class="title">Cô dâu</p>
                                 <h3 class="bride_name">{{ $invitation->bride_name }}</h3>
                                 <p class="bride_birthday">{{
-                                    \Carbon\Carbon::parse($invitation->bride_birthday)->format('d/m/Y') }}</p>
+                                    \Carbon\Carbon::parse($invitation->bride_birth_date)->format('d/m/Y') }}</p>
                                 <p class="bride_des">{{ $invitation->bride_description }}</p>
                                 <hr />
                             </div>
@@ -566,7 +566,7 @@
                                 <p class="title">Chú rể</p>
                                 <h3 class="groom_name">{{ $invitation->groom_name }}</h3>
                                 <p class="groom_birthday">{{
-                                    \Carbon\Carbon::parse($invitation->groom_birthday)->format('d/m/Y') }}</p>
+                                    \Carbon\Carbon::parse($invitation->groom_birth_date)->format('d/m/Y') }}</p>
                                 <p class="groom_des">{{ $invitation->groom_description }}</p>
                                 <hr />
                             </div>
@@ -789,7 +789,8 @@
                                         alt="TƯ GIA NHÀ GÁI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ GÁI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->bride_family_address }}</p>
+                                     <p>{{ $invitation->bride_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -831,7 +832,8 @@
                                         alt="TƯ GIA NHÀ TRAI" />
                                     <h3 class="card-title uk-margin-remove">TƯ GIA NHÀ TRAI</h3>
                                     <address class="uk-margin-remove">
-                                        <p>{{ $invitation->groom_family_address }}</p>
+                                   <p>{{ $invitation->groom_family_address ?? 'Địa chỉ không khả dụng' }}</p>
+
                                     </address>
                                     <div class="invitation-body">
                                         <div class="invi_time">
@@ -971,8 +973,8 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-9.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->

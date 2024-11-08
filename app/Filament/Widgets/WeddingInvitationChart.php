@@ -14,30 +14,29 @@ class WeddingInvitationChart extends ChartWidget
     {
         $endDate = Carbon::now()->endOfMonth();
         $startDate = $endDate->copy()->subMonths(11)->startOfMonth();
-
+    
         $data = WeddingInvitation::select(
             DB::raw('COUNT(*) as count'),
-            DB::raw('SUM(wedding_invitations.total_amount) as total'), // Sửa thành wedding_invitations.total_amount
+            DB::raw('SUM(wedding_invitations.total_amount) as total'), 
             DB::raw("DATE_FORMAT(wedding_invitations.created_at, '%Y-%m') as month")
         )
+        ->where('wedding_invitations.payment_status', 'completed') // Filter by completed payment status
         ->whereBetween('wedding_invitations.created_at', [$startDate, $endDate])
         ->groupBy('month')
         ->orderBy('month')
         ->get();
-
+    
         $months = [];
         $invitationCounts = [];
         $totalAmounts = [];
-
-        // Mảng ánh xạ tên tháng tiếng Anh sang tiếng Việt
+    
         $vietnameseMonths = [
             'Jan' => 'Tháng 1', 'Feb' => 'Tháng 2', 'Mar' => 'Tháng 3',
             'Apr' => 'Tháng 4', 'May' => 'Tháng 5', 'Jun' => 'Tháng 6',
             'Jul' => 'Tháng 7', 'Aug' => 'Tháng 8', 'Sep' => 'Tháng 9',
             'Oct' => 'Tháng 10', 'Nov' => 'Tháng 11', 'Dec' => 'Tháng 12'
         ];
-
-        // Generate all months in the range
+    
         $currentDate = $startDate->copy();
         while ($currentDate <= $endDate) {
             $monthKey = $currentDate->format('Y-m');
@@ -49,7 +48,7 @@ class WeddingInvitationChart extends ChartWidget
             $totalAmounts[] = $monthData ? $monthData->total : 0;
             $currentDate->addMonth();
         }
-
+    
         return [
             'datasets' => [
                 [
@@ -69,6 +68,7 @@ class WeddingInvitationChart extends ChartWidget
             'labels' => $months,
         ];
     }
+    
 
     protected function getType(): string
     {

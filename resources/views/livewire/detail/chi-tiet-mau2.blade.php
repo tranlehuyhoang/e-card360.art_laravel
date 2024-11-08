@@ -838,25 +838,38 @@
                                         <p>{{$invitation->bride_family_address}}</p>
                                     </address>
                                     <div class="invitation-body">
-                                        <div class="invi_time">
-                                            <p class="fw-bold">Vào lúc
-                                                <span class="invi_hours">
-                                                    10:00 </span>
-                                            </p>
-                                            <div class="invi_group_time">
-
-                                                <span class="invi_date_text">
-                                                    Thứ bảy </span>
-                                                <span class="invi_date_number">
-                                                    <p class="invi_date">03</p> /
-                                                    <p class="invi_month">02</p>
-                                                </span>
-                                                <span class="invi_year_text">
-                                                    2024 </span>
-                                            </div>
-
-                                            <p class="invi_amlich">Nhằm ngày 24 tháng 12 năm Quý Mão</p>
+                                        @php
+                                        // Parse bride's family time
+                                        $brideFamilyTime = \Carbon\Carbon::parse($invitation->bride_family_time);
+                                    
+                                        // Extracting time components for display
+                                        $brideTime = $brideFamilyTime->format('H:i');
+                                        $brideDayOfWeek = $brideFamilyTime->locale('vi')->dayName; // Vietnamese day name
+                                        $brideDay = $brideFamilyTime->format('d');
+                                        $brideMonth = $brideFamilyTime->format('m');
+                                        $brideYear = $brideFamilyTime->format('Y');
+                                    
+                                        // Assuming lunar date for bride family time is stored or calculated
+                                        $brideLunarDate = $invitation->bride_family_description ?? '24 tháng 12 năm Quý Mão';
+                                    @endphp
+                                    
+                                    <div class="invi_time">
+                                        <p class="fw-bold">Vào lúc
+                                            <span class="invi_hours">
+                                                {{ $brideTime }}
+                                            </span>
+                                        </p>
+                                        <div class="invi_group_time">
+                                            <span class="invi_date_text">{{ $brideDayOfWeek }}</span>
+                                            <span class="invi_date_number">
+                                                <p class="invi_date">{{ $brideDay }}</p> /
+                                                <p class="invi_month">{{ $brideMonth }}</p>
+                                            </span>
+                                            <span class="invi_year_text">{{ $brideYear }}</span>
                                         </div>
+                                        <p class="invi_amlich">Nhằm ngày {{ $brideLunarDate }}</p>
+                                    </div>
+                                    
 
                                     </div>
                                     <div class="social-link">
@@ -881,25 +894,39 @@
                                         <p>{{$invitation->groom_family_address}}</p>
                                     </address>
                                     <div class="invitation-body">
-                                        <div class="invi_time">
-                                            <p class="fw-bold">Vào lúc
-                                                <span class="invi_hours">
-                                                    10:00 </span>
-                                            </p>
-                                            <div class="invi_group_time">
-
-                                                <span class="invi_date_text">
-                                                    {{$invitation->event_day_of_week}} </span>
-                                                <span class="invi_date_number">
-                                                    <p class="invi_date">04</p> /
-                                                    <p class="invi_month">02</p>
-                                                </span>
-                                                <span class="invi_year_text">
-                                                    2024 </span>
-                                            </div>
-
-                                            <p class="invi_amlich">Nhằm ngày 25 tháng 12 năm Quý Mão</p>
+                                        @php
+                                        // Assuming $invitation->groom_family_time is a datetime object or a formatted date string
+                                        $groomFamilyTime = \Carbon\Carbon::parse($invitation->groom_family_time);
+                                    
+                                        // Formatting components for display
+                                        $time = $groomFamilyTime->format('H:i');
+                                        $dayOfWeek = $groomFamilyTime->locale('vi')->dayName; // Display day of the week in Vietnamese
+                                        $day = $groomFamilyTime->format('d');
+                                        $month = $groomFamilyTime->format('m');
+                                        $year = $groomFamilyTime->format('Y');
+                                    
+                                        // Assuming lunar date is pre-calculated and stored as $invitation->lunar_date
+                                        // Replace with actual logic if conversion to lunar date is needed
+                                        $lunarDate = $invitation->groom_family_description ?? '24 tháng 12 năm Quý Mão';
+                                    @endphp
+                                    
+                                    <div class="invi_time">
+                                        <p class="fw-bold">Vào lúc
+                                            <span class="invi_hours">
+                                                {{ $time }}
+                                            </span>
+                                        </p>
+                                        <div class="invi_group_time">
+                                            <span class="invi_date_text">{{ $dayOfWeek }}</span>
+                                            <span class="invi_date_number">
+                                                <p class="invi_date">{{ $day }}</p> /
+                                                <p class="invi_month">{{ $month }}</p>
+                                            </span>
+                                            <span class="invi_year_text">{{ $year }}</span>
                                         </div>
+                                        <p class="invi_amlich">Nhằm ngày {{ $lunarDate }}</p>
+                                    </div>
+                                    
 
                                     </div>
                                     <div class="social-link">
@@ -1020,8 +1047,8 @@
  $(':root').css('--bg', '');
                 </script>
                 <!-- AUDIO -->
-                <audio src="/assets_1/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-12.mp3"
-                    controls autoplay id="audio">
+                <audio src="{{$invitation->background_music}}" controls="" autoplay="" id="audio">
+
 
                 </audio>
                 <!-- END AUDIO -->
