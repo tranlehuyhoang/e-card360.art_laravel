@@ -1,0 +1,44 @@
+  /* header */
+  .nav-link li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black) !important;
+  }
+.logo-left {
+    display: none;
+}
+.nav-link {
+    display: none;
+}
+.nav-right {
+    display: none;
+}
+.nav-mobile li a {
+    font-size: 18px;
+    font-weight: 500;
+}
+.avatar {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--primary-color);
+}
+@media (min-width: 680px) {
+    
+}
+@media (min-width:1024px) {
+    .nav-right {
+        display: inline-flex;
+    }
+    .logo-center {
+        display: none;
+    }
+    .logo-left {
+        display: block;
+    }
+    .nav-link {
+        display: inline-flex;
+    }
+    .menu-icon {
+        display: none;
+    }
+}

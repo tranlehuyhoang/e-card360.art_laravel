@@ -1,7 +1,5 @@
 <?php
 
-use App\Livewire\BangGia;
-use App\Livewire\KhoGiaoDien;
 use App\Livewire\Mau1;
 use App\Livewire\Mau2;
 use App\Livewire\Mau3;
@@ -96,8 +94,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route cho mau-1 đến mau-44
 Route::get('/', TrangChu::class);
-Route::get('/kho-giao-dien', KhoGiaoDien::class);
-Route::get('/bang-gia', BangGia::class);
+ 
  
 Route::get('/mau-1', Mau1::class);
 Route::get('/mau-2', Mau2::class);

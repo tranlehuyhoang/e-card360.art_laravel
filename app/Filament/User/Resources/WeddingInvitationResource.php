@@ -39,6 +39,8 @@ class WeddingInvitationResource extends Resource
                                     ->schema([
                                         Forms\Components\Select::make('customer_id')
                                             ->required()
+                                            ->disabled()
+                                            ->dehydrated(true)
                                             ->options(User::all()->pluck('email', 'id')) // Lấy danh sách người dùng
                                             ->label('ID Khách Hàng')
                                             ->default(auth()->user()->id), // Chọn người dùng đã đăng nhập
@@ -49,6 +51,7 @@ class WeddingInvitationResource extends Resource
                                             ->label('ID Mẫu Thiệp')
                                             ->options(WeddingCard::all()->pluck('template_name', 'id')) // Assuming 'template_name' is the display value
                                             ->nullable()
+                                            
                                             ->required()
                                             ->live()
                                             ->disabled(fn($get) => $get('id') !== null) // Vô hiệu hóa nếu đang chỉnh sửa
@@ -111,6 +114,7 @@ class WeddingInvitationResource extends Resource
                                         Forms\Components\TextInput::make('total_amount')
                                             ->label('Tổng Tiền')
                                             ->required()
+                                            ->disabled()
                                             ->dehydrated()
                                             ->numeric() // Đảm bảo rằng trường này là số
                                             ->default(0), // Giá trị mặc định
@@ -397,9 +401,6 @@ class WeddingInvitationResource extends Resource
                         ->label('Thanh toán')
                         ->icon('heroicon-o-credit-card')
                         ->action(function (WeddingInvitation $record) {
-                            // Xử lý logic thanh toán ở đây
-                            // Ví dụ: Cập nhật trạng thái thanh toán hoặc xử lý giao dịch
-                            $record->update(['payment_status' => 'completed']); // Cập nhật trạng thái thanh toán
                         })
                         ->modalContent(function (WeddingInvitation $record) {
                             return view('partials.payment-modal', [
