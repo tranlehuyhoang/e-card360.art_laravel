@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Jobs\CheckPayment;
 use Livewire\Component;
 use App\Models\WeddingCard;
 
@@ -13,6 +14,7 @@ class TrangChu extends Component
     {
         // Lấy 8 WeddingCard từ database
         $this->weddingCards = WeddingCard::inRandomOrder()->take(10)->get();
+        CheckPayment::dispatch();
 
     }
 

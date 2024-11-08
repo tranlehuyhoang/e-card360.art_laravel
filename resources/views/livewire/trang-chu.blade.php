@@ -958,11 +958,11 @@
                                 <div class="logo uk-text-center">
                                     <img src="/saxukyR.png" alt="" style="max-width: 120px;">
                                 </div>
-                                <h1 class="uk-h3 title-font uk-margin-remove-bottom">Thiệp cưới điện tử</h1>
+                                <h1 class="uk-h3 title-font uk-margin-remove-bottom">E-card360.art</h1>
                                 <div class="uk-child-width-auto uk-grid-small uk-flex-inline uk-grid uk-margin-bottom uk-margin-small-top"
                                     uk-grid="">
                                     <div class="">
-                                        <a class="el-link" target="_blank" href="" rel="noreferrer">
+                                        <a class="el-link" target="_blank" href="https://www.facebook.com/Ecard360" rel="noreferrer">
                                             <span uk-icon="icon: facebook; width: 20; height: 20;" class="uk-icon">
                                             </span>
                                         </a>
@@ -988,7 +988,6 @@
 
                                 </div>
                                 <div>
-                                    <p>39 Lý Tự Trọng, phường 1, TP.Vũng Tàu</p>
                                 </div>
                                 <div class="uk-panel uk-text-small uk-text-emphasis uk-text-left uk-scrollspy-inview uk-text-center uk-padding-small"
                                     uk-scrollspy-class="">©
@@ -997,10 +996,9 @@
                                         year: 'numeric'
                                     }).format() + '</time>');
                                     </script>
-                                    Thiệp cưới điện tử. All rights
+                                    E-card360. All rights
                                     reserved. Powered by <a class="uk-link-text"
-                                        href="https://thiepdientu.com.vn/">Thiệp
-                                        cưới điện tử</a>.
+                                        href="/">E-card360</a>.
                                 </div>
                             </div>
                         </div>

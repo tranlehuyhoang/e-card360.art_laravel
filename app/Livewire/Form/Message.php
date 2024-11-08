@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Form;
 
+use App\Jobs\CheckPayment;
 use App\Models\Message as MessageModel;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -17,6 +18,7 @@ class Message extends Component
 
     public function mount($invitationId)
     {
+
         $this->invitationId = $invitationId; // Assign the invitation ID
         $this->invitation = \App\Models\WeddingInvitation::find($invitationId); // Fetch the invitation
 
@@ -31,6 +33,7 @@ class Message extends Component
             $this->alert('error', 'Thanh toán chưa hoàn tất. Vui lòng thanh toán .');
             $this->invitation = null; // Reset invitation to prevent form submission
         }
+        CheckPayment::dispatch();
     }
 
     public function render()
